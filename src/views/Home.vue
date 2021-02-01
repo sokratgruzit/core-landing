@@ -2,10 +2,13 @@
   <div class="body-container">
     <StartContainer v-if="false"/>
     <MainContainer/>
+    <TextContainer/>
     <Community :itemData="$store.state.community"/>
     <About/>
-    <Statistic :statData="$store.state.statistic"/>
     <LottieContainer/>
+    <Statistic :statData="$store.state.statistic"/>
+    <Frameworks/>
+    <Generation/>
     <Reviews/>
     <Faq :itemData="$store.state.faq"/>
     <CommunityPopup :itemData="$store.state.community"/>
@@ -22,10 +25,16 @@ import Reviews from '../components/Reviews'
 import Statistic from '../components/Statistic'
 import StartContainer from '../components/Start'
 import LottieContainer from '../components/LottieContainer'
+import TextContainer from '../components/TextContainer'
+import Frameworks from '../components/Frameworks'
+import Generation from '../components/Generation'
 
 export default {
   name: 'Home',
   components: {
+    Frameworks,
+    Generation,
+    TextContainer,
     LottieContainer,
     StartContainer,
     Statistic,
@@ -46,6 +55,12 @@ export default {
   @media (max-width: 1023px){
     .body-container{
       padding-left: 180px;
+    }
+  }
+  /*Mobile 320*/
+  @media (max-width: 767px){
+    .body-container{
+      padding-left: 0px;
     }
   }
 </style>

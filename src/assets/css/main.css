@@ -107,6 +107,10 @@ button {
     opacity: 0;
     transform: translateY(10px);
 }
+.lottie-container__item svg{
+    height: 100px!important;
+    width: 100px!important;
+}
 /* width */
 *::-webkit-scrollbar {
     width: 8px;

@@ -147,4 +147,48 @@ export default {
       margin-left: 180px;
     }
   }
+  /*Mobile 320*/
+  @media (max-width: 767px){
+    .subTtl{
+      font-size: 16px;
+      line-height: 22px;
+    }
+    .subTtl i{
+      width: 22px;
+      height: 22px;
+      margin-right: 15px;
+    }
+    .communityInner {
+      padding-top: 65px;
+      padding-bottom: 65px;
+    }
+    .subTtl{
+      align-items: end;
+    }
+    .linksContainer{
+      padding-top: 50px;
+    }
+    .link .txt {
+      font-size: 50px;
+      line-height: 56px;
+    }
+    .videoContainer{
+      height: 170px;
+      top: -100%;
+      user-select: none;
+    }
+    .link{
+      margin:12px auto!important;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+    video{
+      user-select: none;
+      -webkit-user-select: none;
+    }
+    .link img{
+      user-select: none;
+      -webkit-user-select: none;
+    }
+  }
 </style>

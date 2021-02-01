@@ -4,15 +4,8 @@
     <div class="community-popup__inner">
       <div class="close-popup" @click="closePopup">
         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g clip-path="url(#clip0)">
-            <path d="M38.75 1.25L1.25 38.75" stroke="white" stroke-width="4"/>
-            <path d="M1.25 1.25L38.75 38.75" stroke="white" stroke-width="4"/>
-          </g>
-          <defs>
-            <clipPath id="clip0">
-              <rect width="40" height="40" fill="white"/>
-            </clipPath>
-          </defs>
+          <path d="M38.75 1.25L1.25 38.75" stroke="white" stroke-width="4"/>
+          <path d="M1.25 1.25L38.75 38.75" stroke="white" stroke-width="4"/>
         </svg>
       </div>
       <VueSlickCarousel v-bind="settings" ref="carousel">
@@ -233,5 +226,37 @@ export default {
   .community-popup__container.active .community-popup__inner{
     transform: translateX(0%);
     transition-delay: 0s;
+  }
+  /*Mobile 320*/
+  @media (max-width: 767px){
+    .community-popup__item-scroll{
+      padding-right: 20px;
+    }
+    .community-popup__inner{
+      width: 100%;
+    }
+    .community-popup__item{
+      padding: 25px 15px 30px 15px;
+    }
+    .community-popup__item h4{
+      font-size: 40px;
+      line-height: 50px;
+    }
+    .close-popup{
+      top: 36px;
+      right: 15px;
+    }
+    .community-popup__container.active .close-popup{
+      transform: scale(.8);
+    }
+    .community-popup__item .subTtl{
+      font-size: 21px;
+      line-height: 32px;
+    }
+    .community-popup__item .txt{
+      font-size: 16px;
+      line-height: 28px;
+      margin-top: 20px;
+    }
   }
 </style>

@@ -1,8 +1,8 @@
 <template>
-  <div class="container lottie-container__outer" data-aos="fade-up">
-    <h3 class="font-72"><span>CORE</span> solves today's hardest
+  <div class="container lottie-container__outer">
+    <h3 class="font-72" data-aos="fade-up"><span>CORE</span> solves today's hardest
       blockchain problems</h3>
-    <div class="lottie-container">
+    <div class="lottie-container" data-aos="fade-up">
       <div class="lottie-container__item" @mouseover="hover(1)">
         <lottie-animation
           ref="lottie1"
@@ -12,17 +12,19 @@
           @complete="leave(1)"
         />
         <div class="ttl">Scalability</div>
+        <div class="txt">Here will be a brief description
+          of the problem in a few lines</div>
       </div>
-      <div class="lottie-container__item" @mouseover="hover(2)">
-        <lottie-animation
-          ref="lottie2"
-          :animationData="require(`@/assets/lottie-icons/user_experience.json`)"
-          :loop="false"
-          :autoPlay="false"
-          @complete="leave(2)"
-        />
-        <div class="ttl">User Experience</div>
-      </div>
+<!--      <div class="lottie-container__item" @mouseover="hover(2)">-->
+<!--        <lottie-animation-->
+<!--          ref="lottie2"-->
+<!--          :animationData="require(`@/assets/lottie-icons/user_experience.json`)"-->
+<!--          :loop="false"-->
+<!--          :autoPlay="false"-->
+<!--          @complete="leave(2)"-->
+<!--        />-->
+<!--        <div class="ttl">User Experience</div>-->
+<!--      </div>-->
       <div class="lottie-container__item" @mouseover="hover(3)">
         <lottie-animation
           ref="lottie3"
@@ -32,6 +34,8 @@
           @complete="leave(3)"
         />
         <div class="ttl">Usability</div>
+        <div class="txt">Here will be a brief description
+          of the problem in a few lines</div>
       </div>
       <div class="lottie-container__item" @mouseover="hover(4)">
         <lottie-animation
@@ -42,6 +46,8 @@
           @complete="leave(4)"
         />
         <div class="ttl">Interoperability</div>
+        <div class="txt">Here will be a brief description
+          of the problem in a few lines</div>
       </div>
       <div class="lottie-container__item" @mouseover="hover(5)">
         <lottie-animation
@@ -52,6 +58,8 @@
           @complete="leave(5)"
         />
         <div class="ttl">Security</div>
+        <div class="txt">Here will be a brief description
+          of the problem in a few lines</div>
       </div>
 
     </div>
@@ -112,12 +120,19 @@ export default {
   .lottie-container__item{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    padding-right: 50px;
+    width: 25%;
+  }
+  .lottie-container__item .txt{
+    opacity: .7;
+    font-size: 15px;
+    line-height: 24px;
+    margin-top: 10px;
   }
   .lottie-container__item .ttl{
-    font-size: 20px;
-    line-height: 28px;
-    margin-top: 40px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 25px;
     transition: .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
   }
   .lottie-container__item:hover .ttl{
@@ -128,6 +143,7 @@ export default {
     justify-content: space-between;
     margin-top: 80px;
     padding-bottom: 170px;
+    width: 76%;
   }
   .lottie-container__outer{
     display: flex;
@@ -135,6 +151,7 @@ export default {
   }
   h3{
     width: 80%;
+    margin-top: 160px;
   }
   h3 span{
     font-size: inherit;
@@ -142,6 +159,9 @@ export default {
   }
   /*Laptop 1440*/
   @media (max-width: 1900px){
+    .lottie-container{
+      width: 100%;
+    }
   }
   /*Ipad Pro 1024*/
   @media (max-width: 1365px){
