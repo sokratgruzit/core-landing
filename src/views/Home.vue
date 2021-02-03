@@ -7,7 +7,7 @@
     <About/>
     <LottieContainer/>
     <Statistic :statData="$store.state.statistic"/>
-    <Frameworks/>
+    <Frameworks :itemData="$store.state.tabs"/>
     <Generation/>
     <Reviews/>
     <Faq :itemData="$store.state.faq"/>

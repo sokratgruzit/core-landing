@@ -190,6 +190,7 @@ export default {
     width: 100%;
     border-bottom: 1px solid rgba(255,255,255,.05);
     background: #00050F;
+    overflow: hidden;
   }
   .main-container__header{
     position: relative;

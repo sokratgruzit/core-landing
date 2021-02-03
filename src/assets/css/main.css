@@ -125,6 +125,13 @@ button {
 *::-webkit-scrollbar-thumb {
     background: #0500FF;
 }
+.frameworks-container__frameworks-tab:hover svg,.frameworks-container__frameworks-tab.active svg{
+    opacity: 1;
+}
+.frameworks-container__frameworks-tab svg{
+    transition: .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+    opacity: 0.5;
+}
 /*Laptop 1440*/
 @media (max-width: 1900px){
     .font-72{

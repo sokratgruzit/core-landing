@@ -11,7 +11,8 @@ export default new Vuex.Store({
     faq: items.faq,
     communityNum: 0,
     statistic: items.statistic,
-    start: false
+    start: false,
+    tabs: items.framework
   },
   getters: {
   },
