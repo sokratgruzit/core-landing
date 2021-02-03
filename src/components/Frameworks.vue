@@ -134,7 +134,7 @@ export default {
   .frameworks-container__frameworks-tab:last-child{
     border-bottom: 0px;
   }
-  .frameworks-container__frameworks-tab:hover:after,.frameworks-container__frameworks-tab.active:after{
+  .frameworks-container__frameworks-tab.active:after{
     transform: scaleY(1);
   }
   .frameworks-container__frameworks-tab:after{
