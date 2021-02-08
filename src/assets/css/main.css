@@ -144,6 +144,9 @@ button {
 }
 /*Ipad Pro 1024*/
 @media (max-width: 1365px){
+    .frameworks-container__frameworks-tab svg{
+        transform: scale(.7);
+    }
     .container{
         padding: 0px 75px;
     }
@@ -170,6 +173,19 @@ button {
 }
 /*Mobile 320*/
 @media (max-width: 767px){
+    .frameworks-container__frameworks-tabs{
+        align-items: center;
+    }
+    .frameworks-container__frameworks-tab{
+        height: auto;
+        width: 33.3333%;
+        padding-left: 0px!important;
+        text-align: center;
+        padding: 15 solid;
+    }
+    .frameworks-container__frameworks-tab svg{
+       height: 40px;
+    }
     .container{
         padding: 0px 15px;
     }

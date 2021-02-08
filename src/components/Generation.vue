@@ -150,10 +150,36 @@ export default {
   /*Laptop 1440*/
   @media (max-width: 1900px){
   }
+  /*Ipad 1024*/
+  @media (max-width: 1365px){
+    .generation-container__item{
+      padding: 15px;
+    }
+    .generation-container__item-title{
+      font-size: 20px;
+    }
+    .generation-container__inner{
+      height: auto;
+    }
+  }
   /*Ipad 768*/
   @media (max-width: 1023px){
+    .generation-container__inner{
+      flex-direction: column;
+      align-items: center;
+    }
+    .generation-container__item{
+      margin-top: 0px!important;
+      margin-bottom: 30px;
+    }
+    .generation-container{
+      padding: 40px 0px;
+    }
   }
   /*Mobile 320*/
   @media (max-width: 767px){
+    .generation-container__inner{
+      margin-top: 30px ;
+    }
   }
 </style>

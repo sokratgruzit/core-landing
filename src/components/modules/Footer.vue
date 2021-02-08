@@ -268,5 +268,8 @@ export default {
   }
   /*Mobile 320*/
   @media (max-width: 767px){
+    footer .container{
+      padding-left: 15px;
+    }
   }
 </style>

@@ -354,6 +354,26 @@ export default {
       width: 750px;
     }
   }
+  /*Ipad Pro 1024*/
+  @media (max-width: 1365px){
+    .slide-nav{
+      margin-top: 50px;
+    }
+    .container{
+      display: flex;
+      flex-direction: column;
+    }
+    .left{
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    .right{
+      width: 100%;
+    }
+    .statistic-container{
+      padding-bottom: 60px;
+    }
+  }
   /*Ipad 768*/
   @media (max-width: 1023px){
   }

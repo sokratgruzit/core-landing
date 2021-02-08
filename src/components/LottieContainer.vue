@@ -168,16 +168,29 @@ export default {
     .lottie-container{
       flex-wrap: wrap;
     }
-    .lottie-container__item:nth-child(4){
-      width: 50%;
-      margin-top: 40px;
-    }
-    .lottie-container__item:nth-child(5){
-      width: 50%;
-      margin-top: 40px;
-    }
   }
   /*Ipad 768*/
   @media (max-width: 1023px){
+    .lottie-container__item{
+      width: 50%;
+      margin-bottom: 30px;
+    }
+  }
+  /*Mobile 320*/
+  @media (max-width: 767px){
+    .lottie-container__item .txt{
+      font-size: 12px;
+      line-height: 20px;
+    }
+    .lottie-container__item{
+      padding-right: 15px;
+    }
+    h3{
+      margin-top: 60px;
+      width: 100%;
+    }
+    .lottie-container{
+      padding-bottom: 60px;
+    }
   }
 </style>

@@ -77,7 +77,41 @@ export default {
       width: 100%;
     }
   }
+  /*Ipad 1024*/
+  @media (max-width: 1365px){
+    .text-container__inner{
+      padding-bottom: 60px;
+    }
+  }
+  /*Ipad 768*/
+  @media (max-width: 1024px){
+    .text-container__inner{
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+    .text-container__bottom{
+      font-size: 14px;
+      line-height: 20px;
+      width: 100%;
+    }
+    .text-container__up{
+      font-size: 18px;
+      line-height: 25px;
+      width: 100%;
+    }
+  }
   /*Mobile 320*/
   @media (max-width: 767px){
+    .text-container{
+      padding-top: 200px;
+    }
+    .text-container__up{
+      font-size: 16px;
+      line-height: 22px;
+    }
+    .text-container__bottom-inner[data-v-4804a3d4] {
+      font-size: 12px;
+      line-height: 20px;
+    }
   }
 </style>

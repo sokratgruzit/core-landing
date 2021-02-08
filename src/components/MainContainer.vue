@@ -4,9 +4,13 @@
     <div class="main-video__container">
       <div class="overlay"></div>
       <img :src="require(`@/assets/img/gradient.png`)" alt="" class="gradient">
-      <video muted loop autoplay class="main-video">
-        <source :src="require(`@/assets/img/Main.mp4`)" type="video/mp4">
-      </video>
+<!--      <video muted loop autoplay class="main-video">-->
+<!--        <source :src="require(`@/assets/img/Main.mp4`)" type="video/mp4">-->
+<!--&lt;!&ndash;        <source :src="require(`@/assets/img/Main.ogg`)" type="video/ogg; codecs=theora, vorbis">&ndash;&gt;-->
+<!--      </video>-->
+      <div class="main-video">
+     <iframe src="https://iframe.videodelivery.net/1b63ec0c3bd09c163f83a515e248e7c0?muted=true&preload=true&loop=true&autoplay=true&controls=false" style="border: none; position: absolute; top: 0; height: 100%; width: 100%;"  allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;" allowfullscreen="true"></iframe>
+      </div>
     </div>
     <div class="container">
       <div class="main-container__header">
@@ -33,8 +37,8 @@
       <div class="main-container__description">
         <h1>Core</h1>
         <p>
-          Cryptographic Object<br>
-          Resource Engine
+          A Virtual World <br>
+          of Interconnected Blockchains
         </p>
       </div>
       <div class="scroll-down">
@@ -91,6 +95,15 @@ export default {
 }
 </script>
 <style scoped>
+  .main-video{
+    transform: translateY(-40%);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+  }
   .download-container__mobile{
     display: none;
   }
@@ -109,14 +122,16 @@ export default {
     width: 100%;
     height: 100%;
     z-index: 2;
-    opacity: 0;
-    transform: scale(.8);
-    transition: .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
   }
-  .animHead .main-video__container video{
+  .animHead .main-video__container{
     transform: scale(1);
     opacity: 1;
     transition-delay: .4s;
+  }
+  .main-video__container{
+    opacity: 0;
+    transform: scale(.8);
+    transition: .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
   }
   .gradient{
     position: absolute;

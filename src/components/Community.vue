@@ -10,9 +10,7 @@
           <div class="txt">{{link.title}}</div>
           <div class="videoContainer">
             <img :src="require(`@/assets/img/gradient.png`)" alt="" class="gradient">
-            <video muted loop autoplay>
-              <source :src="require(`@/assets/img/community/${link.video}`)" type="video/mp4">
-            </video>
+            <div class="video" v-html="link.video"></div>
           </div>
         </div>
       </div>
@@ -105,8 +103,12 @@ export default {
     width: 100%;
     padding-top: 180px;
   }
-  .videoContainer video{
-     height: 100%;
+  .videoContainer .video{
+    height: 100%;
+    width: 100%;
+  }
+  .videoContainer .video iframe{
+    position: relative;
   }
   .gradient{
     position: absolute;
@@ -133,6 +135,18 @@ export default {
     }
     .communityInner{
       padding-top: 110px;
+    }
+  }
+  /*Ipad 1024*/
+  @media (max-width: 1365px){
+    .link:nth-child(3) {
+      margin-left: 280px;
+    }
+    .link:nth-child(2) {
+      margin-left: 140px;
+    }
+    .link .txt{
+      font-size: 90px;
     }
   }
   /*Ipad 768*/

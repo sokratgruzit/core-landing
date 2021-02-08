@@ -1,17 +1,16 @@
 <template>
-  <div class="container" id="community" v-view="visibilityChanged">
+  <div class="community__outer">
+    <div class="container" id="community" v-view="visibilityChanged">
     <div class="inner">
       <div class="left">
         <h2 class="font-72" data-aos="fade-up">
-          We believe <br>
-          in the power <br>
-          of community<br>
+          Use Cases
         </h2>
-        <p class="descr" data-aos="fade-up">Our goal is to create a product and service
-          that you're satisfied with and use it every day.</p>
-        <div class="btnContainer" data-aos="fade-up">
-          <div class="btn">Leave a review</div>
-        </div>
+        <p class="descr" data-aos="fade-up">Our goal is to create a product
+          and service that you're satisfied with and use it every day.a</p>
+<!--        <div class="btnContainer" data-aos="fade-up">-->
+<!--          <div class="btn">Leave a review</div>-->
+<!--        </div>-->
       </div>
       <div class="right">
         <div class="slidersContainer">
@@ -19,24 +18,12 @@
             <VueSlickCarousel v-bind="settings" :style="{height: '100%'}">
               <div class="review">
                 <div class="review__header">
-                  <a href="##">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#0084FF"/>
-                      <path d="M15.0168 12.4697H12.8755V20.3142H9.63132V12.4697H8.08838V9.71278H9.63132V7.92876C9.63132 6.65299 10.2373 4.65527 12.9044 4.65527L15.3075 4.66533V7.34136H13.5639C13.2779 7.34136 12.8757 7.48425 12.8757 8.09283V9.71535H15.3002L15.0168 12.4697Z" fill="white"/>
-                    </svg>
-                  </a>
                   <div class="name">Ovanes</div>
                 </div>
                 <p>Good product. Convenient, fast. Allows you to keep abreast of all the events in the world of cryptology.</p>
               </div>
               <div class="review">
                 <div class="review__header">
-                  <a href="##">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#0084FF"/>
-                      <path d="M15.0168 12.4697H12.8755V20.3142H9.63132V12.4697H8.08838V9.71278H9.63132V7.92876C9.63132 6.65299 10.2373 4.65527 12.9044 4.65527L15.3075 4.66533V7.34136H13.5639C13.2779 7.34136 12.8757 7.48425 12.8757 8.09283V9.71535H15.3002L15.0168 12.4697Z" fill="white"/>
-                    </svg>
-                  </a>
                   <div class="name">David</div>
                 </div>
                 <p>It has all the tools you need. Moreover is a very dynamic tool that is constantly being updated and enhanced with features. Blockchain technology is here to stay.
@@ -44,24 +31,12 @@
               </div>
               <div class="review">
                 <div class="review__header">
-                  <a href="##">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#0084FF"/>
-                      <path d="M15.0168 12.4697H12.8755V20.3142H9.63132V12.4697H8.08838V9.71278H9.63132V7.92876C9.63132 6.65299 10.2373 4.65527 12.9044 4.65527L15.3075 4.66533V7.34136H13.5639C13.2779 7.34136 12.8757 7.48425 12.8757 8.09283V9.71535H15.3002L15.0168 12.4697Z" fill="white"/>
-                    </svg>
-                  </a>
                   <div class="name">Ovanes</div>
                 </div>
                 <p>Good product. Convenient, fast. Allows you to keep abreast of all the events in the world of cryptology.</p>
               </div>
               <div class="review">
                 <div class="review__header">
-                  <a href="##">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#0084FF"/>
-                      <path d="M15.0168 12.4697H12.8755V20.3142H9.63132V12.4697H8.08838V9.71278H9.63132V7.92876C9.63132 6.65299 10.2373 4.65527 12.9044 4.65527L15.3075 4.66533V7.34136H13.5639C13.2779 7.34136 12.8757 7.48425 12.8757 8.09283V9.71535H15.3002L15.0168 12.4697Z" fill="white"/>
-                    </svg>
-                  </a>
                   <div class="name">David</div>
                 </div>
                 <p>It has all the tools you need. Moreover is a very dynamic tool that is constantly being updated and enhanced with features. Blockchain technology is here to stay.
@@ -69,24 +44,12 @@
               </div>
               <div class="review">
                 <div class="review__header">
-                  <a href="##">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#0084FF"/>
-                      <path d="M15.0168 12.4697H12.8755V20.3142H9.63132V12.4697H8.08838V9.71278H9.63132V7.92876C9.63132 6.65299 10.2373 4.65527 12.9044 4.65527L15.3075 4.66533V7.34136H13.5639C13.2779 7.34136 12.8757 7.48425 12.8757 8.09283V9.71535H15.3002L15.0168 12.4697Z" fill="white"/>
-                    </svg>
-                  </a>
                   <div class="name">Ovanes</div>
                 </div>
                 <p>Good product. Convenient, fast. Allows you to keep abreast of all the events in the world of cryptology.</p>
               </div>
               <div class="review">
                 <div class="review__header">
-                  <a href="##">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#0084FF"/>
-                      <path d="M15.0168 12.4697H12.8755V20.3142H9.63132V12.4697H8.08838V9.71278H9.63132V7.92876C9.63132 6.65299 10.2373 4.65527 12.9044 4.65527L15.3075 4.66533V7.34136H13.5639C13.2779 7.34136 12.8757 7.48425 12.8757 8.09283V9.71535H15.3002L15.0168 12.4697Z" fill="white"/>
-                    </svg>
-                  </a>
                   <div class="name">David</div>
                 </div>
                 <p>It has all the tools you need. Moreover is a very dynamic tool that is constantly being updated and enhanced with features. Blockchain technology is here to stay.
@@ -98,24 +61,12 @@
             <VueSlickCarousel v-bind="settings2" :style="{height: '100%'}">
               <div class="review">
                 <div class="review__header">
-                  <a href="##">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#0084FF"/>
-                      <path d="M15.0168 12.4697H12.8755V20.3142H9.63132V12.4697H8.08838V9.71278H9.63132V7.92876C9.63132 6.65299 10.2373 4.65527 12.9044 4.65527L15.3075 4.66533V7.34136H13.5639C13.2779 7.34136 12.8757 7.48425 12.8757 8.09283V9.71535H15.3002L15.0168 12.4697Z" fill="white"/>
-                    </svg>
-                  </a>
                   <div class="name">Ovanes</div>
                 </div>
                 <p>Good product. Convenient, fast. Allows you to keep abreast of all the events in the world of cryptology.</p>
               </div>
               <div class="review">
                 <div class="review__header">
-                  <a href="##">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#0084FF"/>
-                      <path d="M15.0168 12.4697H12.8755V20.3142H9.63132V12.4697H8.08838V9.71278H9.63132V7.92876C9.63132 6.65299 10.2373 4.65527 12.9044 4.65527L15.3075 4.66533V7.34136H13.5639C13.2779 7.34136 12.8757 7.48425 12.8757 8.09283V9.71535H15.3002L15.0168 12.4697Z" fill="white"/>
-                    </svg>
-                  </a>
                   <div class="name">David</div>
                 </div>
                 <p>It has all the tools you need. Moreover is a very dynamic tool that is constantly being updated and enhanced with features. Blockchain technology is here to stay.
@@ -135,12 +86,6 @@
               </div>
               <div class="review">
                 <div class="review__header">
-                  <a href="##">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#0084FF"/>
-                      <path d="M15.0168 12.4697H12.8755V20.3142H9.63132V12.4697H8.08838V9.71278H9.63132V7.92876C9.63132 6.65299 10.2373 4.65527 12.9044 4.65527L15.3075 4.66533V7.34136H13.5639C13.2779 7.34136 12.8757 7.48425 12.8757 8.09283V9.71535H15.3002L15.0168 12.4697Z" fill="white"/>
-                    </svg>
-                  </a>
                   <div class="name">David</div>
                 </div>
                 <p>It has all the tools you need. Moreover is a very dynamic tool that is constantly being updated and enhanced with features. Blockchain technology is here to stay.
@@ -148,24 +93,12 @@
               </div>
               <div class="review">
                 <div class="review__header">
-                  <a href="##">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#0084FF"/>
-                      <path d="M15.0168 12.4697H12.8755V20.3142H9.63132V12.4697H8.08838V9.71278H9.63132V7.92876C9.63132 6.65299 10.2373 4.65527 12.9044 4.65527L15.3075 4.66533V7.34136H13.5639C13.2779 7.34136 12.8757 7.48425 12.8757 8.09283V9.71535H15.3002L15.0168 12.4697Z" fill="white"/>
-                    </svg>
-                  </a>
                   <div class="name">Ovanes</div>
                 </div>
                 <p>Good product. Convenient, fast. Allows you to keep abreast of all the events in the world of cryptology.</p>
               </div>
               <div class="review">
                 <div class="review__header">
-                  <a href="##">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#0084FF"/>
-                      <path d="M15.0168 12.4697H12.8755V20.3142H9.63132V12.4697H8.08838V9.71278H9.63132V7.92876C9.63132 6.65299 10.2373 4.65527 12.9044 4.65527L15.3075 4.66533V7.34136H13.5639C13.2779 7.34136 12.8757 7.48425 12.8757 8.09283V9.71535H15.3002L15.0168 12.4697Z" fill="white"/>
-                    </svg>
-                  </a>
                   <div class="name">David</div>
                 </div>
                 <p>It has all the tools you need. Moreover is a very dynamic tool that is constantly being updated and enhanced with features. Blockchain technology is here to stay.
@@ -176,6 +109,7 @@
         </div>
       </div>
     </div>
+  </div>
   </div>
 </template>
 <script>
@@ -233,9 +167,13 @@ export default {
 }
 </script>
 <style scoped>
+  .community__outer{
+    background: #010918;
+    overflow: hidden;
+  }
   .review__header .name{
     font-size: 15px;
-    opacity: .5;
+    color: #FF7152;
   }
   .review__header a{
     transition: .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
@@ -247,7 +185,6 @@ export default {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    flex-direction: row-reverse;
     align-items: center;
     margin-bottom: 10px;
   }
@@ -312,6 +249,7 @@ export default {
   .descr{
     font-size: 26px;
     line-height: 36px;
+    color: rgba(255,255,255,.7);
   }
   .btn{
     height: 52px;
@@ -337,7 +275,7 @@ export default {
     width: 58%;
     display: flex;
     justify-content: center;
-    height: 768px;
+    height: 480px;
   }
   /*Laptop 1440*/
   @media (max-width: 1900px){
@@ -347,6 +285,11 @@ export default {
   }
   /*Ipad 768*/
   @media (max-width: 1023px){
+    .descr{
+      font-size: 18px;
+      line-height: 25px;
+      padding-right: 20px;
+    }
     .sliderInner:last-child{
       display: none;
     }
@@ -359,6 +302,20 @@ export default {
     }
     .left{
       width: 60%;
+    }
+    /*Iphone*/
+    @media (max-width: 767px){
+      .left{
+        width: 100%;
+      }
+      .right{
+        width: 100%;
+        height: 300px;
+        margin-top: 30px;
+      }
+      .inner{
+        flex-direction: column;
+      }
     }
   }
 </style>

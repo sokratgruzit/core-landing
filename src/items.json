@@ -20,21 +20,21 @@
     {
       "id": 1,
       "title": "Technology",
-      "video": "Technology.mp4",
+      "video": "<iframe src=\"https://iframe.videodelivery.net/912d9ee7a940b1c6cdeabbcb15821e9b?muted=true&preload=true&loop=true&autoplay=true&controls=false\" style=\"border: none; position: absolute; top: 0; height: 100%; width: 100%;\"  allow=\"accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
       "subTitle": "Core brings a new standard in technology — open and inclusive — to challenge the old and activate a new age of sustainable, globally-distributed innovation.",
       "text": "From the incremental to global, Core improves how we interact, transact,\nand create — and ultimately operate\nas a global society. Core is a blockchain platform built on the groundbreaking Ouroboros proof-of-stake consensus protocol, and developed using the Haskell programming language."
     },
     {
       "id": 2,
       "title": "Research",
-      "video": "Research.mp4",
+      "video": "<iframe src=\"https://iframe.videodelivery.net/ba02c51bd5a64eb4430aaf30f88b911b?muted=true&preload=true&loop=true&autoplay=true&controls=false\" style=\"border: none; position: absolute; top: 0; height: 100%; width: 100%;\"  allow=\"accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
       "subTitle": "Core brings a new standard in technology — open and inclusive — to challenge the old and activate a new age of sustainable, globally-distributed innovation.",
       "text": "From the incremental to global, Core improves how we interact, transact,\nand create — and ultimately operate\nas a global society. Core is a blockchain platform built on the groundbreaking Ouroboros proof-of-stake consensus protocol, and developed using the Haskell programming language."
     },
     {
       "id": 3,
       "title": "Purpose",
-      "video": "Purpose.mp4",
+      "video": "<iframe src=\"https://iframe.videodelivery.net/112f3c0278f210a880e8ea0abdef6913?muted=true&preload=true&loop=true&autoplay=true&controls=false\" style=\"border: none; position: absolute; top: 0; height: 100%; width: 100%;\"  allow=\"accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
       "subTitle": "Core brings a new standard in technology — open and inclusive — to challenge the old and activate a new age of sustainable, globally-distributed innovation.",
       "text": "From the incremental to global, Core improves how we interact, transact,\nand create — and ultimately operate\nas a global society. Core is a blockchain platform built on the groundbreaking Ouroboros proof-of-stake consensus protocol, and developed using the Haskell programming language."
     }

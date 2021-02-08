@@ -213,10 +213,94 @@ export default {
       font-size: 46px;
     }
   }
+  /*Ipad 1024*/
+  @media (max-width: 1365px){
+    .frameworks-container__inner{
+      padding-bottom: 60px;
+    }
+    .frameworks-container__title-bottom{
+      font-size: 18px;
+    }
+    .frameworks-container__sub-title{
+      font-size: 24px;
+    }
+    .frameworks-container__title {
+      font-size: 70px;
+    }
+    .frameworks-container__frameworks-tabs-inner-text{
+      font-size: 18px;
+      line-height: 30px;
+    }
+    .frameworks-container__frameworks-tabs-inner{
+      padding: 20px;
+    }
+    .frameworks-container__frameworks{
+      height: 290px;
+    }
+    .frameworks-container__frameworks{
+      width: 100%;
+    }
+  }
   /*Ipad 768*/
   @media (max-width: 1023px){
+    .frameworks-container__middle-title{
+      padding-top: 80px;
+    }
+    .frameworks-container__title-bottom {
+      font-size: 16px;
+    }
+    .frameworks-container__middle-title {
+      font-size: 36px;
+    }
+    .frameworks-container__frameworks {
+      height: 245px;
+    }
+    .frameworks-container__frameworks-tabs-inner-text {
+      font-size: 16px;
+      line-height: 25px;
+    }
+    .frameworks-container__title-top{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .frameworks-container__sub-title{
+      margin-left: 0px;
+    }
   }
   /*Mobile 320*/
   @media (max-width: 767px){
+    .frameworks-container__frameworks-tab{
+      height: 60px;
+      width: 33.3333%;
+    }
+    .frameworks-container__frameworks-tab:after{
+      height : 4px;
+      width: 100%;
+      top: 0px;
+      transform: scaleY(1) scaleX(0);
+    }
+    .frameworks-container__frameworks-tab.active:after {
+      transform: scaleY(1) scaleX(1);
+    }
+    .frameworks-container__frameworks-tab svg {
+      transform: scale(1);
+      height: 15px;
+    }
+    .frameworks-container__frameworks-tabs{
+      flex-direction: row;
+      width: 100%;
+      padding-right: 0px;
+    }
+    .frameworks-container__frameworks-tabs-container{
+      height: 250px;
+    }
+    .frameworks-container__title-bottom {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    .frameworks-container__frameworks{
+      flex-direction: column;
+      height: auto;
+    }
   }
 </style>

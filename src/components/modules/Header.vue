@@ -235,5 +235,8 @@ export default {
   }
   /*Mobile 320*/
   @media (max-width: 767px){
+    header{
+      display: none;
+    }
   }
 </style>

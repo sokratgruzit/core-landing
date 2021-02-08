@@ -10,6 +10,7 @@
     <Frameworks :itemData="$store.state.tabs"/>
     <Generation/>
     <Reviews/>
+    <Developers/>
     <Faq :itemData="$store.state.faq"/>
     <CommunityPopup :itemData="$store.state.community"/>
   </div>
@@ -28,10 +29,12 @@ import LottieContainer from '../components/LottieContainer'
 import TextContainer from '../components/TextContainer'
 import Frameworks from '../components/Frameworks'
 import Generation from '../components/Generation'
+import Developers from '../components/Developers'
 
 export default {
   name: 'Home',
   components: {
+    Developers,
     Frameworks,
     Generation,
     TextContainer,

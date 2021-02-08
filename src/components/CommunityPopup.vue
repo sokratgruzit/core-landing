@@ -12,9 +12,7 @@
         <div class="community-popup__item" v-for="(item,index) in itemData" :key="index">
           <div class="videoContainer">
             <img :src="require(`@/assets/img/gradient2.png`)" alt="" class="gradient2">
-            <video muted loop autoplay>
-              <source :src="require(`@/assets/img/community/${item.video}`)" type="video/mp4">
-            </video>
+            <div class="video" v-html="item.video"></div>
           </div>
           <h4>{{item.title}}</h4>
           <div class="community-popup__item-scroll">
