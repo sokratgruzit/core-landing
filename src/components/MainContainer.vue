@@ -82,7 +82,7 @@ export default {
   mounted () {
     setTimeout(() => {
       this.firstAnimation = true
-    }, 700)
+    }, 1200)
   },
   methods: {
     visibilityChanged () {
@@ -96,13 +96,15 @@ export default {
 </script>
 <style scoped>
   .main-video{
-    transform: translateY(-40%);
     position: absolute;
     top: 0px;
     left: 0px;
-    z-index: 10;
+    z-index: 1;
     width: 100%;
     height: 100%;
+  }
+  .main-video iframe{
+    transform: translateY(-40%);
   }
   .download-container__mobile{
     display: none;
@@ -140,6 +142,7 @@ export default {
     width: 100%;
     height: 100%;
     z-index: 3;
+    transform: translateY(-40%);
   }
   .scroll-down{
     position: absolute;

@@ -116,6 +116,7 @@ export default {
     left: 0px;
     width: 100%;
     height: 100%;
+    z-index: 3;
   }
   .subTtl i{
     height: 28px;

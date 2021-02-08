@@ -128,10 +128,10 @@ export default {
   },
   mounted () {
     this.mobileModeFunc()
+    this.$store.commit('setMenuStatus', null)
     setTimeout(() => {
       this.firstAnimation = true
-      this.$store.commit('setMenuStatus', null)
-    }, 700)
+    }, 1200)
   },
   created () {
     window.addEventListener('resize', this.myEventHandler)
