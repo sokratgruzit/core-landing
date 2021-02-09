@@ -199,7 +199,7 @@ export default {
   mounted () {
     this.mobileModeFunc()
     setTimeout(() => {
-      this.$store.commit('setMenuStatus', null)
+      this.$store.commit('setMenuStatus', 0)
       this.firstAnimation = true
     }, 1200)
   },
@@ -416,6 +416,7 @@ export default {
     }
     .mobile-header__socials a{
       margin: 0px 8px;
+      transition: .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
     }
    .mobile-header__socials svg{
       transition: .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
@@ -437,6 +438,9 @@ export default {
     .mobile-header__down.active .mobile-header__socials svg{
       opacity: 1;
       transform: scale(1);
+    }
+    .mobile-header__nav a.active{
+      color: #FF7152;
     }
   }
 </style>
