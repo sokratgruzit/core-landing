@@ -12,7 +12,7 @@
         <p data-aos="fade-up">Our platform is universal, which allows it to support all currencies, from popular to the latest, and their list is constantly growing.</p>
       </div>
       <div class="right">
-        <hooper :autoPlay="false" :playSpeed="5000" :transition="0" :itemsToShow="1" :infiniteScroll="true">
+        <hooper :autoPlay="true" :playSpeed="5000" :transition="0" :itemsToShow="1" :infiniteScroll="true">
           <slide>
             <div class="slideInner">
               <img :src="require(`@/assets/img/crypto/1.png`)" alt="" class="img_1">

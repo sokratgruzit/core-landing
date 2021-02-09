@@ -1,7 +1,7 @@
 <template>
   <div :class="activeBurger ? 'activeBurger' : ''" v-if="true">
 <!--    {{$store.state.activeMenu}}-->
-    <header :class="firstAnimation ? 'animHead' : ''">
+    <header :class="firstAnimation ? 'animHead' : ''" v-if="!mobileMode">
       <router-link
         class="logo"
         to="/"
@@ -22,7 +22,7 @@
         </svg>
 
       </router-link>
-      <nav v-if="!mobileMode">
+      <nav>
         <router-link
           v-for="nav in routes"
           :key="nav.id"
@@ -54,6 +54,73 @@
         </div>
       </div>
     </header>
+    <div class="mobile-header" :class="firstAnimation ? 'animHead' : ''" v-if="mobileMode">
+      <div class="mobile-header__up" :class="$store.state.activeMenu !== 0 ? 'fixedMenu' : ''">
+        <router-link
+          class="mobile-header__logo"
+          to="/">
+          <svg width="45" height="50" viewBox="0 0 45 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.3375 12.9163C8.31772 10.2875 10.9148 8.1866 13.8993 6.79924C16.8838 5.41188 20.164 4.7807 23.4503 4.96145C26.7366 5.14219 29.9278 6.12929 32.7422 7.8356C35.5566 9.5419 37.9075 11.9149 39.5875 14.7451L41.04 13.8701L43.4288 12.4438C41.2594 8.78789 38.1762 5.7593 34.482 3.65574C30.7878 1.55218 26.6099 0.446045 22.3587 0.446045C18.1076 0.446045 13.9297 1.55218 10.2355 3.65574C6.54133 5.7593 3.45807 8.78789 1.28875 12.4438L0.125 14.4038L2.04125 15.5413L9.47875 19.9163C8.83828 21.5342 8.5145 23.2601 8.525 25.0001C8.52518 27.8338 9.39723 30.5988 11.0228 32.9199C12.6484 35.241 14.9487 37.0057 17.6116 37.9746C20.2746 38.9434 23.1711 39.0695 25.9082 38.3357C28.6452 37.6019 31.0902 36.0437 32.9113 33.8726L38.3275 37.0838C36.3459 39.7119 33.7477 41.8116 30.7624 43.1975C27.777 44.5834 24.4963 45.2129 21.21 45.0304C17.9237 44.848 14.7328 43.8591 11.9193 42.1512C9.10569 40.4433 6.75594 38.0689 5.0775 35.2376L1.2625 37.5126C3.43182 41.1685 6.51508 44.1971 10.2093 46.3007C13.9034 48.4043 18.0814 49.5104 22.3325 49.5104C26.5836 49.5104 30.7616 48.4043 34.4557 46.3007C38.1499 44.1971 41.2332 41.1685 43.4025 37.5126L44.54 35.5963L42.6237 34.4588L36.4987 30.8363L31.2487 27.8001C31.1274 28.1923 30.9783 28.5754 30.8025 28.9463C29.9207 30.8302 28.4355 32.366 26.5823 33.3105C24.7291 34.2551 22.6137 34.5543 20.5712 34.1608C18.5287 33.7674 16.6759 32.7037 15.3061 31.1383C13.9364 29.573 13.128 27.5954 13.0091 25.5187C12.8902 23.4421 13.4676 21.3851 14.6497 19.6736C15.8318 17.9621 17.5511 16.694 19.5354 16.07C21.5196 15.446 23.6553 15.5018 25.6043 16.2286C27.5532 16.9554 29.2039 18.3117 30.295 20.0826L34.1537 17.8601C33.0183 15.9781 31.4503 14.3942 29.5799 13.2398C27.7095 12.0855 25.5907 11.394 23.3994 11.2229C21.2081 11.0517 19.0076 11.4059 16.9807 12.2559C14.9537 13.1059 13.1588 14.4272 11.745 16.1101L6.3375 12.9163Z" fill="#FF7152"/>
+          </svg>
+        </router-link>
+        <div class="mobile-header__title">
+          Cryptographic Object <br>
+          Resourse Engine
+        </div>
+        <div class="burger" :class="activeBurger ? 'active' : ''" @click="openBurger">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="mobile-header__down" :class="activeBurger ? 'active' : ''">
+        <div class="mobile-header__nav">
+          <router-link
+            v-for="nav in routes"
+            :key="nav.id"
+            :to="nav.route"
+            class="font-18"
+            :class="$store.state.activeMenu == nav.id ? 'active' : ''"
+            @click.native="closeBurger(),activeLinkFunc(nav.id)"
+          >
+            {{nav.title}}
+          </router-link>
+        </div>
+        <div class="mobile-header__socials-container">
+          <div class="mobile-header__socials-title"><span>Follow us</span></div>
+          <div class="mobile-header__socials">
+            <a href="##" target="_blank">
+              <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.5487 20V10.8777H10.6094L11.0686 7.32156H7.5487V5.05147C7.5487 4.0222 7.83334 3.32076 9.31099 3.32076L11.1925 3.31999V0.13923C10.8671 0.0969453 9.75021 0 8.45021 0C5.73561 0 3.87715 1.65697 3.87715 4.69927V7.32156H0.807129V10.8777H3.87715V20H7.5487Z" fill="white"/>
+              </svg>
+            </a>
+            <a href="##" target="_blank">
+              <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 2.79875C19.2563 3.125 18.4637 3.34125 17.6375 3.44625C18.4875 2.93875 19.1363 2.14125 19.4412 1.18C18.6488 1.6525 17.7738 1.98625 16.8412 2.1725C16.0887 1.37125 15.0162 0.875 13.8462 0.875C11.5763 0.875 9.74875 2.7175 9.74875 4.97625C9.74875 5.30125 9.77625 5.61375 9.84375 5.91125C6.435 5.745 3.41875 4.11125 1.3925 1.6225C1.03875 2.23625 0.83125 2.93875 0.83125 3.695C0.83125 5.115 1.5625 6.37375 2.6525 7.1025C1.99375 7.09 1.3475 6.89875 0.8 6.5975C0.8 6.61 0.8 6.62625 0.8 6.6425C0.8 8.635 2.22125 10.29 4.085 10.6712C3.75125 10.7625 3.3875 10.8062 3.01 10.8062C2.7475 10.8062 2.4825 10.7913 2.23375 10.7362C2.765 12.36 4.2725 13.5538 6.065 13.5925C4.67 14.6838 2.89875 15.3412 0.98125 15.3412C0.645 15.3412 0.3225 15.3263 0 15.285C1.81625 16.4563 3.96875 17.125 6.29 17.125C13.835 17.125 17.96 10.875 17.96 5.4575C17.96 5.27625 17.9538 5.10125 17.945 4.9275C18.7588 4.35 19.4425 3.62875 20 2.79875Z" fill="white"/>
+              </svg>
+            </a>
+            <a href="##" target="_blank">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                  <path d="M19.9951 20.0001V19.9993H20.0001V12.6643C20.0001 9.07594 19.2276 6.31177 15.0326 6.31177C13.0159 6.31177 11.6626 7.41844 11.1101 8.4676H11.0517V6.64677H7.07422V19.9993H11.2159V13.3876C11.2159 11.6468 11.5459 9.96344 13.7017 9.96344C15.8259 9.96344 15.8576 11.9501 15.8576 13.4993V20.0001H19.9951Z" fill="white"/>
+                  <path d="M0.330078 6.64746H4.47675V20H0.330078V6.64746Z" fill="white"/>
+                  <path d="M2.40167 0C1.07583 0 0 1.07583 0 2.40167C0 3.7275 1.07583 4.82583 2.40167 4.82583C3.7275 4.82583 4.80333 3.7275 4.80333 2.40167C4.8025 1.07583 3.72667 0 2.40167 0V0Z" fill="white"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0">
+                    <rect width="20" height="20" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+            <a href="##" target="_blank">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.99875 0.000244141C4.4775 0.000244141 0 4.5908 0 10.2537C0 14.783 2.865 18.6255 6.84 19.9825C7.34 20.0769 7.5225 19.7603 7.5225 19.4884C7.5225 19.2446 7.51375 18.5999 7.50875 17.7446C4.7275 18.3638 4.14 16.3698 4.14 16.3698C3.68625 15.1851 3.03 14.8698 3.03 14.8698C2.12125 14.234 3.0975 14.2468 3.0975 14.2468C4.10125 14.3196 4.62875 15.3038 4.62875 15.3038C5.52125 16.8702 6.97 16.4183 7.54 16.1553C7.63 15.4927 7.88875 15.0408 8.175 14.7842C5.955 14.5251 3.62 13.6455 3.62 9.71753C3.62 8.59797 4.01 7.68267 4.65 6.96523C4.54625 6.70609 4.20375 5.66313 4.7475 4.25251C4.7475 4.25251 5.5875 3.97677 7.4975 5.30313C8.295 5.0759 9.15 4.96229 10.0013 4.95846C10.85 4.96356 11.7062 5.0759 12.505 5.30441C14.4137 3.97805 15.2525 4.25379 15.2525 4.25379C15.7975 5.66568 15.455 6.70737 15.3525 6.96651C15.9937 7.68394 16.38 8.59925 16.38 9.7188C16.38 13.657 14.0425 14.5238 11.815 14.7779C12.1737 15.0945 12.4937 15.72 12.4937 16.6761C12.4937 18.0472 12.4812 19.1527 12.4812 19.4884C12.4812 19.7629 12.6613 20.082 13.1687 19.9812C17.1375 18.6229 20 14.7817 20 10.2537C20 4.5908 15.5225 0.000244141 9.99875 0.000244141Z" fill="white"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 <script>
@@ -89,7 +156,7 @@ export default {
         },
         {
           id: 3,
-          title: 'faq',
+          title: 'FAQ',
           route: {
             name: 'Home',
             params: {
@@ -113,7 +180,11 @@ export default {
       this.mobileModeFunc()
     },
     openBurger () {
-      this.activeBurger = true
+      if (this.activeBurger === true) {
+        this.activeBurger = false
+      } else {
+        this.activeBurger = true
+      }
     },
     closeBurger () {
       this.activeBurger = false
@@ -123,13 +194,12 @@ export default {
         this.activeLink = id
         this.$store.commit('setMenuStatus', id)
       }, 100)
-      console.log(id)
     }
   },
   mounted () {
     this.mobileModeFunc()
-    this.$store.commit('setMenuStatus', null)
     setTimeout(() => {
+      this.$store.commit('setMenuStatus', null)
       this.firstAnimation = true
     }, 1200)
   },
@@ -235,8 +305,138 @@ export default {
   }
   /*Mobile 320*/
   @media (max-width: 767px){
-    header{
-      display: none;
+    .mobile-header__title{
+      font-size: 13px;
+      line-height: 18px;
+      margin-left: 15px;
+    }
+    .mobile-header__up{
+      position: relative;
+      width: 100%;
+      display: flex;
+      padding: 15px;
+      align-items: center;
+      border-bottom: 1px solid rgba(255,255,255,.05);
+      z-index: 10;
+      transition: .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+    }
+    .mobile-header__up.fixedMenu{
+      background: rgba(0,5,15,.8);
+    }
+    .mobile-header{
+      position: fixed;
+      z-index: 99999;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+    }
+    .burger{
+      height: 30px;
+      width: 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin-left: auto;
+    }
+    .burger.active span:nth-child(1){
+      transform: translateY(7px) rotate(-45deg);
+    }
+    .burger.active span:nth-child(2){
+      transform: translateY(-8px) rotate(45deg);
+    }
+    .burger span{
+      height: 2px;
+      width: 100%;
+      background: #fff;
+      display: flex;
+      transition: .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+    }
+    .mobile-header__down{
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      background: #00050F;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+      opacity: 0;
+      pointer-events: none;
+      transition-delay: .6s;
+    }
+    .mobile-header__down.active{
+      transition-delay: 0s;
+      opacity: 1;
+      pointer-events: all;
+    }
+    .mobile-header__nav{
+      display: flex;
+      flex-direction: column;
+      margin-top: 135px;
+      transition: .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+      transform: translateY(10px);
+      opacity: 0;
+    }
+    .mobile-header__down.active .mobile-header__nav{
+      transform: translateY(0px);
+      opacity: 1;
+    }
+    .mobile-header__nav a{
+      font-size: 42px;
+      line-height: 48px;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    .mobile-header__socials-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: auto;
+      margin-bottom: 40px;
+    }
+    .mobile-header__socials-title span{
+      font-size: 20px;
+      transition: .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+      transform: translateY(120%);
+      display: flex;
+    }
+    .mobile-header__down.active .mobile-header__socials-title span{
+      transform: translateY(0%);
+      transition-delay: .2s;
+    }
+    .mobile-header__socials-title{
+      margin-bottom: 15px;
+      overflow: hidden;
+    }
+    .mobile-header__socials{
+      display: flex;
+      align-items: center;
+    }
+    .mobile-header__socials a{
+      margin: 0px 8px;
+    }
+   .mobile-header__socials svg{
+      transition: .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+      opacity: 0;
+      transform: scale(.9);
+    }
+    .mobile-header__socials a:nth-child(1) svg{
+      transition-delay: .3s;
+    }
+    .mobile-header__socials a:nth-child(2) svg{
+      transition-delay: .4s;
+    }
+    .mobile-header__socials a:nth-child(3) svg{
+      transition-delay: .5s;
+    }
+    .mobile-header__socials a:nth-child(4) svg{
+      transition-delay: .6s;
+    }
+    .mobile-header__down.active .mobile-header__socials svg{
+      opacity: 1;
+      transform: scale(1);
     }
   }
 </style>

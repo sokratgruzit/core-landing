@@ -307,5 +307,8 @@ export default {
     .main-container__description h1{
       margin-bottom: 10px;
     }
+    .main-container__header{
+      display: none;
+    }
   }
 </style>
