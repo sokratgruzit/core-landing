@@ -106,10 +106,10 @@ export default {
       padding-top: 200px;
     }
     .text-container__up{
-      font-size: 16px;
-      line-height: 22px;
+      font-size: 14px;
+      line-height: 20px;
     }
-    .text-container__bottom-inner[data-v-4804a3d4] {
+    .text-container__bottom-inner {
       font-size: 12px;
       line-height: 20px;
     }

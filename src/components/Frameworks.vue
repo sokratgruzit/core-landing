@@ -17,7 +17,8 @@
           <div class="frameworks-container__middle-title" data-aos="fade-up">CORE: A multi-layered blockchain framework</div>
           <div class="frameworks-container__frameworks" data-aos="fade-up">
             <div class="frameworks-container__frameworks-tabs">
-              <div class="frameworks-container__frameworks-tab" @mouseover="clickTab(tab.id)" v-for="tab in itemData" :key="tab.id" v-html="tab.svg" :class="activeTab == tab.id ? 'active' : ''">
+              <div class="frameworks-container__frameworks-tab" @mouseover="clickTab(tab.id)" v-for="tab in itemData" :key="tab.id" :class="activeTab == tab.id ? 'active' : ''">
+                <img :src="require(`@/assets/img/${tab.svg}`)" alt="" class="frameworks-container__tab-image">
               </div>
             </div>
             <div class="frameworks-container__frameworks-tabs-container">
@@ -166,7 +167,7 @@ export default {
     margin-right: auto;
     height: 360px;
   }
-  .frameworks-container__frameworks svg{
+  .frameworks-container__frameworks img{
     margin-right: 100px;
   }
   .frameworks-container__middle-title{

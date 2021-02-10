@@ -187,7 +187,7 @@ export default {
     left: 0px;
     right: 0px;
     bottom: 0px;
-    z-index: 10000;
+    z-index: 100000;
     pointer-events: none;
   }
   .community-popup__container.active{

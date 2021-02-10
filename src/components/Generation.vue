@@ -19,7 +19,7 @@
           </div>
           <div class="generation-container__item">
             <div class="generation-container__item-sub-title">CORE, Cardano, Cosmos, <br> Elrond & Polkadot</div>
-            <div class="generation-container__item-title">Blockchain 3.0</div>
+            <div class="generation-container__item-title">Blockchain 2.0</div>
             <ul>
               <li>Protection from fraud</li>
               <li>Global Availability</li>
@@ -32,7 +32,7 @@
           </div>
           <div class="generation-container__item">
             <div class="generation-container__item-sub-title">Ethereum</div>
-            <div class="generation-container__item-title">Blockchain 2.0</div>
+            <div class="generation-container__item-title">Blockchain 3.0</div>
             <ul>
               <li>Protection from fraud</li>
               <li>Global Availability</li>

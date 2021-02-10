@@ -125,10 +125,10 @@ button {
 *::-webkit-scrollbar-thumb {
     background: #0500FF;
 }
-.frameworks-container__frameworks-tab:hover svg,.frameworks-container__frameworks-tab.active svg{
+.frameworks-container__frameworks-tab:hover img,.frameworks-container__frameworks-tab.active img{
     opacity: 1;
 }
-.frameworks-container__frameworks-tab svg{
+.frameworks-container__frameworks-tab img{
     transition: .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
     opacity: 0.5;
 }
@@ -144,7 +144,7 @@ button {
 }
 /*Ipad Pro 1024*/
 @media (max-width: 1365px){
-    .frameworks-container__frameworks-tab svg{
+    .frameworks-container__frameworks-tab img{
         transform: scale(.7);
     }
     .container{
@@ -183,8 +183,10 @@ button {
         text-align: center;
         padding: 15 solid;
     }
-    .frameworks-container__frameworks-tab svg{
+    .frameworks-container__frameworks-tab img{
        height: 40px;
+        width: 100%;
+        object-fit: contain;
     }
     .container{
         padding: 0px 15px;
