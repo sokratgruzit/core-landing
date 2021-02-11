@@ -1,28 +1,41 @@
 <template>
-  <div>
-    <AboutDiscover/>
-    <AboutContent/>
-    <AboutCounter/>
-    <Reviews :itemData="$store.state.reviews"/>
-    <GetStarted/>
+  <div class="body-container">
+    <AboutMainContainer/>
+    <AboutVideo/>
+    <AboutText/>
+    <AboutFinancial/>
   </div>
 </template>
 
 <script>
-import AboutDiscover from '@/components/AboutDiscover.vue'
-import AboutContent from '@/components/AboutContent.vue'
-import AboutCounter from '@/components/AboutCounter.vue'
-import Reviews from '@/components/Reviews.vue'
-import GetStarted from '@/components/GetStarted.vue'
-
+import AboutMainContainer from '@/components/AboutMainContainer.vue'
+import AboutVideo from '@/components/AboutVideo.vue'
+import AboutText from '@/components/AboutText.vue'
+import AboutFinancial from '@/components/AboutFinancial.vue'
 export default {
   name: 'About',
   components: {
-    AboutDiscover,
-    AboutContent,
-    AboutCounter,
-    Reviews,
-    GetStarted
+    AboutMainContainer,
+    AboutVideo,
+    AboutText,
+    AboutFinancial
   }
 }
 </script>
+<style scoped>
+  .body-container{
+    padding-left: 210px;
+  }
+  /*Ipad 768*/
+  @media (max-width: 1023px){
+    .body-container{
+      padding-left: 180px;
+    }
+  }
+  /*Mobile 320*/
+  @media (max-width: 767px){
+    .body-container{
+      padding-left: 0px;
+    }
+  }
+</style>

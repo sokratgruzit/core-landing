@@ -29,7 +29,7 @@ body {
     -moz-text-size-adjust:100%;
     -ms-text-size-adjust:100%;
     text-size-adjust: 100%;
-    /*padding-bottom: 200vh;*/
+    padding-bottom: 200vh;
     background: #00050F;
     overflow: hidden;
 }
@@ -63,16 +63,21 @@ button {
 .container{
     width: 100%;
     max-width: 1920px;
-    padding: 0px 80px;
+    padding: 0px 80px 0px 100px;
     margin: 0px auto;
     display: flex;
+    position: relative;
+    z-index: 5;
 }
-.font-72{
-    font-size: 72px;
-    line-height: 80px;
+.font-51{
+    font-size: 51px;
+    line-height: 66px;
 }
-.pT-140{
-    padding-top: 140px;
+.pT-160{
+    padding-top: 160px;
+}
+.pB-160{
+    padding-bottom: 160px;
 }
 .sliderInner .slick-list{
     height: 100%!important;

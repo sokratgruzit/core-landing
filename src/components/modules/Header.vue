@@ -164,6 +164,16 @@ export default {
             },
             hash: '#faq'
           }
+        },
+        {
+          id: 4,
+          title: 'tokenomics',
+          route: '/tokenomics'
+        },
+        {
+          id: 5,
+          title: 'about',
+          route: '/about'
         }
       ]
     }
@@ -256,7 +266,7 @@ export default {
     height: 100vh;
     left: 0px;
     top: 0px;
-    background: #00050F;
+    background: transparent;
     z-index: 10;
     display: flex;
     flex-direction: column;
@@ -289,7 +299,7 @@ export default {
     -webkit-text-stroke: .8px rgba(255, 255, 255, 1);
     color: transparent;
   }
-  nav a.active{
+  nav a.active,nav a.router-link-active{
     color: #ff7152;
     -webkit-text-stroke: .8px rgba(255, 255, 255, 0);
   }
