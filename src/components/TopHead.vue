@@ -45,6 +45,7 @@ export default {
   .container{
     display: flex;
     justify-content: space-between;
+    width: 100%;
   }
   .main-container__header{
     position: absolute;

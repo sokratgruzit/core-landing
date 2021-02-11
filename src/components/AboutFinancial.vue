@@ -19,28 +19,41 @@
             <div id="chart">
               <apexchart type="radialBar" height="380" :options="chartOptions" :series="series"></apexchart>
             </div>
+            <div class="chart-container__inner-total">
+              <div class="chart-container__inner-total-title">$6.3 BN</div>
+              <div class="chart-container__inner-total-text">Total</div>
+            </div>
           </div>
         </div>
         <div class="chart-container__right">
           <div class="chart-container__description">
-            <div class="color" style="background: #0500FF"></div>
-            <div class="title descr">Sale</div>
-            <div class="text descr">3 Billion</div>
+            <div class="color" style="border-color: #0500FF"></div>
+            <div class="title descr">Single Family</div>
+            <div class="text descr">63%</div>
           </div>
           <div class="chart-container__description">
-            <div class="color" style="background: #504DFF"></div>
-            <div class="title descr">Reserve</div>
-            <div class="text descr">500 Million</div>
+            <div class="color" style="border-color: #817EFF"></div>
+            <div class="title descr">Commercial Real Estate</div>
+            <div class="text descr">25%</div>
           </div>
           <div class="chart-container__description">
-            <div class="color" style="background: #9B99FF"></div>
-            <div class="title descr">Founders & Advisors</div>
-            <div class="text descr">340 Million</div>
+            <div class="color" style="border-color: #D5D5FF"></div>
+            <div class="title descr">Commercial & Industrial</div>
+            <div class="text descr">12%</div>
           </div>
-          <div class="chart-container__description">
-            <div class="color" style="background: #CFCEFF"></div>
-            <div class="title descr">Marketing</div>
-            <div class="text descr">900 Million</div>
+        </div>
+      </div>
+      <div class="column-chart-container pT-140">
+        <div class="column-chart__title">Asset Size</div>
+        <img :src="require(`@/assets/img/charts/asset_size.png`)" alt="" class="column-chart-container__img">
+        <div class="column-chart__footer">
+          <div class="column-chart__footer-item">
+            <span></span>
+            Total Deposits
+          </div>
+          <div class="column-chart__footer-item">
+            <span></span>
+            Total Assets
           </div>
         </div>
       </div>
@@ -56,12 +69,12 @@ export default {
   },
   data () {
     return {
-      series: [44, 55, 67, 83],
+      series: [75, 60, 50],
       chartOptions: {
         chart: {
           type: 'radialBar'
         },
-        colors: ['#0500FF', '#504DFF', '#9B99FF', '#CFCEFF'],
+        colors: ['#0500FF', '#817EFF', '#D5D5FF'],
         plotOptions: {
           radialBar: {
             hollow: {
@@ -69,7 +82,28 @@ export default {
             },
             track: {
               background: 'transparent',
-              margin: 10
+              margin: 15
+            },
+            dataLabels: {
+              show: false
+            }
+          }
+        }
+
+      },
+      chartOptions2: {
+        chart: {
+          type: 'radialBar'
+        },
+        colors: ['#0500FF', '#817EFF', '#D5D5FF'],
+        plotOptions: {
+          radialBar: {
+            hollow: {
+              size: '50%'
+            },
+            track: {
+              background: 'transparent',
+              margin: 15
             },
             dataLabels: {
               show: false
@@ -84,29 +118,68 @@ export default {
   }
 }
 </script>
-<style>
+<style scoped>
+  .column-chart__title{
+    color: #FF7152;
+    font-size: 20px;
+    margin-bottom: 55px;
+  }
+  .column-chart-container__img{
+    width: 100%;
+  }
+  .column-chart-container{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding-right: 120px;
+  }
+  .chart-container__inner-total-text{
+    font-size: 15px;
+    line-height: 24px;
+    opacity: .7;
+  }
+  .chart-container__inner-total-title{
+    font-size: 30px;
+    line-height: 42px;
+  }
+  .chart-container__inner-total{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    flex-direction: column;
+    display: flex;
+  }
   .chart-container__description{
     margin: 15px 0px;
     position: relative;
-    padding: 0px 50px;
+    padding: 0px 40px;
   }
   .chart-container__right{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 50%;
   }
   .chart-container{
     display: flex;
     width: 100%;
     height: 100%;
+    justify-content: center;
+    margin-top: 30px;
   }
   .chart-container__left{
-    width: 660px;
+    width: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    padding-right: 100px;
   }
   #chart{
-    width: 358px;
+    width: 380px;
     position: relative;
     z-index: 3;
   }
@@ -136,30 +209,32 @@ export default {
     z-index: 2;
   }
   .chart-container__description .color{
-    height: 28px;
-    width: 28px;
+    height: 20px;
+    width: 20px;
     position: absolute;
-    top: -2px;
+    top: 2px;
     left: 0px;
     border-radius: 50%;
     transition: .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
     opacity: 1;
     transform: scale(1);
+    border: 4px solid;
   }
   .chart-container__description .title{
-    font-size: 20px;
-    color: #ff7152;
+    font-size: 15px;
     white-space: nowrap;
     transition: .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
     opacity: 1;
     transform: translateY(0px);
   }
   .chart-container__description .text{
-    font-size: 20px;
+    font-size: 15px;
     transition: .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
     opacity: 1;
     transform: scale(1);
     transform: translateY(0px);
+    color: rgba(255,255,255,.7);
+    line-height: 24px;
   }
   .container{
     display: flex;

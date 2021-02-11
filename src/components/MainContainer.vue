@@ -190,6 +190,9 @@ export default {
     opacity: 1;
     transition-delay: .4s;
   }
+  #main > .container{
+    flex-direction: column;
+  }
   /*Laptop 1440*/
   @media (max-width: 1900px){
     .main-video__container {
