@@ -42,8 +42,21 @@ export default {
   /*Laptop 1440*/
   @media (max-width: 1900px){
   }
+  /*Ipad Pro */
+  @media (max-width: 1300px){
+    .about-text__container{
+      width: 80%;
+    }
+  }
   /*Ipad 768*/
   @media (max-width: 1023px){
+    .about-text{
+      font-size: 16px;
+      line-height: 26px;
+    }
+    .about-text:first-child {
+      margin-bottom: 30px;
+    }
   }
   /*Iphone*/
   @media (max-width: 767px) {

@@ -3,7 +3,7 @@
     <img :src="require(`@/assets/img/textImg.jpg`)" alt="" class="text-container__image" data-aos="fade-up">
       <div class="text-container__inner">
         <div class="text-container__up" data-aos="fade-up">
-          <span>CORE</span> — is Multi Chain PoS Network focused on Interoperability, Scalability and Usability. It utilizes AI Enabled Proof of Stake Algorithm, Multi Layered Consensus Model and Voting Based Governance.
+         CORE— is Multi Chain PoS Network focused on Interoperability, Scalability and Usability. It utilizes AI Enabled Proof of Stake Algorithm, Multi Layered Consensus Model and Voting Based Governance.
         </div>
         <div class="text-container__bottom"  data-aos="fade-up">
           <div class="text-container__bottom-inner">
@@ -31,22 +31,30 @@ export default {
 <style scoped>
   .text-container{
     position: relative;
+    padding-top: 68%;
   }
   .text-container__image{
-    width: 100%;
-    position: relative;
+    width: calc(100% + 210px);
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    height: 100%;
     z-index: 1;
+    object-fit: cover;
   }
   .text-container__bottom-inner{
     font-size: 16px;
     line-height: 24px;
     margin-top: 30px;
     opacity: .7;
-    text-align: center;
+    text-align: left;
   }
   .text-container__bottom{
-    width: 740px;
+    width: 640px;
+    text-align: left;
     display: flex;
+    font-size: 15px;
+    line-height: 24px;
   }
   .text-container__inner{
     width: 100%;
@@ -57,15 +65,17 @@ export default {
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
-    padding-bottom: 160px;
+    padding-bottom: 240px;
     z-index: 3;
     align-items: center;
+    padding-right: 210px;
   }
   .text-container__up{
     text-align: center;
-    font-size: 28px;
-    line-height: 40px;
-    width: 740px;
+    font-size: 20px;
+    line-height: 30px;
+    width: 640px;
+    text-align: left;
   }
   .text-container__up span{
     font-size: inherit;

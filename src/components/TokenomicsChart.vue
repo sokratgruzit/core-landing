@@ -1,14 +1,11 @@
 <template>
-  <div class="about-financial pT-160">
+  <div class="takenomics-chart pT-160 pB-160">
     <div class="container">
       <div data-aos="fade-up" class="about-financial__header">
-        <h3 class="font-51"><span>Financial</span> <span>Highlights</span></h3>
+        <h3 class="font-51"><span>Token</span> <span>Distribution</span></h3>
         <div class="about-financial__header-text-container">
-          <p class="about-financial__header-text">
-            NexBank provides up-to-date financial data for all our stakeholders. Below you will find NexBank's current financial highlights and ratings.
-          </p>
-          <div class="about-financial__header-title">Q3 2020 Highlights</div>
-          <div class="about-financial__header-sub-title">Loan Portfolio (Gross)</div>
+          <div class="about-financial__header-title">Total Supply</div>
+          <div class="about-financial__header-sub-title">20,000,000,000 CXRE</div>
         </div>
       </div>
       <div class="chart-container" data-aos="fade-up">
@@ -19,66 +16,49 @@
             <div id="chart">
               <apexchart type="radialBar" height="380" :options="chartOptions" :series="series"></apexchart>
             </div>
-            <div class="chart-container__inner-total">
-              <div class="chart-container__inner-total-title">$6.3 BN</div>
-              <div class="chart-container__inner-total-text">Total</div>
-            </div>
           </div>
         </div>
         <div class="chart-container__right">
           <div class="chart-container__description">
             <div class="color" style="border-color: #0500FF"></div>
-            <div class="title descr">Single Family</div>
-            <div class="text descr">63%</div>
+            <div class="title descr">Reserve</div>
+            <div class="text descr">6,000,000,000 CXRE (30%)</div>
           </div>
           <div class="chart-container__description">
             <div class="color" style="border-color: #817EFF"></div>
-            <div class="title descr">Commercial Real Estate</div>
-            <div class="text descr">25%</div>
+            <div class="title descr">Seed Round (Private Founders)</div>
+            <div class="text descr">4,000,000,0000 CXRE (20%)</div>
           </div>
           <div class="chart-container__description">
             <div class="color" style="border-color: #D5D5FF"></div>
-            <div class="title descr">Commercial & Industrial</div>
-            <div class="text descr">12%</div>
+            <div class="title descr">IEO</div>
+            <div class="text descr">4,000,000,0000 CXRE (20%)</div>
           </div>
-        </div>
-      </div>
-      <div data-aos="fade-up" class="column-chart-container pT-160">
-        <div class="column-chart-container__inner">
-          <div class="column-chart__title">Asset Size</div>
-          <img :src="require(`@/assets/img/charts/asset_size.png`)" alt="" class="column-chart-container__img">
-          <div class="column-chart__footer">
-            <div class="column-chart__footer-item" style="color: #817EFF">
-              <span style="background: #817EFF"></span>
-              Total Deposits
-            </div>
-            <div class="column-chart__footer-item" style="color: #7B7B96">
-              <span style="background: #7B7B96"></span>
-              Total Assets
-            </div>
+          <div class="chart-container__description">
+            <div class="color" style="border-color: #FFBB95"></div>
+            <div class="title descr">Ecosystem Rewards</div>
+            <div class="text descr">2,000,000,0000 CXRE (10%)</div>
           </div>
-        </div>
-      </div>
-      <div data-aos="fade-up" class="column-chart-container pT-160">
-        <div class="column-chart-container__inner">
-          <div class="column-chart__title">Capital Ratios</div>
-          <img :src="require(`@/assets/img/charts/capital_ratios.png`)" alt="" class="column-chart-container__img">
-          <div class="column-chart__footer">
-            <div class="column-chart__footer-item" style="color: #817EFF">
-              <span style="background: #817EFF"></span>
-              CORE
-            </div>
-            <div class="column-chart__footer-item" style="color: #7B7B96">
-              <span style="background: #7B7B96"></span>
-              Regulatory Minimum ("Well-Capitalized")
-            </div>
+          <div class="chart-container__description">
+            <div class="color" style="border-color: #FF8D4D"></div>
+            <div class="title descr">Marketing & Operations</div>
+            <div class="text descr">1,000,000,0000 CXRE (10%)</div>
           </div>
-        </div>
-      </div>
-      <div data-aos="fade-up" class="column-chart-container pT-160 pB-160">
-        <div class="column-chart-container__inner">
-          <div class="column-chart__title">Pre-Tax Income</div>
-          <img :src="require(`@/assets/img/charts/pre-tax_income.png`)" alt="" class="column-chart-container__img">
+          <div class="chart-container__description">
+            <div class="color" style="border-color: #E2DD5D"></div>
+            <div class="title descr">Advisory Board</div>
+            <div class="text descr">600,000,0000 CXRE (3%)</div>
+          </div>
+          <div class="chart-container__description">
+            <div class="color" style="border-color: #4ECB6A"></div>
+            <div class="title descr">Strategic Acquisitions</div>
+            <div class="text descr">400,000,0000 CXRE (2%)</div>
+          </div>
+          <div class="chart-container__description">
+            <div class="color" style="border-color: #99FFB0"></div>
+            <div class="title descr">Team</div>
+            <div class="text descr">2,000,000,0000 CXRE (10%)</div>
+          </div>
         </div>
       </div>
     </div>
@@ -93,48 +73,26 @@ export default {
   },
   data () {
     return {
-      series: [75, 60, 50],
+      series: [30, 20, 20, 10, 10, 6, 4, 6],
       chartOptions: {
         chart: {
           type: 'radialBar'
         },
-        colors: ['#0500FF', '#817EFF', '#D5D5FF'],
+        colors: ['#0500FF', '#817EFF', '#D5D5FF', '#FFBB95', '#FF8D4D', '#E2DD5D', '#4ECB6A', '#99FFB0'],
         plotOptions: {
           radialBar: {
             hollow: {
-              size: '50%'
+              size: '0%'
             },
             track: {
               background: 'transparent',
-              margin: 15
+              margin: 12
             },
             dataLabels: {
               show: false
             }
           }
         }
-
-      },
-      chartOptions2: {
-        chart: {
-          type: 'radialBar'
-        },
-        colors: ['#0500FF', '#817EFF', '#D5D5FF'],
-        plotOptions: {
-          radialBar: {
-            hollow: {
-              size: '50%'
-            },
-            track: {
-              background: 'transparent',
-              margin: 15
-            },
-            dataLabels: {
-              show: false
-            }
-          }
-        }
-
       }
     }
   },
@@ -143,63 +101,15 @@ export default {
 }
 </script>
 <style scoped>
+  .takenomics-chart{
+    display: flex;
+  }
   .column-chart__footer-item span{
     height: 4px;
     width: 25px;
     border-radius: 10px;
     display: flex;
     margin-right: 30px;
-  }
-  .column-chart__footer-item{
-    display: flex;
-    align-items: center;
-    font-size: 15px;
-    margin-right: 30px;
-  }
-  .column-chart__footer{
-    display: flex;
-    margin-top: 55px;
-  }
-  .column-chart-container__inner{
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-  }
-  .column-chart__title{
-    color: #FF7152;
-    font-size: 20px;
-    margin-bottom: 55px;
-    margin-right: auto;
-  }
-  .column-chart-container__img{
-    width: 100%;
-  }
-  .column-chart-container{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-
-  }
-  .chart-container__inner-total-text{
-    font-size: 15px;
-    line-height: 24px;
-    opacity: .7;
-  }
-  .chart-container__inner-total-title{
-    font-size: 30px;
-    line-height: 42px;
-  }
-  .chart-container__inner-total{
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    z-index: 10;
-    flex-direction: column;
-    display: flex;
   }
   .chart-container__description{
     margin: 15px 0px;
@@ -224,6 +134,7 @@ export default {
     display: flex;
     justify-content: flex-end;
     padding-right: 100px;
+    margin-top: 50px;
   }
   #chart{
     width: 380px;
@@ -234,6 +145,7 @@ export default {
     position: relative;
     display: flex;
     width: fit-content;
+    height: fit-content;
     overflow: hidden;
     transition: .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
     opacity: 1;
@@ -329,6 +241,15 @@ export default {
   @media (max-width: 1900px){
     .about-financial__header-text-container{
       padding-right: 120px;
+    }
+  }
+  /*Ipad Pro 1024*/
+  @media (max-width: 1300px){
+    .chart-container__left{
+      padding-right: 40px;
+    }
+    h3 span:last-child {
+      padding-left: 60px;
     }
   }
   /*Ipad 768*/

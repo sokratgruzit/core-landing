@@ -2,16 +2,17 @@
   <div class="container" id="about">
     <picture>
       <source media="(max-width: 767px)" srcset="@/assets/img/bg320.jpg">
-      <img src="@/assets/img/bg1920.jpg" alt="" class="bg">
+      <img src="@/assets/img/tokenomicslist.jpg" alt="" class="bg">
     </picture>
-    <div class="inner">
+    <div class="inner pT-160 pB-160">
       <div class="left">
-        <h2 class="font-72" data-aos="fade-up">
-          More than <span>500</span> currencies & tokens
+        <h2 class="font-51" data-aos="fade-up">
+          CORE Bridge
         </h2>
+        <div class="sub-ttl" data-aos="fade-up">Access to <span>500+</span> <br> Cryptocurrencies and Tokens</div>
         <p data-aos="fade-up">Our platform is universal, which allows it to support all currencies, from popular to the latest, and their list is constantly growing.</p>
       </div>
-      <div class="right">
+      <div class="right" data-aos="fade-up">
         <hooper :autoPlay="true" :playSpeed="5000" :transition="0" :itemsToShow="1" :infiniteScroll="true">
           <slide>
             <div class="slideInner">
@@ -78,6 +79,15 @@ export default {
 }
 </script>
 <style scoped>
+  .sub-ttl{
+    font-size: 30px;
+    line-height: 40px;
+    margin-top: 25px;
+  }
+  .sub-ttl span{
+    color: #FF7152;
+    font-size: inherit;
+  }
   .hooper-slide.is-active .middle-image__inner {
     transform: scale(1);
     opacity: 1;
@@ -111,9 +121,10 @@ export default {
     z-index: 10;
   }
   p{
-    font-size: 21px;
-    line-height: 38px;
-    margin-top: 40px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 25px;
+    color: rgba(255,255,255,.7);
   }
   h2{
     color: #fff;
@@ -129,10 +140,8 @@ export default {
     width: 58%;
   }
   .inner{
-    padding-bottom: 160px;
     display: flex;
     width: 100%;
-    padding-top: 200px;
     position: relative;
     z-index: 2;
   }
@@ -185,7 +194,8 @@ export default {
     justify-content: center;
   }
   .right{
-    pointer-events: none;
+    pointer-events: none!important;
+    overflow: hidden;
   }
   .hooper-list{
     overflow: visible;
@@ -193,17 +203,15 @@ export default {
   .bg{
     position: absolute;
     top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    right: 0px;
+    width: calc(100% + 210px);
+    height: 120%;
+  }
+  .hooper-list{
+    pointer-events: none;
   }
   /*Laptop 1440*/
   @media (max-width: 1900px){
-    .inner{
-      padding-bottom: 100px;
-      padding-top: 100px;
-    }
     .middle-image__inner svg{
       transform: scale(.7);
     }
@@ -250,8 +258,5 @@ export default {
   }
   /*Mobile 320*/
   @media (max-width: 768px){
-    .inner{
-      padding-top: 60px;
-    }
   }
 </style>

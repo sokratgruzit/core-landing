@@ -13,6 +13,7 @@
     "aos": "^3.0.0-beta.6",
     "apexcharts": "^3.23.1",
     "core-js": "^3.6.5",
+    "emailjs-com": "^2.6.4",
     "hooper": "^0.3.4",
     "lottie-web-vue": "^1.0.1",
     "register-service-worker": "^1.7.1",

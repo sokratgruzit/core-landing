@@ -56,14 +56,11 @@ export default {
   mounted () {
     setTimeout(() => {
       this.firstAnimation = true
-    }, 1200)
+    }, 100)
   },
   methods: {
     visibilityChanged () {
       this.$store.commit('setMenuStatus', 0)
-    },
-    test () {
-      this.$store.commit('setStart', true)
     }
   }
 }
@@ -172,30 +169,41 @@ export default {
   }
   /*Laptop 1440*/
   @media (max-width: 1900px){
-    .main-video__container {
-      right: -15%;
-      padding-top: 75%;
-      width: 75%;
-    }
-    .main-container__description h1 {
-      font-size: 210px;
-    }
-    .main-container__description p{
-      font-size: 46px;
-      line-height: 54px;
-    }
-    .main-container__description{
-      bottom: 30px;
-      padding-left: 40px;
-    }
     .main-container__header{
       margin-top: 30px;
     }
+    #main{
+      min-height: 800px;
+    }
   }
   /*Ipad Pro 1024*/
-  @media (max-width: 1365px){}
+  @media (max-width: 1300px){
+    .main-container__description{
+      padding-left: 25px;
+    }
+    .main-container__description h1{
+      font-size: 50px;
+    }
+    .right{
+      padding-bottom: 60px;
+      padding-right: 75px;
+    }
+  }
   /*Ipad 768*/
   @media (max-width: 1023px){
+    .main-container__description .frst-txt{
+      font-size: 12px;
+      line-height: 22px;
+    }
+    .main-container__description .scnd-txt{
+      font-size: 16px;
+      line-height: 26px;
+      margin-top: 30px;
+    }
+    .right {
+      padding-bottom: 60px;
+      padding-right: 30px;
+    }
     .main-video__container{
       right: -38%;
       padding-top: 130%;
@@ -209,15 +217,23 @@ export default {
       font-size: 32px;
       line-height: 40px;
     }
-    .main-container__description h1{
-      font-size: 96px;
-    }
     .scroll-down{
       display: none;
     }
   }
   /*Mobile 320*/
   @media (max-width: 767px){
+    .right{
+      width: 100%;
+      padding-right: 0px;
+      margin-top: auto;
+    }
+    .left{
+      width: 100%;
+    }
+    .main-container__description{
+      flex-direction: column;
+    }
     .download-container__mobile-inner a{
       margin: 0px 15px;
     }
@@ -252,6 +268,9 @@ export default {
     }
     .main-container__header{
       display: none;
+    }
+    #main {
+      min-height: 100vh;
     }
   }
 </style>

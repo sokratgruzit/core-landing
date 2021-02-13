@@ -2,19 +2,32 @@
   <div class="statistic-container">
     <div class="container">
       <div class="left">
-        <h3 class="font-72" data-aos="fade-up">
-          Our
-          important statistics
+        <h3 class="font-51" data-aos="fade-up">
+          Our Roadmap
         </h3>
         <div class="slide-nav" data-aos="fade-up">
           <div class="prev">
-            <svg width="54" height="42" viewBox="0 0 54 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M21.6568 -6.86641e-06L27.1137 5.34645L14.8358 17.252L54 17.252L54 24.748L14.8358 24.748L27.1137 36.6535L21.6568 42L9.17939e-07 21L21.6568 -6.86641e-06Z" fill="#0500FF"/>
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0)">
+                <path d="M15.8354 4.64104L16.1853 4.30177L16.5334 4.64285L20.4311 8.46174L20.7975 8.82075L20.4293 9.17784L12.5452 16.8228L39.2857 16.8228L39.7857 16.8228L39.7857 17.3228L39.7857 22.6772L39.7857 23.1772L39.2857 23.1772L12.5452 23.1772L20.4293 30.8221L20.7975 31.1792L20.4311 31.5382L16.5334 35.3571L16.1853 35.6982L15.8354 35.3589L0.366208 20.3589L-0.00397426 20L0.366208 19.641L15.8354 4.64104Z" stroke="#0500FF"/>
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <rect width="40" height="40" fill="white"/>
+                </clipPath>
+              </defs>
             </svg>
           </div>
           <div class="next">
-            <svg width="54" height="42" viewBox="0 0 54 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M32.3432 -6.86641e-06L26.8863 5.34645L39.1642 17.252L-1.08177e-06 17.252L-7.54108e-07 24.748L39.1642 24.748L26.8863 36.6535L32.3432 42L54 21L32.3432 -6.86641e-06Z" fill="#0500FF"/>
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0)">
+                <path d="M15.8354 4.64104L16.1853 4.30177L16.5334 4.64285L20.4311 8.46174L20.7975 8.82075L20.4293 9.17784L12.5452 16.8228L39.2857 16.8228L39.7857 16.8228L39.7857 17.3228L39.7857 22.6772L39.7857 23.1772L39.2857 23.1772L12.5452 23.1772L20.4293 30.8221L20.7975 31.1792L20.4311 31.5382L16.5334 35.3571L16.1853 35.6982L15.8354 35.3589L0.366208 20.3589L-0.00397426 20L0.366208 19.641L15.8354 4.64104Z" stroke="#0500FF"/>
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <rect width="40" height="40" fill="white"/>
+                </clipPath>
+              </defs>
             </svg>
           </div>
         </div>
@@ -119,6 +132,9 @@ export default {
 }
 </script>
 <style scoped>
+  .container{
+    flex-direction: column;
+  }
   .chart-container__description{
     margin: 15px 0px;
     position: relative;
@@ -203,12 +219,12 @@ export default {
     width: 900px;
   }
   .left{
-    width: 480px;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
   }
   .right{
-    width: calc(100% - 480px);
+    width: 100%;
     position: relative;
   }
   .right:after{
@@ -237,16 +253,22 @@ export default {
   }
   .slide-nav{
     display: flex;
-    margin-top: 90px;
+    margin-left: 40px;
   }
   .slide-nav path{
     transition: .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
   }
   .slide-nav div:hover path{
-    fill: #ff7152;
+    stroke: #ff7152;
+  }
+  .slide-nav div:hover svg{
+    fill: #ff7152!important;
+  }
+  .slide-nav div:not(.swiper-button-disabled) svg{
+    fill: #0500FF;
   }
   .prev{
-    margin-right: 25px;
+    margin-right: 15px;
     transition: .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
     cursor: pointer;
   }
@@ -256,6 +278,9 @@ export default {
   .next{
     transition: .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
     cursor: pointer;
+  }
+  .next svg{
+    transform: rotate(180deg);
   }
   .next:hover{
     transform: translateX(10px);
@@ -341,12 +366,6 @@ export default {
   }
   /*Laptop 1440*/
   @media (max-width: 1900px){
-    .left{
-      width: 380px;
-    }
-    .right {
-      width: calc(100% - 380px);
-    }
     .chart-container__left{
       width: 500px;
     }

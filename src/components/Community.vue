@@ -2,8 +2,7 @@
   <div class="container" data-aos="fade-up" v-view="visibilityChanged">
     <div class="communityInner">
       <div class="subTtl">
-        <i></i>
-        What makes our product special
+        What makes CORE different
       </div>
       <div class="linksContainer" id="explore">
         <div class="link" v-for="link in itemData" :key="link.id" data-aos="fade-up" @click="openPopup(link.id)">
@@ -87,9 +86,9 @@ export default {
   }
   .subTtl{
     font-size: 20px;
-    color: #fff;
     display: flex;
     align-items: center;
+    color: #FF7152;
   }
   .communityInner{
     position: relative;

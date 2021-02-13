@@ -4,6 +4,7 @@
     <AboutVideo/>
     <AboutText/>
     <AboutFinancial/>
+    <AboutList/>
   </div>
 </template>
 
@@ -12,13 +13,15 @@ import AboutMainContainer from '@/components/AboutMainContainer.vue'
 import AboutVideo from '@/components/AboutVideo.vue'
 import AboutText from '@/components/AboutText.vue'
 import AboutFinancial from '@/components/AboutFinancial.vue'
+import AboutList from '@/components/AboutList.vue'
 export default {
   name: 'About',
   components: {
     AboutMainContainer,
     AboutVideo,
     AboutText,
-    AboutFinancial
+    AboutFinancial,
+    AboutList
   }
 }
 </script>

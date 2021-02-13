@@ -95,8 +95,18 @@ export default {
   }
   /*Ipad 768*/
   @media (max-width: 1023px){
+    .about-video__play{
+      height: 80px;
+      width: 80px;
+    }
   }
   /*Iphone*/
   @media (max-width: 767px) {
+    .about-video__poster img{
+      width: 100%;
+    }
+    .about-video__poster-inner{
+      width: 100%;
+    }
   }
 </style>

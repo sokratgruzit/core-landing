@@ -1,11 +1,11 @@
 <template>
-    <div class="frameworks-container__inner">
+    <div class="frameworks-container__inner pB-160">
       <div class="frameworks-container__video-outer">
         <img class="frameworks-container__video" :src="require(`@/assets/img/vid.jpg`)" alt="">
         <div class="frameworks-container__title-wrap" data-aos="fade-up">
           <div class="frameworks-container__title-top">
             <h3 class="frameworks-container__title">50,000+</h3>
-            <h3 class="frameworks-container__sub-title">Transactions per second</h3>
+            <h3 class="frameworks-container__sub-title">Transactions/sec</h3>
           </div>
           <div class="frameworks-container__title-bottom">
             Unprecedented speed and decentralization make CORE the flagship of Blockchain
@@ -172,16 +172,17 @@ export default {
   }
   .frameworks-container__middle-title{
     font-size: 66px;
-    padding-top: 160px;
+    padding-top: 240px;
     margin-bottom: 80px;
   }
   .frameworks-container__title-bottom{
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 25px;
+    color: rgba(255,255,255,.7);
   }
   .frameworks-container__sub-title{
-    font-size: 32px;
-    margin-left: 30px;
+    font-size: 30px;
+    margin-left: 42px;
   }
   .frameworks-container__title-wrap{
     position: absolute;
@@ -195,15 +196,20 @@ export default {
   }
   .frameworks-container__title{
     font-size: 140px;
-    -webkit-text-stroke: 1px rgba(255, 255, 255, 1);
+    -webkit-text-stroke: 1px rgba(255, 113, 82, 1);
     color: transparent;
   }
   .frameworks-container__video-outer{
     position: relative;
+    padding-top: 56%;
   }
   .frameworks-container__video{
-    opacity: .2;
-    width: 100%;
+    width: calc(100% + 210px);
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    object-fit: cover;
   }
   /*Laptop 1440*/
   @media (max-width: 1900px){

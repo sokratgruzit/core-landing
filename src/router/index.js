@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
+import Tokenomics from '../views/Tokenomics.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -14,6 +15,12 @@ const routes = [
     path: '/about',
     name: 'About',
     component: About,
+    meta: { scrollToTop: true }
+  },
+  {
+    path: '/tokenomics',
+    name: 'Tokenomics',
+    component: Tokenomics,
     meta: { scrollToTop: true }
   }
 ]
