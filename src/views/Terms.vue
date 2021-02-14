@@ -1,6 +1,6 @@
 <template>
   <div class="body-container">
-    <div class="container" :class="firstAnimation ? 'animHead' : ''">
+    <div class="container" :class="firstAnimation ? 'animHead' : ''" v-view="visibilityChanged">
       <TopHead/>
       <div class="terms">
         <h1 data-aos="fade-up"><span>Terms</span><span>of Use</span></h1>
@@ -34,6 +34,11 @@ export default {
     setTimeout(() => {
       this.firstAnimation = true
     }, 100)
+  },
+  methods: {
+    visibilityChanged () {
+      this.$store.commit('setMenuStatus', 0)
+    }
   }
 }
 </script>
