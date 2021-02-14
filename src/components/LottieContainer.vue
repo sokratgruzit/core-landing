@@ -303,12 +303,25 @@ export default {
     }
   }
   /*Ipad Pro 1024*/
-  @media (max-width: 1365px){
+  @media (max-width: 1300px){
+    .lottie-container{
+      width: 100%;
+    }
+    .lottie-container__item-floor{
+      flex-direction: column;
+    }
     .lottie-container{
       flex-wrap: wrap;
     }
-    .lottie-container{
+    .lottie-container__item{
       width: 60%;
+    }
+   .lottie-container__item-descr {
+     width: 60%;
+     margin-top: 30px;
+    }
+    .lottie-container__item-descr i{
+      display: none;
     }
   }
   /*Ipad 768*/
@@ -331,8 +344,14 @@ export default {
   }
   /*Mobile 320*/
   @media (max-width: 767px){
+    .lottie-container__item-descr{
+      width: 100%;
+    }
+    .lottie-container__item-description{
+      margin-left: 20px;
+    }
     .lottie-container__item {
-      width: 90%;
+      width: 100%;
     }
     .lottie-container__item .txt{
       font-size: 12px;

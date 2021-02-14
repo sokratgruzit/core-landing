@@ -6,7 +6,7 @@
         <div class="copyright">© Core App, 2020</div>
         <div class="footStep">
           <div class="nav">
-            <a href="##">Terms of Service</a>
+            <router-link to="/termsofuse">Terms of Service</router-link>
             <a href="##">Privacy</a>
           </div>
           <div class="share">

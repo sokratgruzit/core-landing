@@ -93,5 +93,8 @@ export default {
   }
     /*Iphone*/
     @media (max-width: 767px) {
+      .main-container__header{
+        display: none;
+      }
   }
 </style>

@@ -154,6 +154,7 @@ export default {
     }
     .faqItem{
       padding: 15px;
+      padding-left: 0px;
     }
     .ttl{
       font-size: 16px;
