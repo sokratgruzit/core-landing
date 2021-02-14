@@ -283,5 +283,8 @@ export default {
     footer .container{
       padding-left: 15px;
     }
+    .footerBg{
+      width: 100%;
+    }
   }
 </style>

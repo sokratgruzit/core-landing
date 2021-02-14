@@ -7,27 +7,13 @@
         </h3>
         <div class="slide-nav" data-aos="fade-up">
           <div class="prev">
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0)">
-                <path d="M15.8354 4.64104L16.1853 4.30177L16.5334 4.64285L20.4311 8.46174L20.7975 8.82075L20.4293 9.17784L12.5452 16.8228L39.2857 16.8228L39.7857 16.8228L39.7857 17.3228L39.7857 22.6772L39.7857 23.1772L39.2857 23.1772L12.5452 23.1772L20.4293 30.8221L20.7975 31.1792L20.4311 31.5382L16.5334 35.3571L16.1853 35.6982L15.8354 35.3589L0.366208 20.3589L-0.00397426 20L0.366208 19.641L15.8354 4.64104Z" stroke="#0500FF"/>
-              </g>
-              <defs>
-                <clipPath id="clip0">
-                  <rect width="40" height="40" fill="white"/>
-                </clipPath>
-              </defs>
+            <svg width="38" height="30" viewBox="0 0 38 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.24 -6.73927e-06L19.08 3.81889L10.44 12.3228L38 12.3228L38 17.6772L10.44 17.6772L19.08 26.1811L15.24 30L6.55671e-07 15L15.24 -6.73927e-06Z" fill="#0500FF"/>
             </svg>
           </div>
           <div class="next">
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0)">
-                <path d="M15.8354 4.64104L16.1853 4.30177L16.5334 4.64285L20.4311 8.46174L20.7975 8.82075L20.4293 9.17784L12.5452 16.8228L39.2857 16.8228L39.7857 16.8228L39.7857 17.3228L39.7857 22.6772L39.7857 23.1772L39.2857 23.1772L12.5452 23.1772L20.4293 30.8221L20.7975 31.1792L20.4311 31.5382L16.5334 35.3571L16.1853 35.6982L15.8354 35.3589L0.366208 20.3589L-0.00397426 20L0.366208 19.641L15.8354 4.64104Z" stroke="#0500FF"/>
-              </g>
-              <defs>
-                <clipPath id="clip0">
-                  <rect width="40" height="40" fill="white"/>
-                </clipPath>
-              </defs>
+            <svg width="38" height="30" viewBox="0 0 38 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.76 -6.73927e-06L18.92 3.81889L27.56 12.3228L-7.72693e-07 12.3228L-5.38648e-07 17.6772L27.56 17.6772L18.92 26.1811L22.76 30L38 15L22.76 -6.73927e-06Z" fill="#0500FF"/>
             </svg>
           </div>
         </div>
@@ -259,7 +245,7 @@ export default {
     transition: .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
   }
   .slide-nav div:hover path{
-    stroke: #ff7152;
+    fill: #ff7152;
   }
   .slide-nav div:hover svg{
     fill: #ff7152!important;
@@ -278,9 +264,6 @@ export default {
   .next{
     transition: .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
     cursor: pointer;
-  }
-  .next svg{
-    transform: rotate(180deg);
   }
   .next:hover{
     transform: translateX(10px);

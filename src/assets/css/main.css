@@ -29,7 +29,7 @@ body {
     -moz-text-size-adjust:100%;
     -ms-text-size-adjust:100%;
     text-size-adjust: 100%;
-    padding-bottom: 200vh;
+    /*padding-bottom: 200vh;*/
     background: #00050F;
     overflow: hidden;
 }
@@ -192,7 +192,7 @@ button {
         width: 33.3333%;
         padding-left: 0px!important;
         text-align: center;
-        padding: 15 solid;
+        padding: 15px;
     }
     .frameworks-container__frameworks-tab img{
        height: 40px;

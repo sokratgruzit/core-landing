@@ -185,7 +185,7 @@ export default {
       font-size: 50px;
     }
     .right{
-      padding-bottom: 60px;
+      padding-bottom: 100px;
       padding-right: 75px;
     }
   }
