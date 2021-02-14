@@ -181,16 +181,33 @@ export default {
     .lottie-container{
       flex-wrap: wrap;
     }
+    .lottie-container{
+      width: 60%;
+    }
   }
   /*Ipad 768*/
   @media (max-width: 1023px){
+    .lottie-container{
+      width: 100%;
+      padding-left: 0px;
+    }
+    .lottie-container__outer{
+      flex-direction: column;
+    }
     .lottie-container__item{
-      width: 50%;
+      width: 80%;
       margin-bottom: 30px;
+    }
+    h3 {
+      width: 45%;
+      margin-bottom: 50px;
     }
   }
   /*Mobile 320*/
   @media (max-width: 767px){
+    .lottie-container__item {
+      width: 90%;
+    }
     .lottie-container__item .txt{
       font-size: 12px;
       line-height: 20px;

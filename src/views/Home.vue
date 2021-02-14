@@ -9,7 +9,7 @@
     <Statistic :statData="$store.state.statistic"/>
     <Frameworks :itemData="$store.state.tabs"/>
     <Generation/>
-    <Reviews/>
+    <UseCases :itemData="$store.state.cases"/>
     <Developers/>
     <Faq :itemData="$store.state.faq"/>
     <CommunityPopup :itemData="$store.state.community"/>
@@ -22,7 +22,7 @@ import Community from '@/components/Community.vue'
 import CommunityPopup from '@/components/CommunityPopup.vue'
 import About from '@/components/About.vue'
 import Faq from '@/components/Faq.vue'
-import Reviews from '../components/Reviews'
+import UseCases from '../components/UseCases'
 import Statistic from '../components/Statistic'
 import StartContainer from '../components/Start'
 import LottieContainer from '../components/LottieContainer'
@@ -41,7 +41,7 @@ export default {
     LottieContainer,
     StartContainer,
     Statistic,
-    Reviews,
+    UseCases,
     MainContainer,
     Community,
     CommunityPopup,

@@ -13,7 +13,8 @@ export default new Vuex.Store({
     statistic: items.statistic,
     start: false,
     tabs: items.framework,
-    success: false
+    success: false,
+    cases: items.cases
   },
   getters: {
   },

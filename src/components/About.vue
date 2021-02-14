@@ -1,7 +1,6 @@
 <template>
   <div class="container" id="about">
     <picture>
-      <source media="(max-width: 767px)" srcset="@/assets/img/bg320.jpg">
       <img src="@/assets/img/tokenomicslist.jpg" alt="" class="bg">
     </picture>
     <div class="inner pT-160 pB-160">
@@ -258,5 +257,10 @@ export default {
   }
   /*Mobile 320*/
   @media (max-width: 768px){
+    .sub-ttl {
+      font-size: 18px;
+      line-height: 20px;
+      margin-top: 15px;
+    }
   }
 </style>

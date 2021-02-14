@@ -14,7 +14,7 @@
       </div>
       <div class="container">
         <div class="frameworks-container__bottom">
-          <div class="frameworks-container__middle-title" data-aos="fade-up">CORE: A multi-layered blockchain framework</div>
+          <div class="frameworks-container__middle-title font-51" data-aos="fade-up">CORE: A multi-layered <br> blockchain framework</div>
           <div class="frameworks-container__frameworks" data-aos="fade-up">
             <div class="frameworks-container__frameworks-tabs">
               <div class="frameworks-container__frameworks-tab" @mouseover="clickTab(tab.id)" v-for="tab in itemData" :key="tab.id" :class="activeTab == tab.id ? 'active' : ''">
@@ -171,9 +171,8 @@ export default {
     margin-right: 100px;
   }
   .frameworks-container__middle-title{
-    font-size: 66px;
     padding-top: 240px;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
   }
   .frameworks-container__title-bottom{
     font-size: 20px;

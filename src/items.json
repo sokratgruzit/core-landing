@@ -104,5 +104,22 @@
       "title": "Explore AURA",
       "svg": "aura.svg"
     }
+  ],
+  "cases": [
+    {
+      "id": 1,
+      "text": "It has all the tools you need. Moreover is a very dynamic tool that is constantly being updated and enhanced with features. Blockchain technology is here to stay. Now you can send crypto coins to any country using Core App. Excellent mobile wallet. Very user friendly\nand secure. Definitely worth checking out and experiencing",
+      "title": "Data curation network"
+    },
+    {
+      "id": 2,
+      "text": "It has all the tools you need. Moreover is a very dynamic tool that is constantly being updated and enhanced with features. Blockchain technology is here to stay. Now you can send crypto coins to any country using Core App. Excellent mobile wallet. Very user friendly\nand secure. Definitely worth checking out and experiencing",
+      "title": "Data curation network"
+    },
+    {
+      "id": 3,
+      "text": "It has all the tools you need. Moreover is a very dynamic tool that is constantly being updated and enhanced with features. Blockchain technology is here to stay. Now you can send crypto coins to any country using Core App. Excellent mobile wallet. Very user friendly\nand secure. Definitely worth checking out and experiencing",
+      "title": "Data curation network"
+    }
   ]
 }

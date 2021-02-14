@@ -1,6 +1,8 @@
 <template>
   <footer>
+    <div class="footerBg"></div>
     <div class="container">
+      <div class="footerInner">
         <div class="copyright">© Core App, 2020</div>
         <div class="footStep">
           <div class="nav">
@@ -40,6 +42,7 @@
       <a href="#main" v-smooth-scroll class="btnUp">
         Up
       </a>
+      </div>
     </div>
   </footer>
 </template>
@@ -116,6 +119,14 @@ export default {
   .footStep{
     display: flex;
   }
+  .footerBg{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: calc(100% - 210px);
+    height: 100%;
+    background: #151B26;
+  }
   .btnUp:hover{
     background: #0500FF;
     border-color: #0500FF;
@@ -134,13 +145,19 @@ export default {
   }
   footer{
     height: 105px;
-    background: #151B26;
+    position: relative;
   }
   .container{
     padding-left: 300px;
     display: flex;
     align-items: center;
     height: 100%;
+  }
+  .footerInner{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 30px 0px;
   }
   .copyright{
     font-size: 15px;
@@ -232,16 +249,11 @@ export default {
     }
     footer{
       height: auto;
-      padding-top: 30px;
-      padding-bottom: 30px;
     }
   }
   /*Ipad Pro 1024*/
-  @media (max-width: 1365px){
-  }
-  /*Ipad 768*/
-  @media (max-width: 1023px){
-    .container{
+  @media (max-width: 1300px){
+    .container,.footerInner{
       flex-direction: column;
       align-items: center;
     }

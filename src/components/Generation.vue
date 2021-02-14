@@ -3,7 +3,7 @@
     <img :src="require(`@/assets/img/generation.jpg`)" alt="" class="generation-outer__image">
     <div class="container">
       <div class="generation-container">
-        <h2 class="generation-container__title font-72" data-aos="fade-up">We are a New Generation</h2>
+        <h2 class="generation-container__title font-51" data-aos="fade-up">We are a New Generation</h2>
         <div class="generation-container__inner" data-aos="fade-up">
           <div class="generation-container__item">
             <div class="generation-container__item-sub-title">Bitcoin</div>
@@ -79,8 +79,8 @@ export default {
   .generation-outer__image{
     position: absolute;
     top: 0px;
-    left: 0px;
-    width: 100%;
+    right: 0px;
+    width: calc(100% + 210px);
     height: 100%;
     object-fit: cover;
   }
@@ -95,7 +95,7 @@ export default {
     align-items: center;
     width: 100%;
     padding-top: 160px;
-    padding-bottom: 160px;
+    padding-bottom: 240px;
   }
   .generation-container__inner{
     height: 480px;

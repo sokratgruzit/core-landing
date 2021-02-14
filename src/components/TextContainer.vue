@@ -95,25 +95,32 @@ export default {
   }
   /*Ipad 768*/
   @media (max-width: 1024px){
-    .text-container__inner{
-      padding-left: 25px;
-      padding-right: 25px;
+    .text-container__up ,.text-container__bottom{
+      font-size: 12px;
+      line-height: 23px;
+      width: 90%;
     }
-    .text-container__bottom{
-      font-size: 14px;
-      line-height: 20px;
-      width: 100%;
-    }
-    .text-container__up{
-      font-size: 18px;
-      line-height: 25px;
-      width: 100%;
+    .text-container__bottom-inner{
+      font-size: 12px;
+      line-height: 23px;
     }
   }
   /*Mobile 320*/
   @media (max-width: 767px){
+    .text-container__image{
+      width: 100%;
+      object-fit: contain;
+    }
+    .text-container__up, .text-container__bottom {
+      font-size: 10px;
+      line-height: 20px;
+      width: 90%;
+    }
+    .text-container__inner{
+      padding-right: 0px;
+    }
     .text-container{
-      padding-top: 200px;
+      padding-top: 100%;
     }
     .text-container__up{
       font-size: 14px;

@@ -201,6 +201,9 @@ export default {
   @media (max-width: 1365px){}
   /*Ipad 768*/
   @media (max-width: 1023px){
+    .main-container__description{
+      padding-left: 25px;
+    }
     .main-video__container{
       right: -38%;
       padding-top: 130%;

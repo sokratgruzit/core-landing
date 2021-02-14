@@ -1,7 +1,7 @@
 <template>
   <div class="container"  id="faq" data-aos="fade-up" v-view="visibilityChanged">
-    <div class="faqContainer pT-140">
-      <h3 class="medium font-72">Frequently <br>
+    <div class="faqContainer pT-160">
+      <h3 class="medium font-51">Frequently <br>
         Asked Questions</h3>
       <div class="faqInner">
         <div class="faqItem" v-for="faq in itemData" :key="faq.id" @click="openFaq(faq.id)" :class="activeFaq == faq.id ? 'active' : ''">
@@ -55,8 +55,12 @@ export default {
 }
 </script>
 <style scoped>
+  .faqContainer{
+    display: flex;
+    justify-content: space-between;
+  }
   .faqInner{
-    width: 56%;
+    width: 50%;
   }
   h3{
     color: #fff;
@@ -73,8 +77,8 @@ export default {
     transform: translateY(0px);
   }
   .questionInner p{
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 15px;
+    line-height: 24px;
     opacity: .8;
     padding-right: 70px;
   }
@@ -87,7 +91,7 @@ export default {
     max-height: 800px;
   }
   .faqItem{
-    border-bottom: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid rgba(255,255,255,.05);
     padding: 25px 0px;
     margin-bottom: 8px;
     cursor: pointer;
@@ -98,11 +102,10 @@ export default {
     justify-content: space-between;
   }
   .ttl{
-    font-size: 32px;
-    line-height: 48px;
+    font-size: 20px;
+    line-height: 30px;
     transition: .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
-    -webkit-text-stroke: 1px rgba(255, 255, 255, 1);
-    color: transparent;
+    color: #fff;
   }
   .faqItem.active .ttl,.faqItem:hover .ttl{
     color: #fff;
@@ -126,16 +129,22 @@ export default {
   #faq{
     padding-bottom: 160px;
   }
+  .faqItem.active .ttl{
+    color: #FF7152;
+  }
+  .faqItem.active line{
+    stroke: #FF7152;
+  }
   /*Laptop*/
   @media (max-width: 1900px){
-    .faqInner{
-      width: 76%;
-    }
   }
   /*Ipad 768*/
   @media (max-width: 1023px){
     .faqInner{
       width: 100%;
+    }
+    .faqContainer{
+      flex-direction: column;
     }
   }
   /*Mobile 320*/

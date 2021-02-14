@@ -375,9 +375,6 @@ export default {
   }
   /*Ipad Pro 1024*/
   @media (max-width: 1365px){
-    .slide-nav{
-      margin-top: 50px;
-    }
     .container{
       display: flex;
       flex-direction: column;
