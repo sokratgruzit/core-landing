@@ -8,7 +8,7 @@
         </div>
         <div class="use-cases__slider-container">
           <div class="use-cases__slider-title">
-            Our goal is to create a product and service that you're satisfied with and use it every day.
+            Apart from a new form of digital money, blockchain technology can be used for a multitude of applications. It can be used to keep record of any type of value that can be represented digitally, and serves as a decentralised database of records that keeps track of all the value transactions between the users on a blockchain network. Let's take a look at some of the use cases of blockchain technology.
           </div>
           <div class="use-cases__slider-outer">
             <swiper class="use-cases__slider" ref="use-cases__slider" :options="swiperOptions">
@@ -175,6 +175,9 @@ export default {
   }
   /*Mobile 320*/
   @media (max-width: 767px){
+    .use-cases__slider-outer{
+      height: 400px;
+    }
     .slide-nav {
       margin-bottom: 30px;
     }
@@ -192,8 +195,8 @@ export default {
       margin-top: 20px;
     }
     .use-cases__slider-title{
-      margin-top: 20px;
-      font-size: 18px;
+      margin-top: 15px;
+      font-size: 12px;
       line-height: 26px;
     }
     h3{

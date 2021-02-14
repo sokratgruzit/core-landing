@@ -128,10 +128,10 @@ export default {
   /*Laptop 1440*/
   @media (max-width: 1900px){
     .videoContainer{
-      height: 350px;
+      height: 250px;
     }
     .link .txt{
-      font-size: 140px;
+      font-size: 100px;
     }
     .communityInner{
       padding-top: 110px;

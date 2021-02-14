@@ -108,18 +108,33 @@
   "cases": [
     {
       "id": 1,
-      "text": "It has all the tools you need. Moreover is a very dynamic tool that is constantly being updated and enhanced with features. Blockchain technology is here to stay. Now you can send crypto coins to any country using Core App. Excellent mobile wallet. Very user friendly\nand secure. Definitely worth checking out and experiencing",
-      "title": "Data curation network"
+      "text": "The most popular use case for blockchain technology is for finance. These are chains that represent a monetary balance (cryptocurrency) and allow users to privately and independently send and receive money with other users on the system. All of this can be done without a 3rd party financial service provider, such as a bank.\n",
+      "title": "Financial Chains"
     },
     {
       "id": 2,
-      "text": "It has all the tools you need. Moreover is a very dynamic tool that is constantly being updated and enhanced with features. Blockchain technology is here to stay. Now you can send crypto coins to any country using Core App. Excellent mobile wallet. Very user friendly\nand secure. Definitely worth checking out and experiencing",
-      "title": "Data curation network"
+      "text": "Blockchain introduced the world to another neat piece of technology: smart contracts. Basically what smart contracts are, are legal agreements between 2 or more people or businesses that is written in computer code. These contracts utilise the security and immutability of blockchain technology to allow anyone to write simple legal agreements without the need for attorneys, provided that the parties involved can code the smart contract.",
+      "title": "Smart Contract Chains"
     },
     {
       "id": 3,
-      "text": "It has all the tools you need. Moreover is a very dynamic tool that is constantly being updated and enhanced with features. Blockchain technology is here to stay. Now you can send crypto coins to any country using Core App. Excellent mobile wallet. Very user friendly\nand secure. Definitely worth checking out and experiencing",
-      "title": "Data curation network"
+      "text": "Blockchains are a great tool for the supply chain and logistic businesses. Their immutability can track supplies as they move between users on a blockchain and enable the last person on the supply chain to trace back to the original supplier in case of a fault.\n",
+      "title": "Supply Chain Management\n"
+    },
+    {
+      "id": 4,
+      "text": "IoT refers to the Internet of Things which is a way for electronic devices to communicate with each other. These aren't necessarily phones and laptops for messaging purposes, but more for smart devices that constantly communicate with each other to allow for more automation and predictability through data analysis. The only problem with all of these devices communicating with each other is that they may be transmitting confidential data, and since they communicate over the web, this confidential information could be intercepted by hackers. Blockchain combined with IoT allows the data shared between devices in an IoT network to be secured by utilising the security factor present in a decentralised blockchain.",
+      "title": "IoT Chains\n"
+    },
+    {
+      "id": 5,
+      "text": "No longer will people have to carry their ID documents or have to remember all of their passwords for their online user profiles when they need to log in to an online platform. Blockchain's information security and encryption allows for the safety of user data. This opens up the possibility for people to store their passwords and identification information on identification blockchains. They can then use the blockchains to log in to their social media accounts or any other online service provider. Much like the \"log in with facebook\" feature available on some sites when logging in.\n",
+      "title": "Identification Chains\n"
+    },
+    {
+      "id": 6,
+      "text": "Healthcare chains allow users to store their medical information and history on a blockchain. This ensures that the medical information is secure and unreadable to anyone unauthorised to view it, while still allowing ease of access to the user to view their whole medical history and all those authorised to do so.",
+      "title": "Healthcare"
     }
   ]
 }
