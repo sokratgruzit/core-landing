@@ -19,7 +19,7 @@
             <div class="subTtl">
               {{item.subTitle}}
             </div>
-            <div class="txt"> {{item.text}}</div>
+            <div class="txt" v-html="item.text"></div>
           </div>
         </div>
       </VueSlickCarousel>
@@ -138,6 +138,7 @@ export default {
     margin-top: 20px;
     transition: .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
     transform: translateY(10px);
+    color: rgba(255,255,255,.5);
     opacity: 0;
   }
   .community-popup__container.active .txt{
@@ -146,8 +147,8 @@ export default {
     transition-delay: .6s;
   }
   .community-popup__item .subTtl{
-    font-size: 15px;
-    line-height: 24px;
+    font-size: 18px;
+    line-height: 28px;
     position: relative;
     z-index: 2;
     transition: .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
@@ -246,10 +247,6 @@ export default {
     }
     .community-popup__container.active .close-popup{
       transform: scale(.8);
-    }
-    .community-popup__item .subTtl{
-      font-size: 21px;
-      line-height: 32px;
     }
     .community-popup__item .txt{
       font-size: 16px;
