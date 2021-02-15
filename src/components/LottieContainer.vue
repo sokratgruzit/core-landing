@@ -5,6 +5,11 @@
         blockchain problems</h3>
       <div class="lottie-container" data-aos="fade-up">
         <div class="lottie-container__item-floor">
+          <div class="lottie-container__item mob-title">Task & Our Solution</div>
+          <div class="lottie-container__item title">Task</div>
+          <div class="lottie-container__item title">Our Solution</div>
+        </div>
+        <div class="lottie-container__item-floor">
           <div class="lottie-container__item" @mouseover="hover(1)">
           <lottie-animation
             ref="lottie1"
@@ -227,6 +232,15 @@ export default {
 }
 </script>
 <style scoped>
+  .lottie-container__item-floor .title{
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .lottie-container__item-floor .mob-title{
+    font-size: 30px;
+    line-height: 40px;
+    display: none;
+  }
   .lottie-container__item-descr i{
     position: absolute;
     top: 0px;
@@ -257,6 +271,7 @@ export default {
     position: relative;
     font-size: 15px;
     line-height: 24px;
+    padding-top: 25px;
     color: rgba(255,255,255,.7);
   }
   .lottie-container__item .txt{
@@ -322,6 +337,15 @@ export default {
     }
     .lottie-container__item-descr i{
       display: none;
+    }
+    .lottie-container__item-floor .title{
+      display: none;
+    }
+    .lottie-container__item-floor .mob-title{
+      display: flex;
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 0px;
     }
   }
   /*Ipad 768*/

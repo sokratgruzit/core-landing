@@ -180,6 +180,7 @@ export default {
     }
     .slide-nav {
       margin-bottom: 30px;
+      margin-top: 20px;
     }
     .use-cases__slider-container {
       width: calc(100% - 120px);
@@ -189,6 +190,7 @@ export default {
       margin-top: 15px;
       font-size: 12px;
       line-height: 20px;
+      padding-right: 10px;
     }
     .use-cases__slider-outer{
       padding-top: 20px;
@@ -197,7 +199,7 @@ export default {
     .use-cases__slider-title{
       margin-top: 15px;
       font-size: 12px;
-      line-height: 26px;
+      line-height: 20px;
     }
     h3{
       font-size: 80px;
