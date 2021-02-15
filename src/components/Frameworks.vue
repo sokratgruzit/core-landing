@@ -177,7 +177,7 @@ export default {
   .frameworks-container__title-bottom{
     font-size: 20px;
     margin-top: 25px;
-    color: rgba(255,255,255,.7);
+    color: rgba(255,255,255,.5);
   }
   .frameworks-container__sub-title{
     font-size: 30px;

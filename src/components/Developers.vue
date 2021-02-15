@@ -79,7 +79,7 @@ export default {
   .descr{
     font-size: 15px;
     line-height: 24px;
-    opacity: .7;
+    opacity: .5;
     width: 75%;
   }
   .developers-container__tab .sub-ttl{

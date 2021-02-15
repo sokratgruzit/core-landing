@@ -272,10 +272,10 @@ export default {
     font-size: 15px;
     line-height: 24px;
     padding-top: 25px;
-    color: rgba(255,255,255,.7);
+    color: rgba(255,255,255,.5);
   }
   .lottie-container__item .txt{
-    opacity: .7;
+    opacity: .5;
     font-size: 15px;
     line-height: 24px;
     margin-top: 5px;

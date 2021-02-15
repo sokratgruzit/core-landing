@@ -72,7 +72,7 @@ export default {
   .use-cases__slider-text{
     margin-bottom: 70px;
     margin-top: 15px;
-    color: rgba(255,255,255,.7);
+    color: rgba(255,255,255,.5);
     font-size: 15px;
     line-height: 24px;
   }

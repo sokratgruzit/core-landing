@@ -79,7 +79,7 @@ export default {
   .questionInner p{
     font-size: 15px;
     line-height: 24px;
-    opacity: .8;
+    opacity: .5;
     padding-right: 70px;
   }
   .questionContainer{

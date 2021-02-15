@@ -123,7 +123,7 @@ export default {
     font-size: 20px;
     line-height: 30px;
     margin-top: 25px;
-    color: rgba(255,255,255,.7);
+    color: rgba(255,255,255,.5);
   }
   h2{
     color: #fff;

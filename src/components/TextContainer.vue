@@ -46,7 +46,7 @@ export default {
     font-size: 16px;
     line-height: 24px;
     margin-top: 30px;
-    opacity: .7;
+    opacity: .5;
     text-align: left;
   }
   .text-container__bottom{
