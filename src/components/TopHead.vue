@@ -1,7 +1,8 @@
 <template>
   <div class="main-container__header">
     <div class="container">
-      <div class="left">Decentralized <br> Blockchain Platform</div>
+      <div class="left">Cryptographic Object <br>
+        Resourse Engine</div>
       <div class="follow-container">
         <a href="##">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
