@@ -133,9 +133,9 @@ export default {
     z-index: 2;
   }
   .community-popup__item .txt{
-    font-size: 24px;
-    line-height: 34px;
-    margin-top: 40px;
+    font-size: 15px;
+    line-height: 24px;
+    margin-top: 20px;
     transition: .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
     transform: translateY(10px);
     opacity: 0;
@@ -146,8 +146,8 @@ export default {
     transition-delay: .6s;
   }
   .community-popup__item .subTtl{
-    font-size: 32px;
-    line-height: 42px;
+    font-size: 15px;
+    line-height: 24px;
     position: relative;
     z-index: 2;
     transition: .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
