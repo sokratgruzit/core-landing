@@ -1,7 +1,8 @@
 <template>
     <div class="frameworks-container__inner pB-160">
       <div class="frameworks-container__video-outer">
-        <img class="frameworks-container__video" :src="require(`@/assets/img/vid.jpg`)" alt="">
+<!--        <img class="frameworks-container__video" :src="require(`@/assets/img/vid.jpg`)" alt="">-->
+        <div class="frameworks-container__video"><iframe src="https://iframe.videodelivery.net/425bf95ea100320c1be632c9d771e0c8?muted=true&preload=true&loop=true&autoplay=true&controls=false" style="border: none; position: absolute; top: 0; height: 100%; width: 100%;"  allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;" allowfullscreen="true"></iframe></div>
         <div class="frameworks-container__title-wrap" data-aos="fade-up">
           <div class="frameworks-container__title-top">
             <h3 class="frameworks-container__title">50,000+</h3>
@@ -200,7 +201,29 @@ export default {
   }
   .frameworks-container__video-outer{
     position: relative;
-    padding-top: 56%;
+    padding-top: 66%;
+  }
+  .frameworks-container__video-outer:after{
+    position: absolute;
+    z-index: 2;
+    height: 200px;
+    width: calc(100% + 210px);
+    top: 0px;
+    right: 0px;
+    content: '';
+    background: rgb(0,5,15);
+    background: linear-gradient(0deg, rgba(0,5,15,0) 0%, rgba(0,5,15,1) 100%);
+  }
+  .frameworks-container__video-outer:before{
+    position: absolute;
+    z-index: 2;
+    height: 200px;
+    width: calc(100% + 210px);
+    bottom: 0px;
+    right: 0px;
+    content: '';
+    background: rgb(0,5,15);
+    background: linear-gradient(180deg, rgba(0,5,15,0) 0%, rgba(0,5,15,1) 100%);
   }
   .frameworks-container__video{
     width: calc(100% + 210px);
@@ -307,6 +330,13 @@ export default {
     .frameworks-container__frameworks{
       flex-direction: column;
       height: auto;
+    }
+    .frameworks-container__video{
+      width: 100%;
+    }
+    .frameworks-container__video:after,.frameworks-container__video:before{
+      height: 100px;
+      width: 100%;
     }
   }
 </style>
