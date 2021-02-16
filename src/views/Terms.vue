@@ -67,7 +67,7 @@ export default {
   p{
     font-size: 15px;
     line-height: 24px;
-    color: rgba(255,255,255,.7);
+    color: rgba(255,255,255,.5);
     margin-bottom: 30px;
     width: 70%;
     padding-left: 100px;

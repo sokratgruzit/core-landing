@@ -1,6 +1,8 @@
 <template>
   <div class="about-video__container">
-    <div class="about-video" v-if="playVideo"><iframe src="https://iframe.videodelivery.net/433e285e16fb121466398f70cd41f8b8?preload=true&loop=true&autoplay=true&controls=false" style="border: none; position: absolute; top: 0; height: 100%; width: 100%;"  allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;" allowfullscreen="true"></iframe></div>
+    <div class="about-video" v-if="playVideo">
+      <iframe src="https://iframe.videodelivery.net/d392ec5687e4bbd55cafe4f102ee09e3?muted=true&preload=true&loop=true&autoplay=true&controls=false" style="border: none; position: absolute; top: 0; height: 100%; width: 100%;"  allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;" allowfullscreen="true"></iframe>
+    </div>
     <div class="about-video__poster-inner" :class="playVideo ? 'active' : ''" @click="playVideoFunc">
       <div class="about-video__poster">
         <img v-prlx="{ speed: 0.1 }" :src="require(`@/assets/img/about-video.jpg`)" alt="" class="about-video__poster-img">
