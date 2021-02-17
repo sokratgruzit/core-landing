@@ -24,20 +24,13 @@
   "community":[
     {
       "id": 1,
-      "title": "Technology",
-      "video": "<iframe src=\"https://iframe.videodelivery.net/912d9ee7a940b1c6cdeabbcb15821e9b?muted=true&preload=true&loop=true&autoplay=true&controls=false\" style=\"border: none; position: absolute; top: 0; height: 100%; width: 100%;\"  allow=\"accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
-      "subTitle": "Core brings a new standard in technology — open and inclusive — to challenge the old and activate a new age of sustainable, globally-distributed innovation.",
-      "text": "From the incremental to global, Core improves how we interact, transact,\nand create — and ultimately operate\nas a global society. Core is a blockchain platform built on the groundbreaking Ouroboros proof-of-stake consensus protocol, and developed using the Haskell programming language."
-    },
-    {
-      "id": 2,
       "title": "Research",
       "video": "<iframe src=\"https://iframe.videodelivery.net/ba02c51bd5a64eb4430aaf30f88b911b?muted=true&preload=true&loop=true&autoplay=true&controls=false\" style=\"border: none; position: absolute; top: 0; height: 100%; width: 100%;\"  allow=\"accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
       "subTitle": "All cutting-edge technology requires a vast amount of research to become the frontier in its field. ",
       "text": "CORE's team, which consists of professionals from various academic disciplines, has done extensive research to not only understand the technical limitations that blockchain technology faces, but also develop a philosophical understanding of the human psyche to discover some of the objections people have about towards blockchain technology. We at CORE are proud to announce that we have answered all of the questions that formed the basis for our research, and have presented it in a simplified, secure, and scalable solution - the CORE blockchain ecosystem."
     },
     {
-      "id": 3,
+      "id": 2,
       "title": "Purpose",
       "video": "<iframe src=\"https://iframe.videodelivery.net/112f3c0278f210a880e8ea0abdef6913?muted=true&preload=true&loop=true&autoplay=true&controls=false\" style=\"border: none; position: absolute; top: 0; height: 100%; width: 100%;\"  allow=\"accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
       "subTitle": "To transcend blockchain technology, with the goal to lead the way in blockchain mass-adoption, by addressing the obstacles that current blockchain solutions face - namely the scalability, interoperability, security and usability of blockchain technology.",
@@ -135,6 +128,38 @@
       "id": 6,
       "text": "Healthcare chains allow users to store their medical information and history on a blockchain. This ensures that the medical information is secure and unreadable to anyone unauthorised to view it, while still allowing ease of access to the user to view their whole medical history and all those authorised to do so.",
       "title": "Healthcare"
+    }
+  ],
+  "technology": [
+    {
+      "id": 1,
+      "title": "CORE",
+      "text": "CORE relay chain is built with Substrate, a blockchain-building framework that is the distillation of Parity Technologies’ learnings building Ethereum, Bitcoin, and enterprise blockchains.<br/><br/> CORE state machine is compiled to WebAssembly (Wasm), a super performant virtual environment. Wasm is developed by major companies, including Google, Apple, Microsoft, and Mozilla, that have created a large ecosystem of support for the standard."
+    },
+    {
+      "id": 2,
+      "title": "Hypercube",
+      "text": "CORE relay chain is built with Substrate, a blockchain-building framework that is the distillation of Parity Technologies’ learnings building Ethereum, Bitcoin, and enterprise blockchains.<br/><br/> CORE state machine is compiled to WebAssembly (Wasm), a super performant virtual environment. Wasm is developed by major companies, including Google, Apple, Microsoft, and Mozilla, that have created a large ecosystem of support for the standard."
+    },
+    {
+      "id": 3,
+      "title": "Wasmi",
+      "text": "CORE relay chain is built with Substrate, a blockchain-building framework that is the distillation of Parity Technologies’ learnings building Ethereum, Bitcoin, and enterprise blockchains.<br/><br/> CORE state machine is compiled to WebAssembly (Wasm), a super performant virtual environment. Wasm is developed by major companies, including Google, Apple, Microsoft, and Mozilla, that have created a large ecosystem of support for the standard."
+    },
+    {
+      "id": 4,
+      "title": "Lipp2p",
+      "text": "CORE relay chain is built with Substrate, a blockchain-building framework that is the distillation of Parity Technologies’ learnings building Ethereum, Bitcoin, and enterprise blockchains.<br/><br/> CORE state machine is compiled to WebAssembly (Wasm), a super performant virtual environment. Wasm is developed by major companies, including Google, Apple, Microsoft, and Mozilla, that have created a large ecosystem of support for the standard."
+    },
+    {
+      "id": 5,
+      "title": "Rust",
+      "text": "CORE relay chain is built with Substrate, a blockchain-building framework that is the distillation of Parity Technologies’ learnings building Ethereum, Bitcoin, and enterprise blockchains.<br/><br/> CORE state machine is compiled to WebAssembly (Wasm), a super performant virtual environment. Wasm is developed by major companies, including Google, Apple, Microsoft, and Mozilla, that have created a large ecosystem of support for the standard."
+    },
+    {
+      "id": 6,
+      "title": "C++",
+      "text": "CORE relay chain is built with Substrate, a blockchain-building framework that is the distillation of Parity Technologies’ learnings building Ethereum, Bitcoin, and enterprise blockchains.<br/><br/> CORE state machine is compiled to WebAssembly (Wasm), a super performant virtual environment. Wasm is developed by major companies, including Google, Apple, Microsoft, and Mozilla, that have created a large ecosystem of support for the standard."
     }
   ]
 }

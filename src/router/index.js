@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Tokenomics from '../views/Tokenomics.vue'
 import Terms from '../views/Terms.vue'
+import Technology from '../views/Technology.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -28,6 +29,12 @@ const routes = [
     path: '/termsofuse',
     name: 'Termsofuse',
     component: Terms,
+    meta: { scrollToTop: true }
+  },
+  {
+    path: '/Technology',
+    name: 'Technology',
+    component: Technology,
     meta: { scrollToTop: true }
   }
 ]

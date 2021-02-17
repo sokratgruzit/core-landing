@@ -5,6 +5,15 @@
         What makes CORE different
       </div>
       <div class="linksContainer" id="explore">
+        <router-link to="/technology" class="link" data-aos="fade-up">
+          <div class="txt">Technology</div>
+          <div class="videoContainer">
+            <img :src="require(`@/assets/img/gradient.png`)" alt="" class="gradient">
+            <div class="video">
+              <iframe src="https://iframe.videodelivery.net/912d9ee7a940b1c6cdeabbcb15821e9b?muted=true&preload=true&loop=true&autoplay=true&controls=false" style="border: none; position: absolute; top: 0; height: 100%; width: 100%;"  allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;" allowfullscreen="true"></iframe>
+            </div>
+          </div>
+        </router-link>
         <div class="link" v-for="link in itemData" :key="link.id" data-aos="fade-up" @click="openPopup(link.id)">
           <div class="txt">{{link.title}}</div>
           <div class="videoContainer">

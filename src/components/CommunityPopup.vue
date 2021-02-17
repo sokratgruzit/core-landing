@@ -109,7 +109,7 @@ export default {
     stroke: #0400DD;
   }
   .videoContainer{
-    padding-top: 100%;
+    padding-top: 77%;
     position: absolute;
     z-index: 1;
     top: 0px;

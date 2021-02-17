@@ -14,7 +14,8 @@ export default new Vuex.Store({
     start: false,
     tabs: items.framework,
     success: false,
-    cases: items.cases
+    cases: items.cases,
+    techTabs: items.technology
   },
   getters: {
   },
