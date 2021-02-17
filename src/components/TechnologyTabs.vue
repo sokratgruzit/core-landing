@@ -71,6 +71,11 @@ export default {
 }
 </script>
 <style scoped>
+  .tabs-bg-out img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
   .tabs-bg-out:before {
     position: absolute;
     z-index: 2;
