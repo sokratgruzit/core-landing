@@ -5,7 +5,7 @@
         What makes CORE different
       </div>
       <div class="linksContainer" id="explore">
-        <router-link to="/technology" class="link" data-aos="fade-up">
+        <router-link to="/technology" class="link" data-aos="fade-up" :class="activeHover == 0">
           <div class="txt">Technology</div>
           <div class="videoContainer">
             <img :src="require(`@/assets/img/gradient.png`)" alt="" class="gradient">
@@ -34,6 +34,7 @@ export default {
   },
   data () {
     return {
+      activeHover: 0
     }
   },
   methods: {
@@ -42,6 +43,9 @@ export default {
     },
     visibilityChanged () {
       this.$store.commit('setMenuStatus', 1)
+    },
+    hover (id) {
+      this.activeHover = id
     }
   }
 }
@@ -109,6 +113,8 @@ export default {
     display: flex;
     flex-direction: column;
     width: 100%;
+    align-items: center;
+    padding-right: 105px;
     padding-top: 180px;
   }
   .videoContainer .video{
@@ -137,22 +143,25 @@ export default {
   /*Laptop 1440*/
   @media (max-width: 1900px){
     .videoContainer{
-      height: 250px;
+      height: 340px;
     }
     .link .txt{
-      font-size: 100px;
+      font-size: 140px;
     }
     .communityInner{
       padding-top: 110px;
     }
+    .link:nth-child(3) {
+      margin-left: 200px;
+    }
+    .link:nth-child(2) {
+      margin-left: 100px;
+    }
   }
   /*Ipad 1024*/
   @media (max-width: 1365px){
-    .link:nth-child(3) {
-      margin-left: 280px;
-    }
-    .link:nth-child(2) {
-      margin-left: 140px;
+    .videoContainer{
+      height: 240px;
     }
     .link .txt{
       font-size: 90px;
@@ -160,6 +169,9 @@ export default {
   }
   /*Ipad 768*/
   @media (max-width: 1023px){
+    .videoContainer{
+      height: 180px;
+    }
     .link .txt{
       font-size: 70px;
     }
@@ -190,6 +202,7 @@ export default {
     }
     .linksContainer{
       padding-top: 50px;
+      padding-right: 0px;
     }
     .link .txt {
       font-size: 50px;

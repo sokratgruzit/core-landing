@@ -3,14 +3,14 @@
     <div class="container lottie-container__outer">
       <h3 class="font-51" data-aos="fade-up">CORE solves today's hardest
         blockchain problems</h3>
-      <div class="lottie-container" data-aos="fade-up">
-        <div class="lottie-container__item-floor">
+      <div class="lottie-container">
+        <div class="lottie-container__item-floor" data-aos="fade-up">
           <div class="lottie-container__item mob-title">Task & Our Solution</div>
           <div class="lottie-container__item title">Task</div>
           <div class="lottie-container__item title">Our Solution</div>
         </div>
-        <div class="lottie-container__item-floor">
-          <div class="lottie-container__item" @mouseover="hover(1)">
+        <div class="lottie-container__item-floor" >
+          <div class="lottie-container__item" @mouseover="hover(1)" data-aos="fade-up">
           <lottie-animation
             ref="lottie1"
             :animationData="require(`@/assets/lottie-icons/scalability.json`)"
@@ -23,7 +23,7 @@
             <div class="txt">This is on of the main reasons that blockchain technology cannot be used on a mass-adoption scale yet. Low throughput and its environmental impact are the biggest obstacles that blockchain has to overcome in order to scale.</div>
           </div>
         </div>
-          <div class="lottie-container__item-descr">
+          <div class="lottie-container__item-descr" data-aos="fade-up">
             <i>
               <svg width="101" height="40" viewBox="0 0 101 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_d)">
@@ -50,7 +50,7 @@
           </div>
         </div>
         <div class="lottie-container__item-floor">
-          <div class="lottie-container__item" @mouseover="hover(3)">
+          <div class="lottie-container__item" @mouseover="hover(3)" data-aos="fade-up">
           <lottie-animation
             ref="lottie3"
             :animationData="require(`@/assets/lottie-icons/usability.json`)"
@@ -65,7 +65,7 @@
               the ordinary individual, which blockchain is not yet.</div>
           </div>
         </div>
-          <div class="lottie-container__item-descr">
+          <div class="lottie-container__item-descr" data-aos="fade-up">
             <i>
               <svg width="101" height="40" viewBox="0 0 101 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_d)">
@@ -93,7 +93,7 @@
           </div>
         </div>
         <div class="lottie-container__item-floor">
-          <div class="lottie-container__item" @mouseover="hover(4)">
+          <div class="lottie-container__item" @mouseover="hover(4)" data-aos="fade-up">
             <lottie-animation
               ref="lottie4"
               :animationData="require(`@/assets/lottie-icons/interoperability.json`)"
@@ -107,7 +107,7 @@
                 a 3rd party, like a centralised exchange.</div>
             </div>
           </div>
-          <div class="lottie-container__item-descr">
+          <div class="lottie-container__item-descr" data-aos="fade-up">
             <i>
               <svg width="101" height="40" viewBox="0 0 101 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_d)">
@@ -134,7 +134,7 @@
           </div>
         </div>
         <div class="lottie-container__item-floor">
-          <div class="lottie-container__item" @mouseover="hover(5)">
+          <div class="lottie-container__item" @mouseover="hover(5)" data-aos="fade-up">
             <lottie-animation
               ref="lottie5"
               :animationData="require(`@/assets/lottie-icons/security.json`)"
@@ -147,7 +147,7 @@
               <div class="txt">Although blockchain is regarded as more secure because of its decentralised nature. However, some blockchains can fall victim to either a 51% attack, endpoint vulnerabilities, vendor exploits, or faulty source code. This can be accomplished on both a proof of stake chain and a proof of work chain.</div>
             </div>
           </div>
-          <div class="lottie-container__item-descr">
+          <div class="lottie-container__item-descr" data-aos="fade-up">
             <i>
               <svg width="101" height="40" viewBox="0 0 101 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_d)">

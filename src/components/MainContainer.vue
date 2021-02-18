@@ -143,7 +143,7 @@ export default {
   .main-container__description{
     position: absolute;
     left: 0px;
-    bottom: 85px;
+    bottom: 0px;
     padding-left: 80px;
     z-index: 5;
   }
@@ -165,9 +165,8 @@ export default {
   }
   #main{
     position: relative;
-    height: 100vh;
+    height: 580px;
     width: 100%;
-    border-bottom: 1px solid rgba(255,255,255,.05);
     background: #00050F;
     overflow: hidden;
   }
@@ -182,15 +181,11 @@ export default {
       padding-top: 75%;
       width: 75%;
     }
-    .main-container__description h1 {
-      font-size: 210px;
-    }
     .main-container__description p{
       font-size: 46px;
       line-height: 54px;
     }
     .main-container__description{
-      bottom: 30px;
       padding-left: 40px;
     }
     .main-container__header{
