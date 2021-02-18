@@ -261,19 +261,39 @@ export default {
   @media (max-width: 1365px){
     .generation-container__item{
       padding: 15px;
+      width: 260px;
     }
     .generation-container__item-title{
       font-size: 20px;
     }
-    .generation-container__inner{
-      height: auto;
+    .generation-container__item:nth-child(2) {
+      height: 415px;
+      left: 190px;
+      z-index: 2;
+    }
+    .generation-container__item:nth-child(3) {
+      height: 470px;
+      left: 380px;
+      z-index: 3;
+    }
+    .generation-container__inner {
+      width: 660px;
+    }
+    .generation-container__item-link{
+      margin-bottom: 15px;
     }
   }
   /*Ipad 768*/
   @media (max-width: 1023px){
+    .generation-container__item{
+      position: relative;
+      left: 0px!important;
+      height: 380px!important;
+    }
     .generation-container__inner{
       flex-direction: column;
       align-items: center;
+      height: auto;
     }
     .generation-container__item{
       margin-top: 0px!important;

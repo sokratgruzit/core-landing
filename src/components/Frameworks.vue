@@ -4,12 +4,28 @@
 <!--        <img class="frameworks-container__video" :src="require(`@/assets/img/vid.jpg`)" alt="">-->
         <div class="frameworks-container__video"><iframe src="https://iframe.videodelivery.net/425bf95ea100320c1be632c9d771e0c8?muted=true&preload=true&loop=true&autoplay=true&controls=false" style="border: none; position: absolute; top: 0; height: 100%; width: 100%;"  allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;" allowfullscreen="true"></iframe></div>
         <div class="frameworks-container__title-wrap" data-aos="fade-up">
-          <div class="frameworks-container__title-top">
-            <h3 class="frameworks-container__title">50,000+</h3>
-            <h3 class="frameworks-container__sub-title">Transactions/sec</h3>
+          <h3 class="frameworks-container__grid-title">We are aiming to achieve these targets*</h3>
+          <div class="frameworks-container__grid">
+            <div class="frameworks-container__grid-item">
+              <div class="frameworks-container__grid-item-title font-51">50,000+</div>
+              <div class="frameworks-container__grid-item-description">Transactions per Second</div>
+            </div>
+            <div class="frameworks-container__grid-item">
+              <div class="frameworks-container__grid-item-title font-51">10 sec</div>
+              <div class="frameworks-container__grid-item-description">Tx Finality</div>
+            </div>
+            <div class="frameworks-container__grid-item">
+              <div class="frameworks-container__grid-item-title font-51">200</div>
+              <div class="frameworks-container__grid-item-description">Shards</div>
+            </div>
+            <div class="frameworks-container__grid-item">
+              <div class="frameworks-container__grid-item-title font-51">>4000</div>
+              <div class="frameworks-container__grid-item-description">Shards</div>
+            </div>
           </div>
           <div class="frameworks-container__title-bottom">
-            Unprecedented speed and decentralization make CORE the flagship of Blockchain
+            *Based on our preliminary research, one year after the deployment of our main-net.
+            <a href="##">See Roadmap</a>
           </div>
         </div>
       </div>
@@ -54,6 +70,27 @@ export default {
 }
 </script>
 <style scoped>
+  .frameworks-container__grid-title{
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+  .frameworks-container__grid-item-description{
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .frameworks-container__grid-item-title{
+    color: #FF7152;
+  }
+  .frameworks-container__grid-item:first-child{
+    padding-right: 100px;
+  }
+  .frameworks-container__grid-item{
+    padding-right: 60px;
+  }
+  .frameworks-container__grid{
+    display: flex;
+  }
   .frameworks-container__bottom{
     display: flex;
     flex-direction: column;
@@ -172,13 +209,24 @@ export default {
     margin-right: 100px;
   }
   .frameworks-container__middle-title{
-    padding-top: 240px;
     margin-bottom: 100px;
   }
   .frameworks-container__title-bottom{
-    font-size: 20px;
-    margin-top: 25px;
+    font-size: 12px;
+    margin-top: 18px;
+    color: rgba(255,255,255,.3);
+    margin-top: 80px;
+  }
+  .frameworks-container__title-bottom a{
+    font-size: 12px;
+    margin-left: 5px;
     color: rgba(255,255,255,.5);
+    text-decoration: underline;
+    transition: .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+  }
+  .frameworks-container__title-bottom a:hover{
+    text-decoration-color: transparent;
+    color: #FF7152;
   }
   .frameworks-container__sub-title{
     font-size: 30px;
@@ -186,7 +234,7 @@ export default {
   }
   .frameworks-container__title-wrap{
     position: absolute;
-    bottom: 0px;
+    bottom: 90px;
     z-index: 3;
     padding-left: 80px;
   }
@@ -201,7 +249,10 @@ export default {
   }
   .frameworks-container__video-outer{
     position: relative;
-    padding-top: 66%;
+    padding-top: 55%;
+  }
+  .frameworks-container__video iframe{
+    transform: scale(1.2);
   }
   .frameworks-container__video-outer:after{
     position: absolute;
@@ -232,6 +283,7 @@ export default {
     right: 0px;
     top: 0px;
     object-fit: cover;
+    overflow: hidden;
   }
   /*Laptop 1440*/
   @media (max-width: 1900px){
@@ -247,15 +299,6 @@ export default {
     .frameworks-container__inner{
       padding-bottom: 60px;
     }
-    .frameworks-container__title-bottom{
-      font-size: 18px;
-    }
-    .frameworks-container__sub-title{
-      font-size: 24px;
-    }
-    .frameworks-container__title {
-      font-size: 70px;
-    }
     .frameworks-container__frameworks-tabs-inner-text{
       font-size: 18px;
       line-height: 30px;
@@ -269,14 +312,37 @@ export default {
     .frameworks-container__frameworks{
       width: 100%;
     }
+    .frameworks-container__video iframe {
+      transform: scale(1.5);
+    }
+    .frameworks-container__grid-item:first-child {
+      padding-right: 60px;
+    }
   }
   /*Ipad 768*/
   @media (max-width: 1023px){
+    .frameworks-container__title-bottom{
+      margin-top: 30px;
+    }
+    .frameworks-container__grid-title {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    .frameworks-container__grid-item-description {
+      font-size: 12px;
+      line-height: 24px;
+    }
+    .frameworks-container__grid-item {
+      padding-right: 30px;
+    }
+    .frameworks-container__grid-item:first-child {
+      padding-right: 30px;
+    }
     .frameworks-container__middle-title{
       padding-top: 80px;
     }
     .frameworks-container__title-bottom {
-      font-size: 16px;
+      font-size: 10px;
     }
     .frameworks-container__middle-title {
       font-size: 36px;
@@ -298,6 +364,30 @@ export default {
   }
   /*Mobile 320*/
   @media (max-width: 767px){
+    .frameworks-container__title-bottom {
+      font-size: 11px;
+      line-height: 18px;
+    }
+    .frameworks-container__grid-title {
+      font-size: 15px;
+      line-height: 20px;
+    }
+    .frameworks-container__grid-item-title{
+      margin-right: 15px;
+    }
+    .frameworks-container__grid-item{
+      display: flex;
+      align-items: center;
+    }
+    .frameworks-container__grid{
+      flex-direction: column;
+    }
+    .frameworks-container__video iframe {
+      transform: scale(2);
+    }
+    .frameworks-container__video-outer{
+      padding-top: 110%;
+    }
     .frameworks-container__frameworks-tab{
       height: 60px;
       width: 33.3333%;
@@ -323,10 +413,6 @@ export default {
     .frameworks-container__frameworks-tabs-container{
       height: 250px;
     }
-    .frameworks-container__title-bottom {
-      font-size: 14px;
-      line-height: 20px;
-    }
     .frameworks-container__frameworks{
       flex-direction: column;
       height: auto;
@@ -337,6 +423,10 @@ export default {
     .frameworks-container__video:after,.frameworks-container__video:before{
       height: 100px;
       width: 100%;
+    }
+    .frameworks-container__title-wrap {
+      padding-left: 15px;
+      bottom: 30px;
     }
   }
 </style>

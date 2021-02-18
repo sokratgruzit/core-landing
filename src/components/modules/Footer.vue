@@ -1,6 +1,6 @@
 <template>
   <div class="footer__main">
-    <div class="container">
+    <div data-aos="fade-up" class="container">
        <div class="footer__join">
       <img v-prlx="{ speed: 0.1 }" :src="require(`@/assets/img/join-img.jpg`)" alt="" class="footer__join-img">
       <div class="footer__join-inner">
@@ -28,7 +28,7 @@
     <footer>
       <div class="footerBg"></div>
       <div class="container">
-        <div class="footerInner">
+        <div class="footerInner" data-aos="fade-up">
           <div class="footer__first-container">
             <router-link to="/" class="footer__logo">
               <svg width="140" height="68" viewBox="0 0 140 68" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -123,7 +123,7 @@
             Up
           </a>
         </div>
-        <div class="footerText">
+        <div class="footerText" data-aos="fade-up">
           Disclaimer: Unium Wallet is a software platform ONLY and does not conduct any independent diligence on or substantive review of any blockchain asset, digital currency, cryptocurrency or associated funds. You are fully and solely responsible for evaluating your investments, for determining whether you will exchange blockchain assets based on your own, and for all your decisions as to whether to exchange blockchain assets with Unium Wallet. In many cases, blockchain assets you exchange on the basis of your research may not increase in value, and may decrease in value. Similarly, blockchain assets you exchange on the basis of your research may increase in value after your exchange. Past performance is not indicative of future results. Any investment in blockchain assets involves the risk of loss of part or all of your investment. The value of the blockchain assets you exchange is subject to market and other investment risks
         </div>
       </div>
@@ -230,6 +230,7 @@ export default {
     height: 130%;
     top: -15%;
     left: 0px;
+    object-fit: cover;
     z-index: 1;
   }
   .footer__join{
@@ -437,6 +438,28 @@ export default {
   }
   /*Ipad Pro 1024*/
   @media (max-width: 1300px){
+    .footer__logo{
+      justify-content: center;
+    }
+    .share{
+      justify-content: center;
+    }
+    .share a {
+      margin: 0px 8px;
+    }
+    .footer__join{
+      height: 170px;
+    }
+    .footer__join-inner{
+      padding: 30px;
+    }
+    .footer__join-title {
+      font-size: 20px;
+      line-height: 32px;
+    }
+    .footer__join{
+      width: 100%;
+    }
     .container,.footerInner{
       flex-direction: column;
       align-items: center;
@@ -444,6 +467,7 @@ export default {
     .nav{
       display: flex;
       align-items: center;
+      margin-bottom: 40px;
       flex-direction: column;
     }
     .nav a{
@@ -452,18 +476,64 @@ export default {
     }
     .copyright{
       margin-right: 0px;
+      text-align: center;
+      margin-bottom: 40px;
     }
     .subscribe-container{
       margin-left: 0px;
-      margin-top: 30px;
     }
     .btnUp{
       margin-right: auto;
       margin-top: 30px;
     }
+    .footer__second-container{
+      width: 100%;
+    }
+    .footer__second-container-column{
+      align-items: center;
+    }
+  }
+  /*Ipad 768*/
+  @media (max-width: 1023px){
+    .footer__join{
+      margin-bottom: 50px;
+      margin-left: -80px;
+    }
+    .footer__join:after{
+      width: 50%;
+    }
+    .subscribe-container{
+      margin-top: 15px;
+    }
+    .footer__join-inner > div[data-v-5e68c45a] {
+      width: 100%;
+    }
+    .footer__join-inner{
+      flex-direction: column;
+    }
   }
   /*Mobile 320*/
   @media (max-width: 767px){
+    .footer__join {
+      margin-bottom: 30px;
+      margin-left: 15px;
+      height: 205px;
+    }
+    .container{
+      padding-left: 0px;
+    }
+    .copyright{
+      margin-bottom: 0px;
+    }
+    .footer__second-ttl{
+      margin-top: 30px;
+    }
+    .footer__second-container-column{
+      width: 100%;
+    }
+    .footer__second-container{
+      flex-direction: column;
+    }
     footer .container{
       padding-left: 15px;
     }
