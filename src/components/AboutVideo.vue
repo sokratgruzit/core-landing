@@ -1,9 +1,14 @@
 <template>
   <div class="about-video__container">
-    <div class="about-video" v-if="playVideo">
-      <iframe src="https://iframe.videodelivery.net/d392ec5687e4bbd55cafe4f102ee09e3?muted=true&preload=true&loop=true&autoplay=true&controls=false" style="border: none; position: absolute; top: 0; height: 100%; width: 100%;"  allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;" allowfullscreen="true"></iframe>
+    <div class="about-video__text">
+      <div class="container">
+        <h3 class="font-51">Simple Text Here</h3>
+        <div class="about-video__text-descr">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.  </div>
+      </div>
     </div>
-    <div class="about-video__poster-inner" :class="playVideo ? 'active' : ''" @click="playVideoFunc">
+    <div class="about-video">
+      <iframe src="https://iframe.videodelivery.net/5e4a7d5c6d497ae4c84da7eddbf699e6?muted=true&preload=true&loop=true&autoplay=true&controls=false" style="border: none; position: absolute; top: 0; height: 100%; width: 100%;"  allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;" allowfullscreen="true"></iframe> </div>
+    <div class="about-video__poster-inner" :class="playVideo ? 'active' : ''" @click="playVideoFunc" v-if="false">
       <div class="about-video__poster">
         <img v-prlx="{ speed: 0.1 }" :src="require(`@/assets/img/about-video.jpg`)" alt="" class="about-video__poster-img">
       </div>
@@ -40,6 +45,22 @@ export default {
 }
 </script>
 <style>
+  .about-video__text-descr{
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .about-video__text .container{
+    display: flex;
+    flex-direction: column;
+  }
+  .about-video__text{
+    position: absolute;
+    bottom: 60px;
+    left: 0px;
+    flex-direction: column;
+    display: flex;
+    width: 50%;
+  }
   .about-video{
     width: 100%;
     height: 100%;
@@ -47,6 +68,7 @@ export default {
     position: absolute;
     top: 0px;
     right: 0px;
+    opacity: .5;
   }
   .about-video__play-txt span{
     color: #141417;
@@ -112,13 +134,19 @@ export default {
   .about-video__container{
     position: relative;
     z-index: 1;
-    padding-top: 59%;
+    padding-top: 42%;
   }
-  /*Laptop 1440*/
-  @media (max-width: 1900px){
+  /*Ipad pro*/
+  @media (max-width: 1300px){
+    .about-video__text{
+      bottom: 30px;
+    }
   }
   /*Ipad 768*/
   @media (max-width: 1023px){
+    .about-video__text{
+      width: 100%;
+    }
     .about-video__play{
       height: 80px;
       width: 80px;
@@ -131,6 +159,13 @@ export default {
     }
     .about-video__poster-inner{
       width: 100%;
+    }
+    .about-video__text {
+      bottom: 15px;
+    }
+    .about-video__text-descr{
+      font-size: 11px;
+      line-height: 18px;
     }
   }
 </style>

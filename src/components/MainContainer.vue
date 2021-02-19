@@ -248,7 +248,7 @@ export default {
     .main-container__description{
       padding: 0px 15px;
       text-align: center;
-      bottom: 90px;
+      bottom: 30px;
     }
     .main-container__description h1{
       margin-bottom: 10px;
