@@ -1,27 +1,15 @@
 <template>
   <div class="body-container">
-    <AboutMainContainer/>
-    <AboutVideo/>
-    <AboutText/>
-    <AboutFinancial/>
-    <AboutList/>
+    <GuidlineMainContainer/>
   </div>
 </template>
 
 <script>
-import AboutMainContainer from '@/components/AboutMainContainer.vue'
-import AboutVideo from '@/components/AboutVideo.vue'
-import AboutText from '@/components/AboutText.vue'
-import AboutFinancial from '@/components/AboutFinancial.vue'
-import AboutList from '@/components/AboutList.vue'
+import GuidlineMainContainer from '@/components/GuidlineMainContainer.vue'
 export default {
   name: 'About',
   components: {
-    AboutMainContainer,
-    AboutVideo,
-    AboutText,
-    AboutFinancial,
-    AboutList
+    GuidlineMainContainer
   }
 }
 </script>

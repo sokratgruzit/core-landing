@@ -20,7 +20,7 @@
             </div>
             <div class="frameworks-container__grid-item">
               <div class="frameworks-container__grid-item-title font-51">>4000</div>
-              <div class="frameworks-container__grid-item-description">Shards</div>
+              <div class="frameworks-container__grid-item-description">Nodes in the first year</div>
             </div>
           </div>
           <div class="frameworks-container__title-bottom">

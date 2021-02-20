@@ -39,8 +39,8 @@ const routes = [
     meta: { scrollToTop: true }
   },
   {
-    path: '/Guideline',
-    name: 'Guideline',
+    path: '/Guidelines',
+    name: 'Guidelines',
     component: Guideline,
     meta: { scrollToTop: true }
   }

@@ -27,7 +27,6 @@
           :key="nav.id"
           :to="nav.route"
           class="font-18"
-          :class="$store.state.activeMenu == nav.id ? 'active' : ''"
           @click.native="closeBurger(),activeLinkFunc(nav.id)"
         >
           {{nav.title}}
@@ -133,46 +132,33 @@ export default {
       routes: [
         {
           id: 1,
-          title: 'Explore',
-          route: {
-            name: 'Home',
-            params: {
-              id: this.$route.params.id
-            },
-            hash: '#explore'
-          }
+          title: 'Home',
+          route: '/'
         },
         {
           id: 2,
-          title: 'Community',
-          route: {
-            name: 'Home',
-            params: {
-              id: this.$route.params.id
-            },
-            hash: '#community'
-          }
-        },
-        {
-          id: 3,
-          title: 'FAQ',
-          route: {
-            name: 'Home',
-            params: {
-              id: this.$route.params.id
-            },
-            hash: '#faq'
-          }
-        },
-        {
-          id: 4,
           title: 'Tokenomics',
           route: '/tokenomics'
         },
         {
-          id: 5,
+          id: 3,
           title: 'About',
           route: '/about'
+        },
+        {
+          id: 4,
+          title: 'Terms',
+          route: '/termsofuse'
+        },
+        {
+          id: 5,
+          title: 'Technology',
+          route: '/technology'
+        },
+        {
+          id: 6,
+          title: 'Guidelines',
+          route: '/guidelines'
         }
       ]
     }
@@ -299,7 +285,7 @@ export default {
     -webkit-text-stroke: .8px rgba(255, 255, 255, 1);
     color: transparent;
   }
-  nav a.active,nav a.router-link-active{
+  nav a.active,nav a.router-link-exact-active,.mobile-header__nav a.router-link-exact-active{
     color: #ff7152;
     -webkit-text-stroke: .8px rgba(255, 255, 255, 0);
   }
