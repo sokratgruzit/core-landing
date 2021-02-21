@@ -71,7 +71,7 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 75px;
+    margin-top: 70px;
     opacity: 0;
     transition: .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
   }

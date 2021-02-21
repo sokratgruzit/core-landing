@@ -147,8 +147,8 @@ export default {
         },
         {
           id: 4,
-          title: 'Terms',
-          route: '/termsofuse'
+          title: 'Roadmap',
+          route: '/roadmap'
         },
         {
           id: 5,

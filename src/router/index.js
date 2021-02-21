@@ -6,6 +6,7 @@ import Tokenomics from '../views/Tokenomics.vue'
 import Terms from '../views/Terms.vue'
 import Technology from '../views/Technology.vue'
 import Guideline from '../views/Guideline.vue'
+import Roadmap from '../views/Roadmap.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -33,15 +34,21 @@ const routes = [
     meta: { scrollToTop: true }
   },
   {
-    path: '/Technology',
+    path: '/technology',
     name: 'Technology',
     component: Technology,
     meta: { scrollToTop: true }
   },
   {
-    path: '/Guidelines',
+    path: '/guidelines',
     name: 'Guidelines',
     component: Guideline,
+    meta: { scrollToTop: true }
+  },
+  {
+    path: '/roadmap',
+    name: 'Roadmap',
+    component: Roadmap,
     meta: { scrollToTop: true }
   }
 ]

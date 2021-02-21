@@ -46,7 +46,7 @@ export default {
   mounted () {
     setTimeout(() => {
       this.firstAnimation = true
-    }, 1200)
+    }, 100)
   },
   methods: {
     visibilityChanged () {
@@ -187,9 +187,6 @@ export default {
     }
     .main-container__description{
       padding-left: 40px;
-    }
-    .main-container__header{
-      margin-top: 30px;
     }
   }
   /*Ipad Pro 1024*/
