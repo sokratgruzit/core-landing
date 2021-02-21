@@ -178,7 +178,7 @@
             <span class="line"></span>
             <div class="guidline__partners-txt">Partners</div>
           </div>
-          <div data-aos="fade-up" class="pB-160 guidline__flex">
+          <div data-aos="fade-up" class="guidline__flex">
             <div class="guidline__half wdth340">
               <div class="guidline__half-ltl-ttl">
                 Visual Balance
@@ -197,7 +197,10 @@
               </div>
             </div>
           </div>
-          <div data-aos="fade-up" class="guidline__flex">
+          <div data-aos="fade-up" class="pT-160 guidline__flex">
+              <div class="guidline__bg-outer">
+                <img v-prlx="{ speed: 0.1 }" :src="require(`@/assets/img/guidelines_bg.jpg`)" alt="">
+              </div>
               <div class="guidline__half">
                 <div class="guidline__lrg-ttl font-51">Solid Colours</div>
               </div>
@@ -326,6 +329,45 @@ export default {
 }
 </script>
 <style scoped>
+  .guidline__bg-outer:before{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    content: '';
+    z-index: 2;
+    height: 50%;
+    background: rgb(0,5,15);
+    background: linear-gradient(0deg, rgba(0,5,15,0.23993347338935578) 0%, rgba(0,5,15,1) 100%);
+  }
+  .guidline__bg-outer:after{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    content: '';
+    z-index: 2;
+    height: 50%;
+    background: rgb(0,5,15);
+    background: linear-gradient(180deg, rgba(0,5,15,0.23993347338935578) 0%, rgba(0,5,15,1) 100%);
+  }
+  .guidline__bg-outer{
+    position: absolute;
+    top: 0px;
+    right: -80px;
+    padding-top: 1080px;
+    z-index: 1;
+    width: calc(100% + 370px);
+    overflow: hidden;
+  }
+  .guidline__bg-outer img{
+    position: absolute;
+    top: -10%;
+    right: 0px;
+    height: 120%;
+    width: 100%;
+    object-fit: cover;
+  }
   .guidline__end-half-descr-txt{
     font-size: 15px;
     line-height: 24px;
@@ -354,6 +396,8 @@ export default {
     display: flex;
     justify-content: space-between;
     margin-bottom: 100px;
+    position: relative;
+    z-index: 2;
   }
   .right.guidline__color-circle-container{
     margin-top: 60px;
@@ -372,6 +416,8 @@ export default {
   }
   .guidline__color-circle-container{
     display: flex;
+    position: relative;
+    z-index: 2;
   }
   .guidline__color-circle-item{
     display: flex;
@@ -395,6 +441,8 @@ export default {
     margin-top: 90px;
     margin-bottom: 60px;
     padding-right: 120px;
+    position: relative;
+    z-index: 2;
   }
   .guidline__half-ltl-dscr{
     font-size: 15px;
@@ -549,11 +597,14 @@ export default {
   .guidline__flex{
     display: flex;
     width: 100%;
+    position: relative;
   }
   .guidline__half{
     width: 50%;
     display: flex;
     flex-direction: column;
+    position: relative;
+    z-index: 3;
   }
   .animHead .token-bg{
     opacity: 1;
