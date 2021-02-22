@@ -60,6 +60,7 @@ export default {
   }
   h1 span{
     font-size: inherit;
+    line-height: inherit;
   }
   h1 span:last-child{
     padding-left: 100px;

@@ -332,6 +332,8 @@ export default {
   .techno-icons_item-text{
     color: rgba(255,255,255,.5);
     margin-top: 5px;
+    font-size: 15px;
+    line-height: 24px;
   }
   .techno-icons_item-title{
     color: #FF7152;

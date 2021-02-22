@@ -68,7 +68,7 @@
             <div class="footStep">
               <div class="nav">
                 <router-link to="/termsofuse">Terms of Service</router-link>
-                <a href="##">Privacy</a>
+                <router-link to="/privacy">Privacy</router-link>
               </div>
             </div>
             <div class="copyright">© CORE Multi-Chain, 2021 <br>

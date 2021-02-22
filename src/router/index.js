@@ -7,6 +7,7 @@ import Terms from '../views/Terms.vue'
 import Technology from '../views/Technology.vue'
 import Guideline from '../views/Guideline.vue'
 import Roadmap from '../views/Roadmap.vue'
+import Privacy from '../views/Privacy.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -49,6 +50,12 @@ const routes = [
     path: '/roadmap',
     name: 'Roadmap',
     component: Roadmap,
+    meta: { scrollToTop: true }
+  },
+  {
+    path: '/privacy',
+    name: 'Privacy',
+    component: Privacy,
     meta: { scrollToTop: true }
   }
 ]
