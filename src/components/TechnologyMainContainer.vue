@@ -176,12 +176,6 @@ export default {
   }
   /*Ipad Pro 1024*/
   @media (max-width: 1300px){
-    .bottom__description-item:nth-child(2) {
-      padding-left: 40px;
-    }
-    .bottom__description{
-      width: 450px;
-    }
     .main-container__description{
       padding-left: 25px;
     }
@@ -195,23 +189,16 @@ export default {
   }
   /*Ipad 768*/
   @media (max-width: 1023px){
-    .bottom__description-text,.bottom__description-ttl{
-      font-size: 12px;
-      line-height: 20px;
+    .techno_description-left,.techno_description-right{
+      padding-right: 0px;
+      width: 100%;
+      margin-top: 50px;
     }
-    .bottom__description-item{
-      width: 45%;
-    }
-    .bottom__description-floor {
-      margin-bottom: 15px;
+    .techno_description{
+      flex-direction: column;
     }
     .main-container__description{
       padding-left: 0px;
-    }
-    .bottom__description{
-      width: 100%;
-      padding-left: 240px;
-      margin-bottom: 20px;
     }
     .main-container__description .frst-txt{
       font-size: 12px;
@@ -318,6 +305,9 @@ export default {
     }
     #main{
       min-height: 600px;
+    }
+    .techno_description-bottom-inner{
+      padding-right: 0px;
     }
   }
 </style>

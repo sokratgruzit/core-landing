@@ -12,7 +12,8 @@
 
 * {
     font-family: "Lack-Regular";
-    font-size: 13px;
+    font-size: 15px;
+    line-height: 24px;
     color: rgba(255,255,255,1);
     text-decoration: none;
     outline-color: none;

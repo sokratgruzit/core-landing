@@ -3,6 +3,7 @@
     <TechnologyMainContainer/>
     <TechnologyTabs :itemData="$store.state.techTabs"/>
     <TechnologyIcons/>
+    <TechnoTexts/>
   </div>
 </template>
 
@@ -10,12 +11,14 @@
 import TechnologyMainContainer from '@/components/TechnologyMainContainer.vue'
 import TechnologyTabs from '@/components/TechnologyTabs.vue'
 import TechnologyIcons from '@/components/TechnologyIcons.vue'
+import TechnoTexts from '@/components/TechnoTexts.vue'
 export default {
   name: 'About',
   components: {
     TechnologyMainContainer,
     TechnologyTabs,
-    TechnologyIcons
+    TechnologyIcons,
+    TechnoTexts
   }
 }
 </script>

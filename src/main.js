@@ -14,6 +14,8 @@ import VueSmoothScroll from 'vue2-smooth-scroll'
 import VueApexCharts from 'vue-apexcharts'
 import VueCountdown from '@chenfengyuan/vue-countdown'
 import VuePrlx from 'vue-prlx'
+import SlideUpDown from 'vue-slide-up-down'
+Vue.component('slide-up-down', SlideUpDown)
 Vue.use(VuePrlx)
 Vue.component(VueCountdown.name, VueCountdown)
 Vue.use(VueApexCharts)
