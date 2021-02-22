@@ -24,10 +24,10 @@
       </div>
       <div class="container" data-aos="fade-up">
         <div class="techno_description-bottom pB-160 pT-160">
-          <h2 class="font-51">The CXRE Token</h2>
+          <h2 class="font-51">The CMCX Token</h2>
           <div class="techno_description-bottom-inner">
             <div class="techno_description-bottom-text">
-              The CRXE token is native to the Hypercube platform and allows users to transact with other users on the blockchain, as well as pay for all of the utility fees in the ecosystem. It can be used for governance, staking, transactions, smart contracts and validator rewards on the platform.
+              The CMCX token is native to the Hypercube platform and allows users to transact with other users on the blockchain, as well as pay for all of the utility fees in the ecosystem. It can be used for governance, staking, transactions, smart contracts and validator rewards on the platform.
             </div>
           </div>
         </div>
