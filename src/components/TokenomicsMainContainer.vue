@@ -2,6 +2,9 @@
   <div>
     <div id="main" class="outer" :class="firstAnimation ? 'animHead' : ''" v-view="visibilityChanged">
       <TopHead/>
+      <div class="token-bg__outer">
+        <img v-prlx="{ speed: 0.1 }" :src="require(`@/assets/img/tokenomics_bg.jpg`)" alt="" class="token-bg">
+      </div>
       <div class="container">
         <div class="main-container__description">
           <div class="left">
@@ -11,7 +14,6 @@
       </div>
       <div class="bottom">
         <div class="bottom__description-inner">
-          <img :src="require(`@/assets/img/token-bg.jpg`)" alt="" class="token-bg">
           <div class="bottom__description">
             <div class="bottom__description-floor">
               <div class="bottom__description-item">
@@ -145,24 +147,47 @@ export default {
   .bottom__description-inner{
     height: 100%;
     width: calc(100% + 210px);
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    height: 100%;
     display: flex;
     justify-content: center;
   }
   .token-bg{
+    width: 100%;
+    height: 120%;
+  }
+  .token-bg__outer{
+    overflow: hidden;
     position: absolute;
     top: 0px;
     right: 0px;
-    width: 100%;
+    width: calc(100% - 200px);
     z-index: 1;
     transform: translateY(10px);
     opacity: 0;
     transition: .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
   }
-  .animHead .token-bg{
+  .token-bg__outer:after{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    content: '';
+    z-index: 2;
+    height: 50%;
+    background: rgb(0,5,15);
+    background: linear-gradient(0deg, rgba(0,5,15,0.23993347338935578) 0%, rgba(0,5,15,1) 100%);
+  }
+  .token-bg__outer:before{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    content: '';
+    z-index: 2;
+    height: 50%;
+    background: rgb(0,5,15);
+    background: linear-gradient(180deg, rgba(0,5,15,0.23993347338935578) 0%, rgba(0,5,15,1) 100%);
+  }
+  .animHead .token-bg__outer{
     opacity: 1;
     transform: translateY(0px);
   }
@@ -221,7 +246,7 @@ export default {
   }
   .bottom{
     position: relative;
-    padding-top: 69%;
+    padding-top: 230px;
     display: flex;
     width: 100%;
   }
@@ -238,9 +263,6 @@ export default {
   }
   /*Laptop 1440*/
   @media (max-width: 1900px){
-    .main-container__header{
-      margin-top: 30px;
-    }
     #main{
       min-height: 800px;
     }
@@ -259,13 +281,12 @@ export default {
     .main-container__description h1{
       font-size: 50px;
     }
-    .right{
-      padding-bottom: 60px;
-      padding-right: 75px;
-    }
   }
   /*Ipad 768*/
   @media (max-width: 1023px){
+    .bottom{
+      padding-top: 100px;
+    }
     .bottom__description-text,.bottom__description-ttl{
       font-size: 12px;
       line-height: 20px;
@@ -281,7 +302,7 @@ export default {
     }
     .bottom__description{
       width: 100%;
-      padding-left: 240px;
+      padding-left: 40px;
       margin-bottom: 20px;
     }
     .main-container__description .frst-txt{
@@ -316,10 +337,8 @@ export default {
   }
   /*Mobile 320*/
   @media (max-width: 767px){
-    .right{
+    .token-bg__outer{
       width: 100%;
-      padding-right: 0px;
-      margin-top: auto;
     }
     .left{
       width: 100%;
@@ -336,21 +355,6 @@ export default {
       opacity: .6;
       margin-bottom: 25px;
     }
-    .download-container__mobile{
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 65px 0px;
-      border-bottom: 1px solid rgba(255,255,255,.05);
-    }
-    .main-video__container{
-      right: -100%;
-      padding-top: 200%;
-      width: 200%;
-      transform: translateY(-25%);
-    }
     .main-container__description{
       padding: 0px 15px;
       text-align: center;
@@ -360,9 +364,6 @@ export default {
       margin-top: 115px;
       margin-bottom: 50px;
       text-align: left;
-    }
-    .main-container__header{
-      display: none;
     }
     .bottom__description-text, .bottom__description-ttl{
       font-size: 10px;
@@ -380,9 +381,6 @@ export default {
     .token-bg{
       height: 100%;
       object-fit: cover;
-    }
-    .bottom{
-      padding-top: 90%;
     }
     .main-container__description{
       padding: 0px;

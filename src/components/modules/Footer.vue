@@ -12,14 +12,18 @@
         </div>
         <div class="footer__join-right">
           <div class="subscribe-container">
-            <div class="input-container">
-              <input type="email" placeholder="myname@example.com">
+            <form @submit.prevent="sendEmail">
+              <div class="input-container" :class="!success ? 'error' : ''">
+              <input type="text" placeholder="myname@example.com" v-model="email" name="message">
+              <div class="error-message">The entered email is incorrect</div>
               <div class="button">
+                <input type="submit">
                 <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M11.8702 0.513321L9.88674 2.51748L14.3496 6.98034L0.113892 6.98034L0.113892 9.7903L14.3496 9.7903L9.88674 14.2532L11.8702 16.2573L19.7422 8.38532L11.8702 0.513321Z" fill="white"/>
                 </svg>
               </div>
             </div>
+            </form>
           </div>
         </div>
       </div>
@@ -153,9 +157,16 @@
   </div>
 </template>
 <script>
+import emailjs from 'emailjs-com'
+
 export default {
   data () {
     return {
+      activeFirst: false,
+      activeSucceessPopup: false,
+      success: true,
+      reg: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,24}))$/,
+      email: '',
       activeFooter: null,
       activeLink: 1,
       mobileMode: false,
@@ -223,6 +234,28 @@ export default {
     window.removeEventListener('resize', this.myEventHandler)
   },
   methods: {
+    sendEmail (e) {
+      if ((this.email === '') ? '' : (this.reg.test(this.email))) {
+        console.log('error')
+        emailjs.sendForm('service_rujm9q4', 'template_cchs8v6', e.target, 'user_Qs2I51OEYXof09TBn8gHY', {
+          email: this.email,
+          message: this.email
+        })
+          .then((result) => {
+            this.$store.commit('setSuccess', true)
+            console.log('SUCCESS!', result.status, result.text)
+          }, (error) => {
+            console.log('FAILED...', error)
+          })
+        // Reset form field
+        this.email = ''
+      } else {
+        this.success = false
+        setTimeout(() => {
+          this.success = true
+        }, 5000)
+      }
+    },
     mobileModeFunc () {
       if (window.innerWidth >= 768) {
         this.mobileMode = false
@@ -250,6 +283,22 @@ export default {
 }
 </script>
 <style scoped>
+  .error-message{
+    font-size: 13px;
+    color: #FF7152;
+    position: absolute;
+    bottom: -22px;
+    left: 0px;
+    transition: .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+    opacity: 0;
+    pointer-events: none;
+  }
+  .input-container.error .mInput{
+    border-color: #FF7152;
+  }
+  .input-container.error .error-message{
+    opacity: 1;
+  }
   .footer__second-link-container{
     display: flex;
     flex-direction: column;
@@ -428,6 +477,16 @@ export default {
     right: 15px;
     top: 0px;
   }
+  .button input{
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+  }
   .button svg{
     transition: .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
     cursor: pointer;
@@ -435,10 +494,10 @@ export default {
   .button svg path{
     transition: .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
   }
-  .button svg:hover path{
+  .button input:hover ~ svg path{
     fill: #ff7152;
   }
-  .button svg:hover{
+  .button input:hover ~ svg {
     transform: translateX(5px);
   }
   input{
