@@ -272,5 +272,8 @@ export default {
     #main {
       min-height: 100vh;
     }
+    .about-bg{
+      width: 100%;
+    }
   }
 </style>

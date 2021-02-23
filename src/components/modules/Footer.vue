@@ -69,6 +69,7 @@
               <div class="nav">
                 <router-link to="/termsofuse">Terms of Service</router-link>
                 <router-link to="/privacy">Privacy</router-link>
+                <router-link to="/proposals">Proposals</router-link>
               </div>
             </div>
             <div class="copyright">© CORE Multi-Chain, 2021 <br>
@@ -76,32 +77,68 @@
           </div>
           <div class="footer__second-container">
             <div class="footer__second-container-column">
-              <div class="footer__second-ttl">Products</div>
-              <a href="##" class="footer__second-link">Liquid Network</a>
-              <a href="##" class="footer__second-link">AQUA Wallet</a>
-              <a href="##" class="footer__second-link">Blockstream AMP</a>
-              <a href="##" class="footer__second-link">Blockstream Jade</a>
-              <a href="##" class="footer__second-link">Blockstream Green</a>
-              <a href="##" class="footer__second-link">Blockstream Mining</a>
-              <a href="##" class="footer__second-link">Blockstream Satellite</a>
-              <a href="##" class="footer__second-link">Blockstream Explorer</a>
-              <a href="##" class="footer__second-link">Lightning Network</a>
+              <div class="footer__second-ttl" @click="openMobileFooter(1)" :class="activeFooter == 1 ? 'active' : ''">
+                Products
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 5L8 11L15 5" stroke="white" stroke-width="2"/>
+                </svg>
+              </div>
+              <slide-up-down :active="activeFooter == 1 || !mobileMode" :use-hidden="true">
+                <div class="footer__second-link-container">
+                  <a href="##" class="footer__second-link">Liquid Network</a>
+                  <a href="##" class="footer__second-link">AQUA Wallet</a>
+                  <a href="##" class="footer__second-link">Blockstream AMP</a>
+                  <a href="##" class="footer__second-link">Blockstream Jade</a>
+                  <a href="##" class="footer__second-link">Blockstream Green</a>
+                  <a href="##" class="footer__second-link">Blockstream Mining</a>
+                  <a href="##" class="footer__second-link">Blockstream Satellite</a>
+                  <a href="##" class="footer__second-link">Blockstream Explorer</a>
+                  <a href="##" class="footer__second-link">Lightning Network</a>
+                </div>
+              </slide-up-down>
             </div>
             <div class="footer__second-container-column">
-              <div class="footer__second-ttl">Developers</div>
-              <a href="##" class="footer__second-link">Engineering Blog</a>
-              <a href="##" class="footer__second-link">Documentation</a>
-              <div class="footer__second-ttl mt-30">Company</div>
-              <a href="##" class="footer__second-link">Research</a>
-              <a href="##" class="footer__second-link">About</a>
-              <a href="##" class="footer__second-link">Careers</a>
+              <div class="footer__second-ttl" @click="openMobileFooter(2)" :class="activeFooter == 2 ? 'active' : ''">
+                Developers
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 5L8 11L15 5" stroke="white" stroke-width="2"/>
+                </svg>
+              </div>
+              <slide-up-down :active="activeFooter == 2 || !mobileMode" :use-hidden="true" :class="activeFooter == 2 ? 'active' : ''">
+                <div class="footer__second-link-container">
+                  <a href="##" class="footer__second-link">Engineering Blog</a>
+                  <a href="##" class="footer__second-link">Documentation</a>
+                </div>
+              </slide-up-down>
+              <div class="footer__second-ttl mt-30" @click="openMobileFooter(3)" :class="activeFooter == 3 ? 'active' : ''">
+                Company
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 5L8 11L15 5" stroke="white" stroke-width="2"/>
+                </svg>
+              </div>
+              <slide-up-down :active="activeFooter == 3 || !mobileMode" :use-hidden="true">
+                <div class="footer__second-link-container">
+                  <a href="##" class="footer__second-link">Research</a>
+                  <a href="##" class="footer__second-link">About</a>
+                  <a href="##" class="footer__second-link">Careers</a>
+                </div>
+              </slide-up-down>
             </div>
             <div class="footer__second-container-column">
-              <div class="footer__second-ttl">Resources</div>
-              <a href="##" class="footer__second-link">Support</a>
-              <a href="##" class="footer__second-link">Contact</a>
-              <a href="##" class="footer__second-link">Brand Assets</a>
-              <a href="##" class="footer__second-link">Scam DB</a>
+              <div class="footer__second-ttl" @click="openMobileFooter(4)" :class="activeFooter == 4 ? 'active' : ''">
+                Resources
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 5L8 11L15 5" stroke="white" stroke-width="2"/>
+                </svg>
+              </div>
+              <slide-up-down :active="activeFooter == 4 || !mobileMode" :use-hidden="true">
+                <div class="footer__second-link-container">
+                  <a href="##" class="footer__second-link">Support</a>
+                  <a href="##" class="footer__second-link">Contact</a>
+                  <a href="##" class="footer__second-link">Brand Assets</a>
+                  <a href="##" class="footer__second-link">Scam DB</a>
+                </div>
+              </slide-up-down>
             </div>
           </div>
           <a href="#main" v-smooth-scroll class="btnUp" v-if="false">
@@ -119,7 +156,9 @@
 export default {
   data () {
     return {
+      activeFooter: null,
       activeLink: 1,
+      mobileMode: false,
       routes: [
         {
           id: 1,
@@ -174,17 +213,47 @@ export default {
       ]
     }
   },
+  mounted () {
+    this.mobileModeFunc()
+  },
+  created () {
+    window.addEventListener('resize', this.myEventHandler)
+  },
+  destroyed () {
+    window.removeEventListener('resize', this.myEventHandler)
+  },
   methods: {
+    mobileModeFunc () {
+      if (window.innerWidth >= 768) {
+        this.mobileMode = false
+      } else {
+        this.mobileMode = true
+      }
+    },
+    myEventHandler (e) {
+      this.mobileModeFunc()
+    },
     activeLinkFunc (id) {
       this.activeLink = id
     },
     scrollToTop () {
       window.scrollTo(0, 0)
+    },
+    openMobileFooter (id) {
+      if (id === this.activeFooter) {
+        this.activeFooter = null
+      } else {
+        this.activeFooter = id
+      }
     }
   }
 }
 </script>
 <style scoped>
+  .footer__second-link-container{
+    display: flex;
+    flex-direction: column;
+  }
   .footer__join-description{
     font-size: 15px;
     line-height: 25px;
@@ -319,12 +388,12 @@ export default {
     opacity: .4;
   }
   .nav a{
-    margin-right: 30px;
+    margin-right: 20px;
     transition: .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
     font-size: 15px;
     text-decoration: none;
   }
-  .nav a:hover{
+  .nav a:hover,.nav a.router-link-exact-active{
     color: #ff7152;
   }
   .share{
@@ -401,6 +470,9 @@ export default {
   .footer__first-container{
     width: 330px;
   }
+  .footer__second-ttl svg{
+    display: none;
+  }
   /*Laptop 1440*/
   @media (max-width: 1900px){
     .footStep{
@@ -423,6 +495,9 @@ export default {
   }
   /*Ipad Pro 1024*/
   @media (max-width: 1300px){
+    .footer__second-link-container{
+      align-items: center;
+    }
     .footer__logo{
       justify-content: center;
     }
@@ -499,6 +574,18 @@ export default {
   }
   /*Mobile 320*/
   @media (max-width: 767px){
+    .footer__second-ttl{
+      display: flex;
+      align-items: center;
+    }
+    .footer__second-ttl svg{
+      display: flex;
+      margin-left: 10px;
+      transition: .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+    }
+    .footer__second-ttl.active svg{
+      transform: rotate(180deg);
+    }
     .footer__join {
       margin-bottom: 30px;
       margin-left: 15px;
