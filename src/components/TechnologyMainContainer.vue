@@ -12,13 +12,13 @@
       <div class="container" data-aos="fade-up">
         <div class="techno_description pB-160">
           <div class="techno_description-left">
-            Hypercube is a multi-chain PoS Network focused on Interoperability, Scalability and Usability. At its core, it utilizes an AI-enabled Proof of Stake algorithm, multi-layered consensus model and voting-based governance.
+            CORE is a multi-chain PoS Network focused on Interoperability, Scalability and Usability. At its core, it utilizes an AI-enabled Proof of Stake algorithm, multi-layered consensus model and voting-based governance.
           </div>
           <div class="techno_description-right">
             It is able to attain higher levels of scalability using advanced sharding, along with pipelining, chunking and parallel transaction processing.
             <br>
             <br>
-            These technologies have made it possible for the Hypercube network to be infinitely scalable and to achieve significantly higher throughput and efficiency. Hypercube is a true multi-chain communication solution that enables protocols such as cross-chain registries and cross-chain computation.
+            These technologies have made it possible for the CORE network to be infinitely scalable and to achieve significantly higher throughput and efficiency. CORE is a true multi-chain communication solution that enables protocols such as cross-chain registries and cross-chain computation.
           </div>
         </div>
       </div>
@@ -27,7 +27,7 @@
           <h2 class="font-51">The CMCX Token</h2>
           <div class="techno_description-bottom-inner">
             <div class="techno_description-bottom-text">
-              The CMCX token is native to the Hypercube platform and allows users to transact with other users on the blockchain, as well as pay for all of the utility fees in the ecosystem. It can be used for governance, staking, transactions, smart contracts and validator rewards on the platform.
+              The CMCX token is native to the CORE platform and allows users to transact with other users on the blockchain, as well as pay for all of the utility fees in the ecosystem. It can be used for governance, staking, transactions, smart contracts and validator rewards on the platform.
             </div>
           </div>
         </div>
