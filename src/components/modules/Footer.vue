@@ -671,5 +671,11 @@ export default {
     .footerBg{
       width: 100%;
     }
+    .footer__join-inner{
+      padding: 20px;
+    }
+    input{
+      width: 250px;
+    }
   }
 </style>

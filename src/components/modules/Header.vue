@@ -63,7 +63,7 @@
         </router-link>
         <div class="mobile-header__title">
           Cryptographic Object <br>
-          Resourse Engine
+          Resource Engine
         </div>
         <div class="burger" :class="activeBurger ? 'active' : ''" @click="openBurger">
           <span></span>
