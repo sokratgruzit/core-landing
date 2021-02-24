@@ -9,7 +9,7 @@
           CORE Bridge
         </h2>
         <div class="sub-ttl" data-aos="fade-up">Access to <span>500+</span> <br> Cryptocurrencies and Tokens</div>
-        <p data-aos="fade-up">Our platform is universal, which allows it to support all currencies, from popular to the latest, and their list is constantly growing.</p>
+        <p data-aos="fade-up">CORE bridges allow resources, data, and information to be shared between multiple blockchains in different ecosystems, which is a limitation currently present in blockchain technology. This cross-chain communication is called interoperability.</p>
       </div>
       <div class="right" data-aos="fade-up">
         <hooper :autoPlay="true" :playSpeed="5000" :transition="0" :itemsToShow="1" :infiniteScroll="true">

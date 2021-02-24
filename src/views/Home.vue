@@ -4,13 +4,13 @@
     <MainContainer/>
     <TextContainer/>
     <Community :itemData="$store.state.community"/>
-    <About/>
     <LottieContainer/>
-    <Statistic :statData="$store.state.statistic"/>
     <Frameworks :itemData="$store.state.tabs"/>
+    <About/>
     <Generation/>
     <UseCases :itemData="$store.state.cases"/>
     <Developers/>
+    <Statistic :statData="$store.state.statistic"/>
     <Faq :itemData="$store.state.faq"/>
     <CommunityPopup :itemData="$store.state.community"/>
   </div>

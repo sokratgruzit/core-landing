@@ -25,13 +25,15 @@
           </div>
           <div class="frameworks-container__title-bottom">
             *Based on our preliminary research, one year after the deployment of our main-net.
-            <a href="##">See Roadmap</a>
+            <router-link to="/roadmap">See Roadmap</router-link>
           </div>
         </div>
       </div>
       <div class="container">
         <div class="frameworks-container__bottom">
           <div class="frameworks-container__middle-title font-51" data-aos="fade-up">CORE: A multi-layered <br> blockchain framework</div>
+          <div class="frameworks-container__middle-sub">Blockchains are typically multi-layered in design, whether the blockchain is permissioned
+            <br>or permission-less.</div>
           <div class="frameworks-container__frameworks" data-aos="fade-up">
             <div class="frameworks-container__frameworks-tabs">
               <div class="frameworks-container__frameworks-tab" @mouseover="clickTab(tab.id)" v-for="tab in itemData" :key="tab.id" :class="activeTab == tab.id ? 'active' : ''">
@@ -70,6 +72,11 @@ export default {
 }
 </script>
 <style scoped>
+  .frameworks-container__middle-sub{
+    color: rgba(255,255,255,.5);
+    margin-bottom: 100px;
+    margin-top: 30px;
+  }
   .frameworks-container__grid-title{
     font-size: 30px;
     line-height: 40px;
@@ -207,9 +214,6 @@ export default {
   }
   .frameworks-container__frameworks img{
     margin-right: 100px;
-  }
-  .frameworks-container__middle-title{
-    margin-bottom: 100px;
   }
   .frameworks-container__title-bottom{
     font-size: 12px;
@@ -351,8 +355,8 @@ export default {
       height: 245px;
     }
     .frameworks-container__frameworks-tabs-inner-text {
-      font-size: 16px;
-      line-height: 25px;
+      font-size: 14px;
+      line-height: 21px;
     }
     .frameworks-container__title-top{
       flex-direction: column;

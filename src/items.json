@@ -98,23 +98,23 @@
   "framework": [
     {
       "id": 1,
-      "text": "Open access to digital money and data-friendly services for everyone — no matter your background or location.",
+      "text": "The first layer of the CORE blockchain is the network layer. This layer is the brain of the system. It is the orchestration and communication in the formation of blocks on the blockchain. This layer usually makes use of the web for decentralized communication between the nodes in the blockchain.\n",
       "image": "tab1.jpg",
-      "title": "Explore ORIGO",
+      "title": "ORIGO\\ori·\u200Bgo\\ :Source and Origin\n",
       "svg": "origo.svg"
     },
     {
       "id": 2,
-      "text": "Open access to digital money and data-friendly services for everyone — no matter your background or location.",
+      "text": " The second layer is the blockchain layer. This layer is where the actual block formation takes place and where the blockchain is appended with the newly formed blocks. It is built on top of the networking layer.\n",
       "image": "tab2.jpg",
-      "title": "Explore CATENA",
+      "title": "CATENA\\kə-ˈtē-nə\\ :Chain\n",
       "svg": "catena.svg"
     },
     {
       "id": 3,
-      "text": "Open access to digital money and data-friendly services for everyone — no matter your background or location.",
+      "text": "The third layer is the application layer. This layer is built on top of the network and blockchain layers and is where blockchain use cases are developed. This is the layer that the user interacts with.",
       "image": "tab3.jpg",
-      "title": "Explore AURA",
+      "title": "AURA \\ˈȯr-ə\\ :A distinctive atmosphere surrounding a given source\n",
       "svg": "aura.svg"
     }
   ],
