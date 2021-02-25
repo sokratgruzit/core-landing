@@ -2,6 +2,11 @@
   <div>
     <div id="main" class="outer" :class="firstAnimation ? 'animHead' : ''" v-view="visibilityChanged">
       <TopHead/>
+      <div class="main-bg">
+        <div class="main-bg__inner">
+          <img :src="require(`@/assets/img/techBgMain.jpg`)" alt="">
+        </div>
+      </div>
       <div class="container">
         <div class="main-container__description">
           <div class="left">
@@ -19,16 +24,6 @@
             <br>
             <br>
             These technologies have made it possible for the CORE network to be infinitely scalable and to achieve significantly higher throughput and efficiency. CORE is a true multi-chain communication solution that enables protocols such as cross-chain registries and cross-chain computation.
-          </div>
-        </div>
-      </div>
-      <div class="container" data-aos="fade-up">
-        <div class="techno_description-bottom pB-160 pT-160">
-          <h2 class="font-51">The CMCX Token</h2>
-          <div class="techno_description-bottom-inner">
-            <div class="techno_description-bottom-text">
-              The CMCX token is native to the CORE platform and allows users to transact with other users on the blockchain, as well as pay for all of the utility fees in the ecosystem. It can be used for governance, staking, transactions, smart contracts and validator rewards on the platform.
-            </div>
           </div>
         </div>
       </div>
@@ -62,24 +57,42 @@ export default {
 }
 </script>
 <style scoped>
-  .techno_description-bottom-text{
-    font-size: 15px;
-    line-height: 24px;
-    color: rgba(255,255,255,.5);
-    width: 640px;
+  .main-bg{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 108%;
+    padding-top: 108%;
+    transition: .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+    opacity: 0;
   }
-  .techno_description-bottom-inner{
+  .animHead .main-bg{
+    opacity: 1;
+    transition-delay: .6s;
+  }
+  .main-bg img{
+    height: 100%;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    padding-right: 105px;
-    margin-top: 60px;
+    position: absolute;
+    object-fit: cover;
+    top: 0px;
+    left: 0px;
+    -webkit-animation:spin 50s linear infinite;
+    -moz-animation:spin 50s linear infinite;
+    animation:spin 50s linear infinite;
   }
-  .techno_description-bottom{
-    display: flex;
-    flex-direction: column;
+  .main-bg__inner{
+    height: 100%;
     width: 100%;
+    position: absolute;
+    object-fit: cover;
+    top: 0px;
+    transform: translateX(35%) translateY(-55%);
+    left: 0px;
   }
+  @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+  @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+  @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
   .techno_description-left{
     width: 50%;
     padding-right: 100px;
@@ -164,12 +177,10 @@ export default {
     width: 100%;
     background: #00050F;
     z-index: 2;
+    overflow: hidden;
   }
   /*Laptop 1440*/
   @media (max-width: 1900px){
-    .main-container__header{
-      margin-top: 30px;
-    }
     #main{
       min-height: 800px;
     }
@@ -181,10 +192,6 @@ export default {
     }
     .main-container__description h1{
       font-size: 50px;
-    }
-    .right{
-      padding-bottom: 60px;
-      padding-right: 75px;
     }
   }
   /*Ipad 768*/
@@ -280,19 +287,6 @@ export default {
     .main-container__header{
       display: none;
     }
-    .bottom__description-text, .bottom__description-ttl{
-      font-size: 10px;
-      line-height: 15px;
-    }
-    .bottom__description-floor {
-      margin-bottom: 10px;
-    }
-    .bottom__description-inner{
-      width: 100%;
-    }
-    .bottom__description{
-      padding-left: 15px;
-    }
     .token-bg{
       height: 100%;
       object-fit: cover;
@@ -306,8 +300,12 @@ export default {
     #main{
       min-height: 600px;
     }
-    .techno_description-bottom-inner{
-      padding-right: 0px;
+    .main-bg{
+      width: 150%;
+      padding-top: 150%;
+    }
+    .main-bg__inner{
+      transform: translateX(40%) translateY(-47%);
     }
   }
 </style>

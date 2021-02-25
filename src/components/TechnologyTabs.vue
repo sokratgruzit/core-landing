@@ -252,5 +252,12 @@ export default {
       width: 370px;
       height: 360px;
     }
+    .tabs-img.active{
+      opacity: 1;
+      transform: translateY(120px);
+    }
+    .right img{
+      transform: translateY(130px);
+    }
   }
 </style>

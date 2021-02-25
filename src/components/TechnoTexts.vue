@@ -1,6 +1,10 @@
 <template>
   <div class="container">
     <div class="techno-text__container pT-160 pB-160">
+      <h2 data-aos="fade-up" class="font-51">
+        <span class="font-51">Other</span>
+        <span class="font-51">Features</span>
+      </h2>
     <div data-aos="fade-up" class="techno-text__inner">
       <h3 class="techno-text__title">
         <span>1.</span>CORE Bridge
@@ -78,6 +82,14 @@ export default {
 }
 </script>
 <style scoped>
+  h2{
+    flex-direction: column;
+    display: flex;
+    margin-bottom: 50px;
+  }
+  h2 span:last-child{
+    padding-left: 120px;
+  }
   .wh__bg:after{
     position: absolute;
     top: 0px;
@@ -145,6 +157,9 @@ export default {
   }
   /*Ipad Pro 1024*/
   @media (max-width: 1300px){
+    h2 span:last-child {
+      padding-left: 60px;
+    }
     .techno-icons_item{
       padding-right: 30px;
     }

@@ -73,6 +73,226 @@
           </div>
         </div>
       </div>
+      <h3 class="font-51" data-aos="fade-up">
+        <span class="font-51">CORE</span>
+        <span class="font-51">Layers</span>
+      </h3>
+      <div class="techno-layers__container">
+        <div data-aos="fade-up" class="techno-layers__floor">
+          <div class="techno-layers__title-container">
+            <div class="techno-layers__title">Application</div>
+            <div class="techno-layers__descr">Aura</div>
+          </div>
+          <div class="techno-layers__icons">
+            <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M50 30V25C50 22.2386 47.7614 20 45 20V20C42.2386 20 40 22.2386 40 25V30" stroke="white" stroke-width="3"/>
+              <rect x="35.5" y="30.5" width="19" height="19" rx="3.5" stroke="white" stroke-width="3"/>
+              <path d="M6 3H8C10.7614 3 13 5.23858 13 8V21C13 23.7614 10.7614 26 8 26H6" stroke="white" stroke-width="3"/>
+              <line x1="19" y1="19.5" x2="30" y2="19.5" stroke="white" stroke-width="3"/>
+              <line x1="5" y1="14.5" x2="13" y2="14.5" stroke="white" stroke-width="3"/>
+              <line x1="19" y1="24.5" x2="30" y2="24.5" stroke="white" stroke-width="3"/>
+              <line x1="19" y1="29.5" x2="30" y2="29.5" stroke="white" stroke-width="3"/>
+              <circle cx="3.5" cy="3.5" r="3.5" fill="#FF7152"/>
+              <circle cx="3.5" cy="14.5" r="3.5" fill="#FF7152"/>
+              <circle cx="3.5" cy="25.5" r="3.5" fill="#FF7152"/>
+              <rect x="13.5" y="10.5" width="22" height="28" rx="3.5" stroke="white" stroke-width="3"/>
+              <path d="M40.9999 39.6569L44.5354 43.1924L50.1923 37.5355" stroke="white" stroke-width="3"/>
+            </svg>
+            <div class="line"></div>
+            <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M50 30V25C50 22.2386 47.7614 20 45 20V20C42.2386 20 40 22.2386 40 25V30" stroke="white" stroke-width="3"/>
+              <rect x="35.5" y="30.5" width="19" height="19" rx="3.5" stroke="white" stroke-width="3"/>
+              <path d="M6 3H8C10.7614 3 13 5.23858 13 8V21C13 23.7614 10.7614 26 8 26H6" stroke="white" stroke-width="3"/>
+              <line x1="19" y1="19.5" x2="30" y2="19.5" stroke="#FF7152" stroke-width="3"/>
+              <line x1="5" y1="14.5" x2="13" y2="14.5" stroke="white" stroke-width="3"/>
+              <line x1="19" y1="24.5" x2="30" y2="24.5" stroke="#FF7152" stroke-width="3"/>
+              <line x1="19" y1="29.5" x2="30" y2="29.5" stroke="#FF7152" stroke-width="3"/>
+              <circle cx="3.5" cy="3.5" r="3.5" fill="white"/>
+              <circle cx="3.5" cy="14.5" r="3.5" fill="white"/>
+              <circle cx="3.5" cy="25.5" r="3.5" fill="white"/>
+              <rect x="13.5" y="10.5" width="22" height="28" rx="3.5" stroke="white" stroke-width="3"/>
+              <path d="M40.9999 39.6569L44.5354 43.1924L50.1923 37.5355" stroke="white" stroke-width="3"/>
+            </svg>
+            <div class="line"></div>
+            <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M50 30V25C50 22.2386 47.7614 20 45 20V20C42.2386 20 40 22.2386 40 25V30" stroke="#FF7152" stroke-width="3"/>
+              <rect x="35.5" y="30.5" width="19" height="19" rx="3.5" stroke="white" stroke-width="3"/>
+              <path d="M6 3H8C10.7614 3 13 5.23858 13 8V21C13 23.7614 10.7614 26 8 26H6" stroke="white" stroke-width="3"/>
+              <line x1="19" y1="19.5" x2="30" y2="19.5" stroke="white" stroke-width="3"/>
+              <line x1="5" y1="14.5" x2="13" y2="14.5" stroke="white" stroke-width="3"/>
+              <line x1="19" y1="24.5" x2="30" y2="24.5" stroke="white" stroke-width="3"/>
+              <line x1="19" y1="29.5" x2="30" y2="29.5" stroke="white" stroke-width="3"/>
+              <circle cx="3.5" cy="3.5" r="3.5" fill="white"/>
+              <circle cx="3.5" cy="14.5" r="3.5" fill="white"/>
+              <circle cx="3.5" cy="25.5" r="3.5" fill="white"/>
+              <rect x="13.5" y="10.5" width="22" height="28" rx="3.5" stroke="white" stroke-width="3"/>
+              <path d="M40.9999 39.6569L44.5354 43.1924L50.1923 37.5355" stroke="white" stroke-width="3"/>
+            </svg>
+            <div class="line"></div>
+            <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M50 30V25C50 22.2386 47.7614 20 45 20V20C42.2386 20 40 22.2386 40 25V30" stroke="white" stroke-width="3"/>
+              <rect x="35.5" y="30.5" width="19" height="19" rx="3.5" stroke="white" stroke-width="3"/>
+              <path d="M6 3H8C10.7614 3 13 5.23858 13 8V21C13 23.7614 10.7614 26 8 26H6" stroke="white" stroke-width="3"/>
+              <line x1="19" y1="19.5" x2="30" y2="19.5" stroke="white" stroke-width="3"/>
+              <line x1="5" y1="14.5" x2="13" y2="14.5" stroke="white" stroke-width="3"/>
+              <line x1="19" y1="24.5" x2="30" y2="24.5" stroke="white" stroke-width="3"/>
+              <line x1="19" y1="29.5" x2="30" y2="29.5" stroke="white" stroke-width="3"/>
+              <circle cx="3.5" cy="3.5" r="3.5" fill="white"/>
+              <circle cx="3.5" cy="14.5" r="3.5" fill="white"/>
+              <circle cx="3.5" cy="25.5" r="3.5" fill="white"/>
+              <rect x="13.5" y="10.5" width="22" height="28" rx="3.5" stroke="white" stroke-width="3"/>
+              <path d="M40.9999 39.6569L44.5354 43.1924L50.1923 37.5355" stroke="#FF7152" stroke-width="3"/>
+            </svg>
+          </div>
+        </div>
+        <div data-aos="fade-up" class="techno-layers__floor">
+          <div class="techno-layers__title-container">
+            <div class="techno-layers__title">Blockchain</div>
+            <div class="techno-layers__descr">Catena</div>
+          </div>
+          <div class="techno-layers__icons">
+            <svg class="line-svg" width="603" height="40" viewBox="0 0 603 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d)">
+                <path d="M590.707 20.7071C591.098 20.3166 591.098 19.6834 590.707 19.2929L584.343 12.9289C583.953 12.5384 583.319 12.5384 582.929 12.9289C582.538 13.3195 582.538 13.9526 582.929 14.3431L588.586 20L582.929 25.6569C582.538 26.0474 582.538 26.6805 582.929 27.0711C583.319 27.4616 583.953 27.4616 584.343 27.0711L590.707 20.7071ZM12 21L590 21V19L12 19V21Z" fill="url(#paint0_linear)"/>
+              </g>
+              <defs>
+                <filter id="filter0_d" x="0" y="0.635986" width="603" height="38.7279" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                  <feOffset/>
+                  <feGaussianBlur stdDeviation="6"/>
+                  <feColorMatrix type="matrix" values="0 0 0 0 0.607843 0 0 0 0 0.6 0 0 0 0 1 0 0 0 0.4 0"/>
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                </filter>
+                <linearGradient id="paint0_linear" x1="590" y1="21.005" x2="12" y2="21.005" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#9B99FF"/>
+                  <stop offset="1" stop-color="#9B99FF" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+            </svg>
+
+            <svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1.5" y="1.5" width="22" height="22" rx="4.5" stroke="#FF7152" stroke-width="3"/>
+              <line x1="12.5" y1="17" x2="12.5" y2="29" stroke="#FF7152" stroke-width="3"/>
+              <line x1="22" y1="12.5" x2="29" y2="12.5" stroke="#FF7152" stroke-width="3"/>
+              <rect x="60.5" y="60.5" width="22" height="22" rx="4.5" transform="rotate(-180 60.5 60.5)" stroke="white" stroke-width="3"/>
+              <line x1="49.5" y1="45" x2="49.5" y2="33" stroke="white" stroke-width="3"/>
+              <line x1="40" y1="49.5" x2="33" y2="49.5" stroke="white" stroke-width="3"/>
+              <rect x="1.5" y="-1.5" width="22" height="22" rx="4.5" transform="matrix(-1 0 0 1 62 3)" stroke="white" stroke-width="3"/>
+              <line x1="49.5" y1="22" x2="49.5" y2="29" stroke="white" stroke-width="3"/>
+              <line x1="46" y1="12.5" x2="33" y2="12.5" stroke="white" stroke-width="3"/>
+              <rect x="-1.5" y="1.5" width="22" height="22" rx="4.5" transform="matrix(1 0 0 -1 3 62)" stroke="white" stroke-width="3"/>
+              <line x1="12.5" y1="40" x2="12.5" y2="33" stroke="white" stroke-width="3"/>
+              <line x1="16" y1="49.5" x2="29" y2="49.5" stroke="white" stroke-width="3"/>
+            </svg>
+            <div class="line"></div>
+            <svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1.5" y="1.5" width="22" height="22" rx="4.5" stroke="white" stroke-width="3"/>
+              <line x1="12.5" y1="17" x2="12.5" y2="29" stroke="white" stroke-width="3"/>
+              <line x1="22" y1="12.5" x2="29" y2="12.5" stroke="white" stroke-width="3"/>
+              <rect x="60.5" y="60.5" width="22" height="22" rx="4.5" transform="rotate(-180 60.5 60.5)" stroke="white" stroke-width="3"/>
+              <line x1="49.5" y1="45" x2="49.5" y2="33" stroke="white" stroke-width="3"/>
+              <line x1="40" y1="49.5" x2="33" y2="49.5" stroke="white" stroke-width="3"/>
+              <rect x="1.5" y="-1.5" width="22" height="22" rx="4.5" transform="matrix(-1 0 0 1 62 3)" stroke="#FF7152" stroke-width="3"/>
+              <line x1="49.5" y1="22" x2="49.5" y2="29" stroke="#FF7152" stroke-width="3"/>
+              <line x1="46" y1="12.5" x2="33" y2="12.5" stroke="#FF7152" stroke-width="3"/>
+              <rect x="-1.5" y="1.5" width="22" height="22" rx="4.5" transform="matrix(1 0 0 -1 3 62)" stroke="white" stroke-width="3"/>
+              <line x1="12.5" y1="40" x2="12.5" y2="33" stroke="white" stroke-width="3"/>
+              <line x1="16" y1="49.5" x2="29" y2="49.5" stroke="white" stroke-width="3"/>
+            </svg>
+            <div class="line"></div>
+            <svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1.5" y="1.5" width="22" height="22" rx="4.5" stroke="white" stroke-width="3"/>
+              <line x1="12.5" y1="17" x2="12.5" y2="29" stroke="white" stroke-width="3"/>
+              <line x1="22" y1="12.5" x2="29" y2="12.5" stroke="white" stroke-width="3"/>
+              <rect x="60.5" y="60.5" width="22" height="22" rx="4.5" transform="rotate(-180 60.5 60.5)" stroke="white" stroke-width="3"/>
+              <line x1="49.5" y1="45" x2="49.5" y2="33" stroke="white" stroke-width="3"/>
+              <line x1="40" y1="49.5" x2="33" y2="49.5" stroke="white" stroke-width="3"/>
+              <rect x="1.5" y="-1.5" width="22" height="22" rx="4.5" transform="matrix(-1 0 0 1 62 3)" stroke="white" stroke-width="3"/>
+              <line x1="49.5" y1="22" x2="49.5" y2="29" stroke="white" stroke-width="3"/>
+              <line x1="46" y1="12.5" x2="33" y2="12.5" stroke="white" stroke-width="3"/>
+              <rect x="-1.5" y="1.5" width="22" height="22" rx="4.5" transform="matrix(1 0 0 -1 3 62)" stroke="#FF7152" stroke-width="3"/>
+              <line x1="12.5" y1="40" x2="12.5" y2="33" stroke="#FF7152" stroke-width="3"/>
+              <line x1="16" y1="49.5" x2="29" y2="49.5" stroke="#FF7152" stroke-width="3"/>
+            </svg>
+            <div class="line"></div>
+            <svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1.5" y="1.5" width="22" height="22" rx="4.5" stroke="white" stroke-width="3"/>
+              <line x1="12.5" y1="17" x2="12.5" y2="29" stroke="white" stroke-width="3"/>
+              <line x1="22" y1="12.5" x2="29" y2="12.5" stroke="white" stroke-width="3"/>
+              <rect x="60.5" y="60.5" width="22" height="22" rx="4.5" transform="rotate(-180 60.5 60.5)" stroke="#FF7152" stroke-width="3"/>
+              <line x1="49.5" y1="45" x2="49.5" y2="33" stroke="#FF7152" stroke-width="3"/>
+              <line x1="40" y1="49.5" x2="33" y2="49.5" stroke="#FF7152" stroke-width="3"/>
+              <rect x="1.5" y="-1.5" width="22" height="22" rx="4.5" transform="matrix(-1 0 0 1 62 3)" stroke="white" stroke-width="3"/>
+              <line x1="49.5" y1="22" x2="49.5" y2="29" stroke="white" stroke-width="3"/>
+              <line x1="46" y1="12.5" x2="33" y2="12.5" stroke="white" stroke-width="3"/>
+              <rect x="-1.5" y="1.5" width="22" height="22" rx="4.5" transform="matrix(1 0 0 -1 3 62)" stroke="white" stroke-width="3"/>
+              <line x1="12.5" y1="40" x2="12.5" y2="33" stroke="white" stroke-width="3"/>
+              <line x1="16" y1="49.5" x2="29" y2="49.5" stroke="white" stroke-width="3"/>
+            </svg>
+          </div>
+        </div>
+        <div data-aos="fade-up" class="techno-layers__floor">
+          <div class="techno-layers__title-container">
+            <div class="techno-layers__title">Network</div>
+            <div class="techno-layers__descr">Origo</div>
+          </div>
+          <div class="techno-layers__icons">
+            <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="25" cy="51" r="3.5" stroke="white" stroke-width="3"/>
+              <path d="M25 38.5V48" stroke="white" stroke-width="3"/>
+              <circle cx="25" cy="6" r="4.5" stroke="white" stroke-width="3"/>
+              <circle cx="50" cy="22" r="4.5" stroke="white" stroke-width="3"/>
+              <circle cx="6" cy="49" r="4.5" stroke="white" stroke-width="3"/>
+              <circle cx="8" cy="20" r="3.5" stroke="white" stroke-width="3"/>
+              <path d="M25 10.5V20.5" stroke="white" stroke-width="3"/>
+              <path d="M11 22L17.5 26.5" stroke="white" stroke-width="3"/>
+              <path d="M47 23L34.5 27" stroke="white" stroke-width="3"/>
+              <path d="M19 35.5L9 46" stroke="white" stroke-width="3"/>
+              <circle cx="25.5" cy="29.5" r="9" stroke="#FF7152" stroke-width="3"/>
+            </svg>
+          </div>
+        </div>
+        <div data-aos="fade-up" class="techno-layers__floor">
+          <div class="techno-layers__title-container">
+            <div class="techno-layers__title">Hardware</div>
+            <div class="techno-layers__descr">Layer -1</div>
+          </div>
+          <div class="techno-layers__icons">
+            <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8.5" y="8.5" width="39" height="39" rx="4.5" stroke="white" stroke-width="3"/>
+              <rect x="17.5" y="17.5" width="21" height="21" rx="4.5" stroke="#FF7152" stroke-width="3"/>
+              <line x1="14.5" y1="-6.55671e-08" x2="14.5" y2="10" stroke="white" stroke-width="3"/>
+              <line y1="14.5" x2="10" y2="14.5" stroke="white" stroke-width="3"/>
+              <line x1="46" y1="14.5" x2="56" y2="14.5" stroke="white" stroke-width="3"/>
+              <line y1="23.5" x2="10" y2="23.5" stroke="white" stroke-width="3"/>
+              <line x1="17" y1="25.5" x2="27" y2="25.5" stroke="#FF7152" stroke-width="3"/>
+              <line x1="46" y1="23.5" x2="56" y2="23.5" stroke="white" stroke-width="3"/>
+              <line y1="32.5" x2="10" y2="32.5" stroke="white" stroke-width="3"/>
+              <line x1="29" y1="30.5" x2="39" y2="30.5" stroke="#FF7152" stroke-width="3"/>
+              <line x1="46" y1="32.5" x2="56" y2="32.5" stroke="white" stroke-width="3"/>
+              <line y1="41.5" x2="10" y2="41.5" stroke="white" stroke-width="3"/>
+              <line x1="46" y1="41.5" x2="56" y2="41.5" stroke="white" stroke-width="3"/>
+              <line x1="14.5" y1="46" x2="14.5" y2="56" stroke="white" stroke-width="3"/>
+              <line x1="23.5" y1="-6.55671e-08" x2="23.5" y2="10" stroke="white" stroke-width="3"/>
+              <line x1="23.5" y1="46" x2="23.5" y2="56" stroke="white" stroke-width="3"/>
+              <line x1="32.5" y1="-6.55671e-08" x2="32.5" y2="10" stroke="white" stroke-width="3"/>
+              <line x1="32.5" y1="46" x2="32.5" y2="56" stroke="white" stroke-width="3"/>
+              <line x1="41.5" y1="-6.55671e-08" x2="41.5" y2="10" stroke="white" stroke-width="3"/>
+              <line x1="41.5" y1="46" x2="41.5" y2="56" stroke="white" stroke-width="3"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div data-aos="fade-up" class="techno_description-bottom pB-160 pT-160">
+          <h2 class="font-51">The CMCX Token</h2>
+          <div class="techno_description-bottom-inner">
+            <div class="techno_description-bottom-text">
+              The CMCX token is native to the CORE platform and allows users to transact with other users on the blockchain, as well as pay for all of the utility fees in the ecosystem. It can be used for governance, staking, transactions, smart contracts and validator rewards on the platform.
+            </div>
+          </div>
+        </div>
       <h3 data-aos="fade-up" class="font-51">
         <span class="font-51">Consensus</span>
         <span class="font-51">Structure</span>
@@ -298,6 +518,67 @@ export default {
 }
 </script>
 <style scoped>
+  .techno-layers__icons .line-svg{
+    position: absolute;
+    left: 0px;
+    bottom: -55px;
+    margin: 0px;
+  }
+  .techno-layers__icons .line{
+    height: 2px;
+    width: 70px;
+    background: rgb(155,153,255);
+    background: linear-gradient(90deg, rgba(155,153,255,0) 0%, rgba(155,153,255,1) 50%, rgba(155,153,255,0) 100%);
+  }
+  .techno-layers__descr{
+    color: rgba(255,255,255,.5);
+  }
+  .techno-layers__title-container div{
+    line-height: 24px;
+  }
+  .techno-layers__title-container{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+  }
+  .techno-layers__icons{
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .techno-layers__icons svg{
+    margin: 0px 25px;
+  }
+  .techno-layers__floor{
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+  }
+  .techno-layers__container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+  }
+  .techno_description-bottom-text{
+    font-size: 15px;
+    line-height: 24px;
+    color: rgba(255,255,255,.5);
+    width: 640px;
+  }
+  .techno_description-bottom-inner{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding-right: 105px;
+    margin-top: 15px;
+  }
+  .techno_description-bottom{
+    display: flex;
+    width: 100%;
+  }
+  .techno_description-bottom h2{
+    width: 50%;
+  }
   .techno-icons_item{
     display: flex;
     flex-direction: column;
@@ -366,12 +647,40 @@ export default {
   }
   /*Ipad Pro 1024*/
   @media (max-width: 1300px){
+    .techno-layers__icons .line-svg{
+      width: 98%;
+    }
+    .techno-layers__icons .line{
+      width: 50px;
+    }
+    .techno-layers__title-container{
+      width: 120px;
+    }
     h3 span:last-child {
       padding-left: 60px;
     }
   }
   /*Ipad 768*/
   @media (max-width: 1023px){
+    .techno-layers__container{
+      margin-top: 50px;
+    }
+    .techno_description-bottom-inner{
+      padding-right: 0px;
+    }
+    .techno-layers__icons svg {
+      margin: 0px 15px;
+    }
+    .techno-layers__title-container{
+      margin-bottom: 30px;
+    }
+    .techno-icons__container{
+      width: 100%;
+    }
+    .techno-layers__floor{
+      flex-direction: column;
+      align-items: flex-start;
+    }
     .techno-icons_item-more-btn{
       margin-left: auto;
     }
@@ -399,6 +708,19 @@ export default {
   }
   /*Mobile 320*/
   @media (max-width: 767px){
+    .techno-layers__floor{
+      margin-bottom: 20px;
+    }
+    .techno-layers__title-container {
+      margin-bottom: 10px;
+    }
+    .techno-layers__icons {
+      transform: scale(.6);
+      transform-origin: left;
+    }
+    .techno_description-bottom-inner{
+      padding-right: 0px;
+    }
     .techno-icons__inner{
       padding-right: 0px;
     }
