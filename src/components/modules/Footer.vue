@@ -31,8 +31,8 @@
     </div>
     <footer>
       <div class="footerBg"></div>
-      <div class="container">
-        <div class="footerInner" data-aos="fade-up">
+      <div data-aos="fade-up" class="container">
+        <div class="footerInner">
           <div class="footer__first-container" v-if="false">
             <router-link to="/" class="footer__logo">
               <img :src="require(`@/assets/img/footerLogo.svg`)" alt="" class="footer__logo-img">
@@ -192,10 +192,10 @@
             </div>
           </div>
         </div>
-        <div class="footerText" data-aos="fade-up">
+        <div class="footerText">
           Disclaimer: CORE is a software platform ONLY and does not conduct any independent diligence on or substantive review of any blockchain asset, digital currency, cryptocurrency or associated funds. You are fully and solely responsible for evaluating your investments, for determining whether you will exchange blockchain assets based on your own, and for all your decisions as to whether to exchange blockchain assets with CORE. In many cases, blockchain assets you exchange on the basis of your research may not increase in value, and may decrease in value. Similarly, blockchain assets you exchange on the basis of your research may increase in value after your exchange. Past performance is not indicative of future results. Any investment in blockchain assets involves the risk of loss of part or all of your investment. The value of the blockchain assets you exchange is subject to market and other investment risks
         </div>
-        <div class="footer__last" data-aos="fade-up">
+        <div class="footer__last">
           <div class="footer__last-copy">© 2021 CORE Multi-Chain</div>
           <div class="footer__last-nav">
             <router-link to="/termsofuse">Terms of Service</router-link>

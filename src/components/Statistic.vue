@@ -109,7 +109,7 @@ export default {
         slidesPerView: 'auto',
         speed: 800,
         spaceBetween: 0,
-        watchOverflow: true,
+        freeMode: true,
         navigation: {
           nextEl: '.next',
           prevEl: '.prev'
