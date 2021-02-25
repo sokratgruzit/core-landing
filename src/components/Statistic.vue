@@ -186,7 +186,7 @@ export default {
   .lft-link{
     position: absolute;
     top: 0px;
-    left: 10px;
+    left: 20px;
     height: 100%;
     display: flex;
     align-items: center;
