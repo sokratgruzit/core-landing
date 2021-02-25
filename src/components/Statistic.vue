@@ -41,6 +41,10 @@
                 </div>
               </div>
               <div class="chart-container__right">
+                <div class="chart-container__description total">
+                  <div class="text descr">Total Supply</div>
+                  <div class="title descr">20,000,000,000 CMCX</div>
+                </div>
                 <div class="chart-container__description">
                   <div class="color" style="background: #0500FF"></div>
                   <div class="title descr">Reserve</div>
@@ -139,6 +143,16 @@ export default {
 }
 </script>
 <style scoped>
+  .chart-container__description.total{
+    position: absolute;
+    left: 0px;
+    top: -20px;
+    padding: 0px;
+  }
+  .chart-container__description.total div{
+    font-size: 20px;
+    line-height: 30px;
+  }
   .container{
     flex-direction: column;
   }
@@ -148,9 +162,11 @@ export default {
     padding: 0px 50px;
   }
   .chart-container__right{
+    padding-top: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
   }
   .statistic-container{
     padding-bottom: 160px;
@@ -223,7 +239,7 @@ export default {
     justify-content: center;
   }
   .statisctic-slider .swiper-slide:last-child{
-    width: 1500px;
+    width: 1300px;
   }
   .left{
     display: flex;
@@ -345,7 +361,8 @@ export default {
     transform: scale(1);
   }
   .chart-container__description .title{
-    font-size: 20px;
+    font-size: 15px;
+    line-height: 24px;
     color: #ff7152;
     white-space: nowrap;
     transition: .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
@@ -353,7 +370,8 @@ export default {
     transform: translateY(0px);
   }
   .chart-container__description .text{
-    font-size: 20px;
+    font-size: 15px;
+    line-height: 24px;
     transition: .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
     opacity: 1;
     transform: scale(1);
@@ -374,7 +392,7 @@ export default {
       width: 500px;
     }
     .statisctic-slider .swiper-slide:last-child{
-      width: 1350px;
+      width: 1150px;
     }
   }
   /*Ipad Pro 1024*/
