@@ -43,23 +43,45 @@
               <div class="chart-container__right">
                 <div class="chart-container__description">
                   <div class="color" style="background: #0500FF"></div>
-                  <div class="title descr">Sale</div>
-                  <div class="text descr">3 Billion</div>
+                  <div class="title descr">Reserve</div>
+                  <div class="text descr">6,000,000,000 CMCX (30%)</div>
                 </div>
                 <div class="chart-container__description">
                   <div class="color" style="background: #504DFF"></div>
-                  <div class="title descr">Reserve</div>
-                  <div class="text descr">500 Million</div>
+                  <div class="title descr">Seed Round (Private Founders)</div>
+                  <div class="text descr">4,000,000,0000 CMCX (20%)</div>
                 </div>
                 <div class="chart-container__description">
                   <div class="color" style="background: #9B99FF"></div>
-                  <div class="title descr">Founders & Advisors</div>
-                  <div class="text descr">340 Million</div>
+                  <div class="title descr">IEO</div>
+                  <div class="text descr">4,000,000,0000 CMCX (20%)</div>
                 </div>
                 <div class="chart-container__description">
-                  <div class="color" style="background: #CFCEFF"></div>
-                  <div class="title descr">Marketing</div>
-                  <div class="text descr">900 Million</div>
+                  <div class="color" style="background: #FFBB95"></div>
+                  <div class="title descr">Ecosystem Rewards</div>
+                  <div class="text descr">2,000,000,0000 CMCX (10%)</div>
+                </div>
+              </div>
+              <div class="chart-container__right">
+                <div class="chart-container__description">
+                  <div class="color" style="background: #FF8D4D"></div>
+                  <div class="title descr">Marketing & Operations</div>
+                  <div class="text descr">1,000,000,0000 CMCX (10%)</div>
+                </div>
+                <div class="chart-container__description">
+                  <div class="color" style="background: #E2DD5D"></div>
+                  <div class="title descr">Advisory Board</div>
+                  <div class="text descr">600,000,0000 CMCX (3%)</div>
+                </div>
+                <div class="chart-container__description">
+                  <div class="color" style="background: #4ECB6A"></div>
+                  <div class="title descr">Strategic Acquisitions</div>
+                  <div class="text descr">400,000,0000 CMCX (2%)</div>
+                </div>
+                <div class="chart-container__description">
+                  <div class="color" style="background: #99FFB0"></div>
+                  <div class="title descr">Team</div>
+                  <div class="text descr">2,000,000,0000 CMCX (10%)</div>
                 </div>
               </div>
             </div>
@@ -89,27 +111,26 @@ export default {
           prevEl: '.prev'
         }
       },
-      series: [44, 55, 67, 83],
+      series: [30, 20, 20, 10, 10, 6, 4, 6],
       chartOptions: {
         chart: {
           type: 'radialBar'
         },
-        colors: ['#0500FF', '#504DFF', '#9B99FF', '#CFCEFF'],
+        colors: ['#0500FF', '#817EFF', '#D5D5FF', '#FFBB95', '#FF8D4D', '#E2DD5D', '#4ECB6A', '#99FFB0'],
         plotOptions: {
           radialBar: {
             hollow: {
-              size: '50%'
+              size: '0%'
             },
             track: {
               background: 'transparent',
-              margin: 10
+              margin: 12
             },
             dataLabels: {
               show: false
             }
           }
         }
-
       }
     }
   },
@@ -202,7 +223,7 @@ export default {
     justify-content: center;
   }
   .statisctic-slider .swiper-slide:last-child{
-    width: 900px;
+    width: 1500px;
   }
   .left{
     display: flex;
@@ -353,7 +374,7 @@ export default {
       width: 500px;
     }
     .statisctic-slider .swiper-slide:last-child{
-      width: 750px;
+      width: 1350px;
     }
   }
   /*Ipad Pro 1024*/

@@ -32,7 +32,7 @@
       <div class="container">
         <div class="frameworks-container__bottom">
           <div class="frameworks-container__middle-title font-51" data-aos="fade-up">CORE: A multi-layered <br> blockchain framework</div>
-          <div class="frameworks-container__middle-sub">Blockchains are typically multi-layered in design, whether the blockchain is permissioned
+          <div class="frameworks-container__middle-sub" data-aos="fade-up">Blockchains are typically multi-layered in design, whether the blockchain is permissioned
             <br>or permission-less.</div>
           <div class="frameworks-container__frameworks" data-aos="fade-up">
             <div class="frameworks-container__frameworks-tabs">
