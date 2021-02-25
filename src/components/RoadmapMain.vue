@@ -15,33 +15,106 @@
       <div class="roadmap__container-inner">
         <div class="roadmap__half left">
           <div data-aos="fade-up" class="roadmap__item">
-            <div class="roadmap__item-title">February</div>
-            <div class="roadmap__item-description">Founded by Adam Back, Erik Svenson, Pieter Wuille and others.</div>
+            <div class="roadmap__item-title">Q1</div>
+            <div class="roadmap__item-description">Website Launch</div>
+            <div class="roadmap__item-description">Light-paper</div>
+            <div class="roadmap__item-description">Request for Proposals (R1)</div>
+            <div class="roadmap__item-description">White-paper(Version 0.1)</div>
+            <div class="roadmap__item-description">Seed Founders On-Boarding</div>
+            <div class="roadmap__item-description">CMCX Token Offering</div>
           </div>
           <div data-aos="fade-up" class="roadmap__item">
-            <div class="roadmap__item-title">March</div>
-            <div class="roadmap__item-description">Founded by Adam Back, Erik Svenson, Pieter Wuille and others.</div>
+            <div class="roadmap__item-title">Q3</div>
+            <div class="roadmap__item-description">CORE Hackathon 2021</div>
+            <div class="roadmap__item-description">CORE MVP</div>
+            <div class="roadmap__item-description">Code Fully Open Source</div>
+            <div class="roadmap__item-description">White-paper update</div>
           </div>
           <div data-aos="fade-up" class="roadmap__item">
-            <div class="roadmap__item-title">August</div>
-            <div class="roadmap__item-description">Founded by Adam Back, Erik Svenson, Pieter Wuille and others.</div>
+            <div class="roadmap__item-title">Q1</div>
+            <div class="roadmap__item-description">Public test-net launch</div>
+            <div class="roadmap__item-description">Catena Layer Testing</div>
+            <div class="roadmap__item-description">Consensus & Sharding Optimizations</div>
+            <div class="roadmap__item-description">CORE Universal Explorer</div>
+            <div class="roadmap__item-description">PolyChains Testing</div>
+            <div class="roadmap__item-description">Cross-Chain Communication Protocol</div>
+            <div class="roadmap__item-description">Aura Layer Testing</div>
+            <div class="roadmap__item-description">Staking launch</div>
+          </div>
+          <div data-aos="fade-up" class="roadmap__item">
+            <div class="roadmap__item-title">Q3</div>
+            <div class="roadmap__item-description">Trustless Bridge</div>
+            <div class="roadmap__item-description">Voting system</div>
+            <div class="roadmap__item-description">Storage Sharing Protocol</div>
+            <div class="roadmap__item-description">Fast State Sync and Re-sharding</div>
+            <div class="roadmap__item-description">Cryptography Engine</div>
+            <div class="roadmap__item-description">Consensus Engine</div>
+          </div>
+          <div data-aos="fade-up" class="roadmap__item">
+            <div class="roadmap__item-title">Q1</div>
+            <div class="roadmap__item-description">Universal blockchain Access API</div>
+            <div class="roadmap__item-description">Off-Chain Data Access (CORE Oracles)</div>
+            <div class="roadmap__item-description">CORE Global Bridge</div>
+            <div class="roadmap__item-description">State Engine</div>
+          </div>
+          <div data-aos="fade-up" class="roadmap__item">
+            <div class="roadmap__item-title">Q3</div>
+            <div class="roadmap__item-description">CORE OS Beta</div>
+            <div class="roadmap__item-description">Synthetic Gate</div>
+            <div class="roadmap__item-description">Cross-Chain Smart Contracts</div>
           </div>
           <div data-aos="fade-up" class="roadmap__lrg-buble top">Inception</div>
-          <div data-aos="fade-up" class="roadmap__ltl-buble middle">2018</div>
-          <div data-aos="fade-up" class="roadmap__lrg-buble bottom">Future</div>
+          <div data-aos="fade-up" class="roadmap__ltl-buble y1">2021</div>
+          <div data-aos="fade-up" class="roadmap__ltl-buble y2">2022</div>
+          <div data-aos="fade-up" class="roadmap__ltl-buble y3">2023</div>
+<!--          <div data-aos="fade-up" class="roadmap__lrg-buble bottom">Future</div>-->
         </div>
         <div class="roadmap__half right">
           <div data-aos="fade-up" class="roadmap__item">
-            <div class="roadmap__item-title">June</div>
-            <div class="roadmap__item-description">Raised $21M in seed funding.</div>
+            <div class="roadmap__item-title">Q2</div>
+            <div class="roadmap__item-description">CORE Community Initiatives Program Launch (CCIP)</div>
+            <div class="roadmap__item-description">Technical Committee Formation</div>
+            <div class="roadmap__item-description">Research and Development Team Voting Event</div>
+            <div class="roadmap__item-description">Request for Proposals (R2)</div>
+            <div class="roadmap__item-description">Proof of Concept (PoC) Version 0.1</div>
+            <div class="roadmap__item-description">CMCX Token Exchange Offering (IEO)</div>
           </div>
           <div data-aos="fade-up" class="roadmap__item">
-            <div class="roadmap__item-title">Jule</div>
-            <div class="roadmap__item-description">Raised $21M in seed funding.</div>
+            <div class="roadmap__item-title">Q4</div>
+            <div class="roadmap__item-description">Private test-net launch</div>
+            <div class="roadmap__item-description">Native CORE Wallet</div>
+            <div class="roadmap__item-description">Origo Layer Testing</div>
+            <div class="roadmap__item-description">PivotChains Testing</div>
           </div>
           <div data-aos="fade-up" class="roadmap__item">
-            <div class="roadmap__item-title">December</div>
-            <div class="roadmap__item-description">Raised $21M in seed funding.</div>
+            <div class="roadmap__item-title">Q2</div>
+            <div class="roadmap__item-description">CORE Main-net Launch</div>
+            <div class="roadmap__item-description">Apeirogon Framework Release</div>
+            <div class="roadmap__item-description">Development Toolkit</div>
+            <div class="roadmap__item-description">CORE Hackathon 2022</div>
+            <div class="roadmap__item-description">CORE VM Beta Release</div>
+            <div class="roadmap__item-description">Smart Contracts</div>
+          </div>
+          <div data-aos="fade-up" class="roadmap__item">
+            <div class="roadmap__item-title">Q4</div>
+            <div class="roadmap__item-description">On-Chain Governance</div>
+            <div class="roadmap__item-description">IPFS Integration</div>
+            <div class="roadmap__item-description">Web3.js Integration</div>
+            <div class="roadmap__item-description">Randomizer Engine</div>
+          </div>
+          <div data-aos="fade-up" class="roadmap__item">
+            <div class="roadmap__item-title">Q2</div>
+            <div class="roadmap__item-description">CORE Name Service</div>
+            <div class="roadmap__item-description">DeFI Tools for Developers</div>
+            <div class="roadmap__item-description">CORE Hackathon 2023</div>
+            <div class="roadmap__item-description">Tokenizer Engine</div>
+          </div>
+          <div data-aos="fade-up" class="roadmap__item">
+            <div class="roadmap__item-title">Q4</div>
+            <div class="roadmap__item-description">Core Mesh testing</div>
+            <div class="roadmap__item-description">TPPL Public Access</div>
+            <div class="roadmap__item-description">State Sync Engine</div>
+            <div class="roadmap__item-description">Blockchain Distribution Network (BDN)</div>
           </div>
         </div>
       </div>
@@ -74,6 +147,27 @@ export default {
 }
 </script>
 <style scoped>
+  .roadmap__item-description:after{
+    content: '';
+    position: absolute;
+    top: 9px;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background: #0500FF;
+  }
+  .left .roadmap__item-description:after{
+    right: 0px;
+  }
+  .right .roadmap__item-description:after{
+    left: 0px;
+  }
+  .left .roadmap__item-description{
+    padding-right: 25px;
+  }
+  .right .roadmap__item-description{
+    padding-left: 25px;
+  }
   .roadmap__bottom-video-outer iframe{
     transform: scale(1.3);
   }
@@ -134,8 +228,16 @@ export default {
   .roadmap__lrg-buble.bottom{
     bottom: 170px;
   }
+  .roadmap__ltl-buble.y1{
+    top: 260px;
+  }
+  .roadmap__ltl-buble.y2{
+    top: 1220px;
+  }
+  .roadmap__ltl-buble.y3{
+    top: 2250px;
+  }
   .roadmap__ltl-buble{
-    top: 560px;
     font-size: 15px;
     position: absolute;
     right: -32px;
@@ -236,30 +338,55 @@ export default {
     color: rgba(255,255,255,.5);
     font-size: 15px;
     line-height: 24px;
+    position: relative;
   }
   .left .roadmap__item:nth-child(1){
-    margin-top: 260px;
+    margin-top: 400px;
   }
   .left .roadmap__item:nth-child(2){
-    margin-top: 350px;
+    margin-top: 206px;
   }
   .left .roadmap__item:nth-child(3){
+    margin-top: 375px;
+  }
+  .left .roadmap__item:nth-child(4){
+     margin-top: 200px;
+   }
+  .left .roadmap__item:nth-child(5){
+    margin-top: 375px;
+  }
+  .left .roadmap__item:nth-child(6){
     margin-top: 150px;
   }
   .right .roadmap__item:nth-child(1){
-    margin-top: 400px;
+    margin-top: 650px;
   }
   .right .roadmap__item:nth-child(2){
-    margin-top: 400px;
+    margin-top: 150px;
   }
   .right .roadmap__item:nth-child(3){
-    margin-top: 260px;
+    margin-top: 480px;
+  }
+  .right .roadmap__item:nth-child(4){
+    margin-top: 205px;
+  }
+  .right .roadmap__item:nth-child(5){
+    margin-top: 375px;
+  }
+  .right .roadmap__item:nth-child(6){
+    margin-top: 120px;
   }
   /*Laptop 1440*/
   @media (max-width: 1900px){
   }
   /*Ipad Pro 1024*/
   @media (max-width: 1365px){
+    .roadmap__ltl-buble.y3 {
+      top: 2350px;
+    }
+    .roadmap__ltl-buble.y2 {
+      top: 1270px;
+    }
     .left .roadmap__item {
       padding-right: 100px;
     }
@@ -277,6 +404,18 @@ export default {
   }
   /*Ipad 768*/
   @media (max-width: 1023px){
+    .roadmap__ltl-buble.y2{
+      top: 1350px;
+    }
+    .roadmap__ltl-buble.y3{
+      top: 2550px;
+    }
+    .left .roadmap__item-description {
+      padding-right: 20px;
+    }
+    .right .roadmap__item-description {
+      padding-left: 20px;
+    }
     .roadmap__top-video-outer,.roadmap__bottom-video-outer{
       width: 100%;
     }
@@ -319,11 +458,31 @@ export default {
       margin-bottom: 5px;
     }
     .roadmap__item-description{
-      font-size: 12px;
-      line-height: 20px;
+      font-size: 10px;
+      line-height: 15px;
     }
     .left .roadmap__item {
       padding-right: 40px;
+    }
+    .roadmap__item-description:after{
+      top: 5px;
+      height: 4px;
+      width: 4px;
+    }
+    .left .roadmap__item:nth-child(3) {
+      margin-top: 430px;
+    }
+    .right .roadmap__item-description {
+      padding-left: 10px;
+    }
+    .left .roadmap__item-description {
+      padding-right: 10px;
+    }
+    .roadmap__ltl-buble.y2 {
+      top: 1190px;
+    }
+    .roadmap__ltl-buble.y3 {
+      top: 2140px;
     }
   }
 </style>

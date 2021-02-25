@@ -60,39 +60,87 @@
   "statistic": [
     {
       "id": 1,
-      "name": "Core Launch"
+      "name": "Website Launch"
     },
     {
       "id": 2,
-      "name": "BTT Token <br/> Issuance"
+      "name": "Light-paper"
     },
     {
       "id": 3,
-      "name": "uTorrent Client with <br/> BitTorrent Speed support"
+      "name": "Request for Proposals (R1)"
     },
     {
       "id": 4,
-      "name": "MainNet <br/> Launch"
+      "name": "White-paper(Version 0.1)"
     },
     {
       "id": 5,
-      "name": "«BigBang» Air Drop"
+      "name": "Seed Founders On-Boarding"
     },
     {
       "id": 6,
-      "name": "On-chain/Off-chain <br/> exchange"
+      "name": "CMCX Token Offering"
     },
     {
       "id": 7,
-      "name": "Wallet Import <br/> and Recovery"
+      "name": "CORE Community <br/> Initiatives Program Launch (CCIP)"
     },
     {
       "id": 8,
-      "name": "Localization <br/> of BitTorrent Speed"
+      "name": "Technical Committee <br/> Formation"
     },
     {
       "id": 9,
-      "name": "«On-demand» AirDrops <br/> to uTorrent users"
+      "name": "Research and Development <br/> Team Voting Event"
+    },
+    {
+      "id": 10,
+      "name": "Request for Proposals (R2)"
+    },
+    {
+      "id": 11,
+      "name": "Proof of Concept (PoC) <br/> Version 0.1"
+    },
+    {
+      "id": 12,
+      "name": "CMCX Token Exchange <br/> Offering (IEO)"
+    },
+    {
+      "id": 13,
+      "name": "Research and Development <br/> Team Voting Event"
+    },
+    {
+      "id": 14,
+      "name": "CORE Hackathon 2021"
+    },
+    {
+      "id": 15,
+      "name": "CORE MVP"
+    },
+    {
+      "id": 16,
+      "name": "Code Fully Open Source"
+    },
+    {
+      "id": 17,
+      "name": "White-paper update"
+    },
+    {
+      "id": 18,
+      "name": "Private test-net launch"
+    },
+    {
+      "id": 19,
+      "name": "Native CORE Wallet"
+    },
+    {
+      "id": 20,
+      "name": "Origo Layer Testing"
+    },
+    {
+      "id": 21,
+      "name": "PivotChains Testing"
     }
   ],
   "framework": [

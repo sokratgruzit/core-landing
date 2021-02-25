@@ -32,8 +32,16 @@
           <swiper-slide>
             <div class="chart-container">
               <div class="chart-container__left">
+                <div class="lft-link">
+                  <router-link to="/roadmap" class="chart__link">Full Roadmap</router-link>
+                </div>
+                <div class="btm-link">
+                  <router-link to="/tokenomics" class="chart__link">Explore Tokenomics</router-link>
+                </div>
                 <div class="chart-container__inner">
-                  <img :src="require(`@/assets/img/chart.png`)" alt="" class="chart__img">
+                  <div class="chart__img">
+                    <img :src="require(`@/assets/img/chart.png`)" alt="">
+                  </div>
                   <img :src="require(`@/assets/img/gradientChart.png`)" alt="" class="chart__imgGr">
                   <div id="chart">
                     <apexchart type="radialBar" height="380" :options="chartOptions" :series="series"></apexchart>
@@ -143,6 +151,47 @@ export default {
 }
 </script>
 <style scoped>
+  @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+  @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+  @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+  .chart__link{
+    position: relative;
+    transition: .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+  }
+  .chart__link:after{
+    position: absolute;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    content: '';
+    background: #0500FF;
+    left: 0px;
+    transition: .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+  }
+  .chart__link:hover:after{
+    transform: scaleX(0);
+  }
+  .chart__link:hover{
+    color: #ff7152;
+  }
+  .btm-link{
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+  }
+  .lft-link{
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+  }
   .chart-container__description.total{
     position: absolute;
     left: 0px;
@@ -315,6 +364,7 @@ export default {
     height: 100%;
   }
   .chart-container__left{
+    position: relative;
     width: 660px;
     display: flex;
     justify-content: center;
@@ -340,6 +390,16 @@ export default {
     height: 100%;
     left: 0px;
     transform: scale(1.2);
+  }
+  .chart__img img{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    -webkit-animation:spin 50s linear infinite;
+    -moz-animation:spin 50s linear infinite;
+    animation:spin 50s linear infinite;
   }
   .chart__imgGr{
     position: absolute;
@@ -395,12 +455,6 @@ export default {
   }
   /*Laptop 1440*/
   @media (max-width: 1900px){
-    .chart-container__left{
-      width: 500px;
-    }
-    .statisctic-slider .swiper-slide:last-child{
-      width: 1150px;
-    }
   }
   /*Ipad Pro 1024*/
   @media (max-width: 1365px){
