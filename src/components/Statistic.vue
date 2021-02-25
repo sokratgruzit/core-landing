@@ -363,14 +363,17 @@ export default {
   .chart-container__description .title{
     font-size: 15px;
     line-height: 24px;
-    color: #ff7152;
+    color: #fff;
     white-space: nowrap;
     transition: .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
     opacity: 1;
     transform: translateY(0px);
   }
   .chart-container__description.total .text{
-    color: #fff;
+     color: #fff;
+   }
+  .chart-container__description.total .title{
+    color: #ff7152;
   }
   .chart-container__description .text{
     font-size: 15px;
