@@ -5,7 +5,14 @@
         What makes CORE different
       </div>
       <div class="linksContainer" id="explore">
-        <router-link to="/technology" class="link" data-aos="fade-up" :class="activeHover == 0">
+        <div class="link" v-for="link in itemData" :key="link.id" @click="openPopup(link.id)" @mouseover="hover(link.id)" :class="activeHover == link.id ? 'hover' : ''">
+          <div class="txt">{{link.title}}</div>
+          <div class="videoContainer">
+            <img :src="require(`@/assets/img/gradient.png`)" alt="" class="gradient">
+            <div class="video" v-html="link.video"></div>
+          </div>
+        </div>
+        <router-link to="/technology" class="link" :class="activeHover == 3 ? 'hover' : ''" @mouseover.native="hover(3)">
           <div class="txt">Technology</div>
           <div class="videoContainer">
             <img :src="require(`@/assets/img/gradient.png`)" alt="" class="gradient">
@@ -14,13 +21,6 @@
             </div>
           </div>
         </router-link>
-        <div class="link" v-for="link in itemData" :key="link.id" data-aos="fade-up" @click="openPopup(link.id)">
-          <div class="txt">{{link.title}}</div>
-          <div class="videoContainer">
-            <img :src="require(`@/assets/img/gradient.png`)" alt="" class="gradient">
-            <div class="video" v-html="link.video"></div>
-          </div>
-        </div>
       </div>
     </div>
   </div>
@@ -34,7 +34,7 @@ export default {
   },
   data () {
     return {
-      activeHover: 0
+      activeHover: 1
     }
   },
   methods: {
@@ -46,13 +46,17 @@ export default {
     },
     hover (id) {
       this.activeHover = id
+      console.log(this.activeHover)
     }
   }
 }
 </script>
 <style scoped>
+  .link:nth-child(1){
+    margin-right: 350px;
+  }
   .link:nth-child(2){
-    margin-left: 240px;
+    margin-left: 0px;
   }
   .link:nth-child(3){
     margin-left: 480px;
@@ -80,7 +84,7 @@ export default {
     opacity: 0;
     transform: scale(.7);
   }
-  .link:hover .videoContainer{
+  .link.hover .videoContainer{
     opacity: 1;
     transform: scale(1);
     transition-delay: .1s;
@@ -92,7 +96,7 @@ export default {
     transform-origin: bottom center;
     transition: .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
   }
-  .link:hover .txt{
+  .link.hover .txt{
     color: #fff;
     /*transform: rotateY(-25deg) scale3d(1.1,1.13,1.1);*/
     transform: scale(1.1);
@@ -152,10 +156,10 @@ export default {
       padding-top: 110px;
     }
     .link:nth-child(3) {
-      margin-left: 200px;
+      margin-left: 250px;
     }
     .link:nth-child(2) {
-      margin-left: 100px;
+      margin-right: 100px;
     }
   }
   /*Ipad 1024*/
@@ -174,6 +178,9 @@ export default {
     }
     .link .txt{
       font-size: 70px;
+    }
+    .link:nth-child(1) {
+      margin-right: 200px;
     }
     .link:nth-child(2) {
       margin-left: 90px;
