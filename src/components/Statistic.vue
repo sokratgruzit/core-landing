@@ -369,6 +369,9 @@ export default {
     opacity: 1;
     transform: translateY(0px);
   }
+  .chart-container__description.total .text{
+    color: #fff;
+  }
   .chart-container__description .text{
     font-size: 15px;
     line-height: 24px;
@@ -376,6 +379,7 @@ export default {
     opacity: 1;
     transform: scale(1);
     transform: translateY(0px);
+    color: rgba(255,255,255,.5);
   }
   .chart-container__description:nth-child(2) .color,.chart-container__description:nth-child(2) .descr{
     transition-delay: .1s;
