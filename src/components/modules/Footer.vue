@@ -715,7 +715,7 @@ export default {
     .subscribe-container{
       margin-top: 15px;
     }
-    .footer__join-inner > div[data-v-5e68c45a] {
+    .footer__join-inner > div {
       width: 100%;
     }
     .footer__join-inner{
@@ -777,6 +777,9 @@ export default {
     }
     input{
       width: 250px;
+    }
+    .footer__join-inner > div{
+      width: 100%;
     }
   }
 </style>
