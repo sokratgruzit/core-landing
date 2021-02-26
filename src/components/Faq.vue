@@ -157,8 +157,8 @@ export default {
       padding-left: 0px;
     }
     .ttl{
-      font-size: 16px;
-      line-height: 20px;
+      font-size: 15px;
+      line-height: 24px;
     }
     .questionInner p{
       font-size: 13px;

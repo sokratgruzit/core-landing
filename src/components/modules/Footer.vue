@@ -781,5 +781,10 @@ export default {
     .footer__join-inner > div{
       width: 100%;
     }
+    .footer__last-nav[data-v-5e68c45a] {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 </style>
