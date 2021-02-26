@@ -168,7 +168,7 @@
           </div>
           <div class="guidline__half">
             <div class="guidline__paragraph paragraphMt">
-              When pairing the Blockstream corporate logo or any other Blockstream logo with another logo, a thin line
+              When pairing the CORE corporate logo or any other CORE logo with another logo, a thin line
               is used to separate the two logos.
             </div>
           </div>
@@ -206,7 +206,7 @@
               </div>
               <div class="guidline__half">
                 <div class="guidline__paragraph paragraphMt">
-                  When pairing the Blockstream corporate logo or any other Blockstream logo with another logo, a thin line
+                  When pairing the CORE corporate logo or any other CORE logo with another logo, a thin line
                   is used to separate the two logos.
                 </div>
               </div>

@@ -65,7 +65,7 @@
             <div class="bottom__description-floor">
               <div class="bottom__description-item">
                 <div class="bottom__description-ttl">Pre-mined Reserve</div>
-                <div class="bottom__description-text">8,000,000,000 CMCX</div>
+                <div class="bottom__description-text">6,000,000,000 CMCX</div>
               </div>
             </div>
           </div>

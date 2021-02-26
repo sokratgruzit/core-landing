@@ -70,7 +70,7 @@
         </div>
       </div>
       <div class="tokenomics-list__description" data-aos="fade-up">
-        Initial token price will be 0.05 USDT, ceiling price will be 2.00 USDT at the Seed Round.
+        Initial token price will be 0.005 USDT, ceiling price will be 2.00 USDT at the Seed Round.
         Unsold Tokens will go to CORE DAO Reserve.
       </div>
       <div class="tokenomics-list__text" data-aos="fade-up">
