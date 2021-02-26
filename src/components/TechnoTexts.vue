@@ -107,6 +107,7 @@ export default {
     background: transparent;
     z-index: 1;
     content: '';
+    transition: .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
   }
   .wh__bg:hover:after{
     background: #ffffff;
