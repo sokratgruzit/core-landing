@@ -17,7 +17,7 @@
               <div class="tokenomics-list__item-text">1,000,000,000</div>
             </div>
             <div class="tokenomics-list__item">
-              <div class="tokenomics-list__item-title">Seed Round/div>
+              <div class="tokenomics-list__item-title">Seed Round
               <div class="tokenomics-list__item-text">1,000,000,000</div>
             </div>
           </div>

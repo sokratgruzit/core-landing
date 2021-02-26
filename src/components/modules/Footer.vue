@@ -238,16 +238,11 @@ export default {
         },
         {
           id: 3,
-          title: 'About',
-          route: '/about'
-        },
-        {
-          id: 4,
           title: 'Roadmap',
           route: '/roadmap'
         },
         {
-          id: 5,
+          id: 4,
           title: 'Technology',
           route: '/technology'
         }

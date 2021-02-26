@@ -107,7 +107,7 @@
               </svg>
               CORE
             </div>
-            <a href="##" class="generation-container__item-button">Learn More Now</a>
+            <router-link to="/technology" class="generation-container__item-button">Learn More Now</router-link>
           </div>
         </div>
       </div>
