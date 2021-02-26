@@ -214,12 +214,12 @@ export default {
   }
   .generation-container__item:nth-child(2){
     height: 415px;
-    left: 260px;
+    left: 270px;
     z-index: 2;
   }
   .generation-container__item:nth-child(3){
     height: 470px;
-    left: 520px;
+    left: 540px;
     z-index: 3;
   }
   .generation-container__item:nth-child(3){

@@ -11,7 +11,9 @@
       <div class="chart-container" data-aos="fade-up">
         <div class="chart-container__left">
           <div class="chart-container__inner">
-            <img :src="require(`@/assets/img/chart.png`)" alt="" class="chart__img">
+            <div class="chart__img">
+              <img :src="require(`@/assets/img/chart.png`)" alt="">
+            </div>
             <img :src="require(`@/assets/img/gradientChart.png`)" alt="" class="chart__imgGr">
             <div id="chart">
               <apexchart type="radialBar" height="380" :options="chartOptions" :series="series"></apexchart>
@@ -158,6 +160,19 @@ export default {
     height: 100%;
     left: 0px;
     transform: scale(1.2);
+  }
+  @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+  @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+  @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+  .chart__img img{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    -webkit-animation:spin 50s linear infinite;
+    -moz-animation:spin 50s linear infinite;
+    animation:spin 50s linear infinite;
   }
   .chart__imgGr{
     position: absolute;
