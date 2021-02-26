@@ -201,6 +201,7 @@
             <router-link to="/termsofuse">Terms of Service</router-link>
             <router-link to="/privacy">Privacy</router-link>
             <router-link to="/proposals">Proposals</router-link>
+            <router-link to="/guidelines">Brand Guidelines</router-link>
           </div>
           <a href="#main" v-smooth-scroll class="btnUp">
             Up
@@ -249,11 +250,6 @@ export default {
           id: 5,
           title: 'Technology',
           route: '/technology'
-        },
-        {
-          id: 6,
-          title: 'Guidelines',
-          route: '/guidelines'
         }
       ]
     }

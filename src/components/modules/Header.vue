@@ -154,11 +154,6 @@ export default {
           id: 5,
           title: 'Technology',
           route: '/technology'
-        },
-        {
-          id: 6,
-          title: 'Guidelines',
-          route: '/guidelines'
         }
       ]
     }
