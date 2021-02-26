@@ -77,7 +77,7 @@ export default {
     position: absolute;
     top: 0%;
     right: -38%;
-    padding-top: 100%;
+    padding-top: 50%;
     width: 100%;
     transform: translateY(-40%);
   }
