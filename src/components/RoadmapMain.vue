@@ -13,6 +13,12 @@
       </div>
       <TopHead/>
       <div class="roadmap__container-inner">
+        <div class="year-container">
+          <div class="roadmap__lrg-buble">Inception</div>
+        </div>
+        <div class="year-container">
+          <div class="roadmap__ltl-buble">2021</div>
+        </div>
         <div class="roadmap__container-floor">
           <div class="roadmap__half left">
             <div data-aos="fade-up" class="roadmap__item">
@@ -60,6 +66,9 @@
               <div class="roadmap__item-description">PivotChains Testing</div>
             </div>
           </div>
+        </div>
+        <div class="year-container">
+          <div class="roadmap__ltl-buble">2022</div>
         </div>
         <div class="roadmap__container-floor">
           <div class="roadmap__half left">
@@ -112,6 +121,9 @@
               <div class="roadmap__item-description">Randomizer Engine</div>
             </div>
           </div>
+        </div>
+        <div class="year-container">
+          <div class="roadmap__ltl-buble">2023</div>
         </div>
         <div class="roadmap__container-floor">
           <div class="roadmap__half left">
@@ -186,6 +198,13 @@ export default {
 }
 </script>
 <style scoped>
+  .year-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0px;
+  }
   .roadmap__half.right{
     margin-left: auto;
   }
@@ -270,23 +289,10 @@ export default {
   .roadmap__lrg-buble.top{
     top: 80px;
   }
-  .roadmap__lrg-buble.bottom{
-    bottom: 170px;
-  }
-  .roadmap__ltl-buble.y1{
-    top: 260px;
-  }
-  .roadmap__ltl-buble.y2{
-    top: 1220px;
-  }
-  .roadmap__ltl-buble.y3{
-    top: 2250px;
-  }
   .roadmap__ltl-buble{
     font-size: 15px;
     line-height: 24px;
     position: relative;
-    right: -32px;
     height: 64px;
     width: 64px;
     border: 2px solid #FF7152;
@@ -299,8 +305,6 @@ export default {
   }
   .roadmap__lrg-buble{
     font-size: 15px;
-    position: absolute;
-    right: -55px;
     height: 110px;
     width: 110px;
     border: 2px solid #FF7152;
@@ -330,12 +334,21 @@ export default {
   }
   .roadmap__container-inner{
     display: flex;
-    width: 850px;
-    margin-top: 240px;
+    width: 950px;
+    margin-top: 19%;
+    margin-bottom: 19%;
     padding-bottom: 360px;
     position: relative;
     z-index: 3;
     flex-direction: column;
+    transition: .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  .animHead .roadmap__container-inner{
+    transform: translateY(0px);
+    opacity: 1;
+    transition-delay: .4s;
   }
   .roadmap__container-floor{
     display: flex;
@@ -434,7 +447,7 @@ export default {
       width: 100%;
     }
     .roadmap__container-inner{
-      margin-top: 220px;
+      margin-top: 3%;
     }
     .roadmap__container{
       padding: 0px 25px;
@@ -446,11 +459,11 @@ export default {
       transform: scale(1.5);
     }
     .roadmap__container-inner {
-      margin-top: 120px;
+      margin-top: 24%;
       padding-bottom: 160px;
     }
     .roadmap__top-video-outer{
-      padding-top: 80%;
+      padding-top: 110%;
     }
     .left .roadmap__item:after {
       width: 20px;
