@@ -256,9 +256,14 @@ export default {
     width: 100%;
     left: 0px;
     text-align: center;
+    display: flex;
+    justify-content: center;
     white-space: nowrap;
     z-index: 2;
-    overflow: hidden;
+  }
+  .statisctic-slider__name span{
+    color: rgba(255,255,255,.5);
+    font-size: 13px;
   }
   .statisctic-slider__middle::after{
     content: '';

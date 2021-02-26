@@ -1,6 +1,6 @@
 <template>
   <div class="footer__main">
-    <div data-aos="fade-up" class="container">
+    <div data-aos="fade-up" class="container join_container">
        <div class="footer__join">
       <img v-prlx="{ speed: 0.1 }" :src="require(`@/assets/img/join-img.jpg`)" alt="" class="footer__join-img">
       <div class="footer__join-inner">
@@ -317,6 +317,12 @@ export default {
 }
 </script>
 <style scoped>
+  .join_container.container{
+    display: none;
+  }
+  .home-page ~ .footer__main .join_container.container{
+    display: flex;
+  }
   .footer__last-nav a{
     font-size: 12px;
     line-height: 20px;

@@ -2,7 +2,7 @@
   <div>
     <div id="main" class="outer" :class="firstAnimation ? 'animHead' : ''" v-view="visibilityChanged">
       <TopHead/>
-      <div class="main-video__container">
+      <div class="main-video__container" >
         <div class="overlay"></div>
         <img :src="require(`@/assets/img/gradient.png`)" alt="" class="gradient">
         <!--      <video muted loop autoplay class="main-video">-->
@@ -10,7 +10,7 @@
         <!--&lt;!&ndash;        <source :src="require(`@/assets/img/Main.ogg`)" type="video/ogg; codecs=theora, vorbis">&ndash;&gt;-->
         <!--      </video>-->
         <div class="main-video">
-          <iframe src="https://iframe.videodelivery.net/1b63ec0c3bd09c163f83a515e248e7c0?muted=true&preload=true&loop=true&autoplay=true&controls=false" style="border: none; position: absolute; top: 0; height: 100%; width: 100%;"  allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;" allowfullscreen="true"></iframe>
+          <iframe src="https://iframe.videodelivery.net/0999a83bd18ba4ebe1cd10136b7963fb?muted=true&preload=true&loop=true&autoplay=true&controls=false" style="border: none; position: absolute; top: 0; height: 100%; width: 100%;"  allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;" allowfullscreen="true"></iframe>
         </div>
       </div>
       <div class="container">
@@ -76,9 +76,9 @@ export default {
   .main-video__container{
     position: absolute;
     top: 0%;
-    right: -15%;
-    padding-top: 75%;
-    width: 75%;
+    right: -38%;
+    padding-top: 100%;
+    width: 100%;
     transform: translateY(-40%);
   }
   .main-video__container video{
@@ -92,7 +92,7 @@ export default {
   .animHead .main-video__container{
     transform: scale(1);
     opacity: 1;
-    transition-delay: .4s;
+    transition-delay: 1.5s;
   }
   .main-video__container{
     opacity: 0;
@@ -176,11 +176,6 @@ export default {
   }
   /*Laptop 1440*/
   @media (max-width: 1900px){
-    .main-video__container {
-      right: -25%;
-      padding-top: 75%;
-      width: 75%;
-    }
     .main-container__description p{
       font-size: 46px;
       line-height: 54px;
@@ -197,7 +192,7 @@ export default {
       padding-left: 25px;
     }
     .main-video__container{
-      right: -38%;
+      right: -50%;
       padding-top: 130%;
       width: 130%;
     }
@@ -237,7 +232,7 @@ export default {
       border-bottom: 1px solid rgba(255,255,255,.05);
     }
     .main-video__container{
-      right: -100%;
+      right: -80%;
       padding-top: 200%;
       width: 200%;
       transform: translateY(-25%);

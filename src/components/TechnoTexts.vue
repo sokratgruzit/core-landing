@@ -33,12 +33,16 @@
       </div>
     <div data-aos="fade-up" class="techno-text__inner wh__bg">
         <div class="techno-text__double-inner">
-          <div class="techno-text__double">
+          <div class="techno-text__double col">
             <h3 class="techno-text__title">
               <span>3.</span>Transaction Privacy Protection Layer
             </h3>
             <div class="techno-text__txt">CORE transaction privacy protection layer (TPPL) adds an extra layer of security and privacy when transacting on its blockchain. This is a universal layer that is applied to every CORE-connected chain and can be applied to the major public blockchains.</div>
           </div>
+        </div>
+      </div>
+      <div data-aos="fade-up" class="techno-text__inner">
+        <div class="techno-text__double-inner col">
           <div class="techno-text__double">
             <h3 class="techno-text__title">
               <span>4.</span> Seamless Access to Off-Chain Data
@@ -82,6 +86,10 @@ export default {
 }
 </script>
 <style scoped>
+  .col.techno-text__double{
+    flex-direction: column;
+    width: 100%;
+  }
   h2{
     flex-direction: column;
     display: flex;
@@ -96,15 +104,18 @@ export default {
     right: -80px;
     height: 100%;
     width: calc(100% + 160px);
-    background: #fff;
+    background: transparent;
     z-index: 1;
     content: '';
   }
-  .wh__bg .techno-text__txt{
+  .wh__bg:hover:after{
+    background: #ffffff;
+  }
+  .wh__bg:hover .techno-text__txt{
     color: #00050F;
     opacity: .5;
   }
-  .wh__bg .techno-text__title{
+  .wh__bg:hover .techno-text__title{
     color: #00050F;
   }
   .techno-text__title span{
@@ -118,10 +129,12 @@ export default {
     margin-bottom: 15px;
     position: relative;
     z-index: 3;
+    transition: .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
   }
   .techno-text__txt{
     padding-right: 120px;
     color: rgba(255,255,255,.5);
+    transition: .6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
   }
   .techno-text__double{
     width: 50%;
@@ -150,7 +163,6 @@ export default {
       right: -40px;
       height: 100%;
       width: calc(100% + 80px);
-      background: #fff;
       z-index: 1;
       content: '';
     }

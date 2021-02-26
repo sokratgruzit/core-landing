@@ -1,5 +1,5 @@
 <template>
-  <div class="body-container">
+  <div class="body-container home-page">
     <StartContainer v-if="false"/>
     <MainContainer/>
     <TextContainer/>
