@@ -1,0 +1,233 @@
+{
+  "faq": [
+    {
+      "id": 1,
+      "question": "What is CORE?",
+      "answer": "CORE is Multi Chain PoS Network focused on Interoperability, Scalability and Usability.\nIt utilizes AI Enabled Proof of Stake Algorithm, Multi Layered Consensus Model and Voting Based Governance. <br/><br/> It would attain higher level of Scalability using Advanced Sharding along with Pipelining and Chunking and Parallel Transaction Processing.\nThese technologies have made it possible for the CORE network to be infinitely scalable and to achieve significantly higher throughput and efficiency.\n"
+    },
+    {
+      "id": 2,
+      "question": "Why is CORE needed?",
+      "answer": "CORE is a solution to all of the current major blockchain problems, namely usability, scalability, throughput, security, and interoperability. CORE solves these issues through its combination of an AI controlled consensus protocol, it's blockchain sharding layer, and its simplified cross-chain communication.\n"
+    },
+    {
+      "id": 3,
+      "question": "Who created CORE?",
+      "answer": "CORE is community driven and relies on its community members for its continuous development. These members include current and future academics, developers, and engineers present in the CORE community.\n"
+    },
+    {
+      "id": 4,
+      "question": "How many chains can CORE connect?\n",
+      "answer": "It is difficult to give a specific limit as to how many chains can be connected to the CORE network. Currently, all of the major public chains and all CORE linked chains can be connected to the network. CORE's optimized and scalable protocol allows for several hundreds, if not thousands, of chain connections to be made to its framework. Future advancements to the protocol may even increase the upper bound on the limit of connected chains as CORE aims to become the internet of blockchains.\n"
+    },
+    {
+      "id": 5,
+      "question": "How does CORE plan to solve the scalability issue?\n",
+      "answer": "CORE is able to increase the throughput speed of current blockchain technology linearly through a combination of sharding, pipelining, and its multilayer technology into one cross-shard and cross-chain communication protocol. The protocol is able to take the large number of transactions from a large ecosystem and split them into smaller ecosystems. These smaller ecosystems are then able to process the transactions in parallel to each other and simultaneously communicate live updates to the other ecosystems. These ecosystems are directly correlated to the size of CORE's community. So, as the community grows the ecosystems will grow, resulting in faster throughput of larger volumes.\n"
+    },
+    {
+      "id": 6,
+      "question": "Will you make the source code public?\n",
+      "answer": "Of course! We can't be a community driven project without making our project open source. Besides that, we believe that there is power in numbers, and that it would benefit the CORE project by not only building a project that incorporates our community's ideology but that also utilizes the exciting intellectual power and skillsets that our community has to offer.\n"
+    },
+    {
+      "id": 7,
+      "question": "How can I join the community?\n",
+      "answer": "CORE is open source and community centric. We welcome new community members with open arms. Whether it is just to keep up to date with CORE's exciting progress or to contribute to its online platforms, we'd love to hear from you and have you be a part of our growing community!\n"
+    },
+    {
+      "id": 8,
+      "question": "How can I support CORE?\n",
+      "answer": "There are many ways that you can support the CORE project such as join our Ambassador program, host CORE-related events in your community, or become a part of our online community. Join us on all social media platforms!"
+    }
+  ],
+  "community":[
+    {
+      "id": 1,
+      "title": "Purpose",
+      "video": "<iframe src=\"https://iframe.videodelivery.net/ba02c51bd5a64eb4430aaf30f88b911b?muted=true&preload=true&loop=true&autoplay=true&controls=false\" style=\"border: none; position: absolute; top: 0; height: 100%; width: 100%;\"  allow=\"accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
+      "subTitle": "To transcend blockchain technology, with the goal to lead the way in blockchain mass-adoption, by addressing the obstacles that current blockchain solutions face - namely the scalability, interoperability, security and usability of blockchain technology.",
+      "text": "One of the major approaches to overcome the performance and scalability limitations of current blockchain protocols is to use true sharding, which is to split the overhead of processing transactions among multiple, smaller groups of nodes. In parallel, these groups work to optimize performance while requiring substantially smaller communication, computing, and storage per node, enabling the device to scale to large networks. <br/><br/>   CORE is powered by Artificial Intelligence and Machine Learning principles at the core of its blockchain- its consensus, together with side chains and off-chain transaction processing to enable both the acceleration of block broadcasting to the chain and scaling out through asynchronous consensus zones. <br/><br/>  CORE overcomes the security concerns associated with blockchain technology, such as 51% attacks and vendor exploits, by combing secure multi-party computation and attribute-based encryption, together with other security practices such as committee reconfiguration and zero knowledge proof. These proven security practices enable anyone to transact freely and securely in the CORE ecosystem. <br/><br/> A lot of research is being done into creating true cross-chain communication between the various blockchains. CORE has combined some of these solutions to create one hybrid cross-chain communication protocol. This hybrid solution makes use of hash-locking, notary schemes, and blockchain bridges, together with trusted relays, side chains, and blockchain migrators. Thus, creating an advanced solution that allows the CORE blockchain to become the internet of blockchains. <br/><br/> Our blockchain ecosystem incorporates a combination of public blockchain sharding, an optimal AI powered consensus, as well as a cross-chain and cross-shard communication protocol into a hybrid solution that is not only Byzantine fault, but also has very high throughputs through block pipelining."
+    },
+    {
+      "id": 2,
+      "title": "Research",
+      "video": "<iframe src=\"https://iframe.videodelivery.net/112f3c0278f210a880e8ea0abdef6913?muted=true&preload=true&loop=true&autoplay=true&controls=false\" style=\"border: none; position: absolute; top: 0; height: 100%; width: 100%;\"  allow=\"accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
+      "subTitle": "All cutting-edge technology requires a vast amount of research to become the frontier in its field. ",
+      "text": "CORE's team, which consists of professionals from various academic disciplines, has done extensive research to not only understand the technical limitations that blockchain technology faces, but also develop a philosophical understanding of the human psyche to discover some of the objections people have about towards blockchain technology. We at CORE are proud to announce that we have answered all of the questions that formed the basis for our research, and have presented it in a simplified, secure, and scalable solution - the CORE blockchain ecosystem."
+    }
+  ],
+  "statistic": [
+    {
+      "id": 1,
+      "name": "Website Launch"
+    },
+    {
+      "id": 2,
+      "name": "Light-paper"
+    },
+    {
+      "id": 3,
+      "name": "Request for Proposals (R1)"
+    },
+    {
+      "id": 4,
+      "name": "White-paper(Version 0.1)"
+    },
+    {
+      "id": 5,
+      "name": "Seed Founders On-Boarding"
+    },
+    {
+      "id": 6,
+      "name": "CMCX Token Offering"
+    },
+    {
+      "id": 7,
+      "name": "CORE Community <br/> Initiatives Program Launch (CCIP)"
+    },
+    {
+      "id": 8,
+      "name": "Technical Committee <br/> Formation"
+    },
+    {
+      "id": 9,
+      "name": "Research and Development <br/> Team Voting Event"
+    },
+    {
+      "id": 10,
+      "name": "Request for Proposals (R2)"
+    },
+    {
+      "id": 11,
+      "name": "Proof of Concept (PoC) <br/> Version 0.1"
+    },
+    {
+      "id": 12,
+      "name": "CMCX Token Exchange <br/> Offering (IEO)"
+    },
+    {
+      "id": 13,
+      "name": "Research and Development <br/> Team Voting Event"
+    },
+    {
+      "id": 14,
+      "name": "CORE Hackathon 2021"
+    },
+    {
+      "id": 15,
+      "name": "CORE MVP"
+    },
+    {
+      "id": 16,
+      "name": "Code Fully Open Source"
+    },
+    {
+      "id": 17,
+      "name": "White-paper update"
+    },
+    {
+      "id": 18,
+      "name": "Private test-net launch"
+    },
+    {
+      "id": 19,
+      "name": "Native CORE Wallet"
+    },
+    {
+      "id": 20,
+      "name": "Origo Layer Testing"
+    },
+    {
+      "id": 21,
+      "name": "PivotChains Testing"
+    }
+  ],
+  "framework": [
+    {
+      "id": 1,
+      "text": "The first layer of the CORE blockchain is the network layer. This layer is the brain of the system. It is the orchestration and communication in the formation of blocks on the blockchain. This layer usually makes use of the web for decentralized communication between the nodes in the blockchain.\n",
+      "image": "tab1.jpg",
+      "title": "ORIGO\\ori·\u200Bgo\\ :Source and Origin\n",
+      "svg": "origo.svg"
+    },
+    {
+      "id": 2,
+      "text": " The second layer is the blockchain layer. This layer is where the actual block formation takes place and where the blockchain is appended with the newly formed blocks. It is built on top of the networking layer.\n",
+      "image": "tab2.jpg",
+      "title": "CATENA\\kə-ˈtē-nə\\ :Chain\n",
+      "svg": "catena.svg"
+    },
+    {
+      "id": 3,
+      "text": "The third layer is the application layer. This layer is built on top of the network and blockchain layers and is where blockchain use cases are developed. This is the layer that the user interacts with.",
+      "image": "tab3.jpg",
+      "title": "AURA \\ˈȯr-ə\\ :A distinctive atmosphere surrounding a given source\n",
+      "svg": "aura.svg"
+    }
+  ],
+  "cases": [
+    {
+      "id": 1,
+      "text": "The most popular use case for blockchain technology is for finance. These are chains that represent a monetary balance (cryptocurrency) and allow users to privately and independently send and receive money with other users on the system. All of this can be done without a 3rd party financial service provider, such as a bank.\n",
+      "title": "Financial Chains"
+    },
+    {
+      "id": 2,
+      "text": "Blockchain introduced the world to another neat piece of technology: smart contracts. Basically what smart contracts are, are legal agreements between 2 or more people or businesses that is written in computer code. These contracts utilise the security and immutability of blockchain technology to allow anyone to write simple legal agreements without the need for attorneys, provided that the parties involved can code the smart contract.",
+      "title": "Smart Contract Chains"
+    },
+    {
+      "id": 3,
+      "text": "Blockchains are a great tool for the supply chain and logistic businesses. Their immutability can track supplies as they move between users on a blockchain and enable the last person on the supply chain to trace back to the original supplier in case of a fault.\n",
+      "title": "Supply Chain Management\n"
+    },
+    {
+      "id": 4,
+      "text": "IoT refers to the Internet of Things which is a way for electronic devices to communicate with each other. These aren't necessarily phones and laptops for messaging purposes, but more for smart devices that constantly communicate with each other to allow for more automation and predictability through data analysis. The only problem with all of these devices communicating with each other is that they may be transmitting confidential data, and since they communicate over the web, this confidential information could be intercepted by hackers. Blockchain combined with IoT allows the data shared between devices in an IoT network to be secured by utilising the security factor present in a decentralised blockchain.",
+      "title": "IoT Chains\n"
+    },
+    {
+      "id": 5,
+      "text": "No longer will people have to carry their ID documents or have to remember all of their passwords for their online user profiles when they need to log in to an online platform. Blockchain's information security and encryption allows for the safety of user data. This opens up the possibility for people to store their passwords and identification information on identification blockchains. They can then use the blockchains to log in to their social media accounts or any other online service provider. Much like the \"log in with facebook\" feature available on some sites when logging in.\n",
+      "title": "Identification Chains\n"
+    },
+    {
+      "id": 6,
+      "text": "Healthcare chains allow users to store their medical information and history on a blockchain. This ensures that the medical information is secure and unreadable to anyone unauthorised to view it, while still allowing ease of access to the user to view their whole medical history and all those authorised to do so.",
+      "title": "Healthcare"
+    }
+  ],
+  "technology": [
+    {
+      "id": 1,
+      "title": "CORE",
+      "text": "CORE blockchain is a combination of all the latest frameworks and advanced programming languages into one cutting-edge solution. \n"
+    },
+    {
+      "id": 2,
+      "title": "Apeirogon",
+      "text": "It is built on top of our in-house Apeirogon blockchain framework - a next-generation framework for enterprise-grade blockchain innovation that is highly compatible with Solidity, Simplicity, and CX. Apeirogon allows any development team to easily build a custom blockchain for their own use case with custom parameter settings such as token supply and token name. It also allows you to add customised protocols to your blockchain and can communicate with both public and private blockchains through its built-in public bridges. \n\n"
+    },
+    {
+      "id": 3,
+      "title": "Wasmi",
+      "text": "Apeirogon is compiled to WebAssembly which is a super performant virtual environment that provides a way to run code written in multiple languages on the web at near native speed. WebAssembly is a fast, efficient, and safe binary instruction format for a stack-based virtual machine. It is a popular choice for the major web browser providers such as Google, Apple, Microsoft, and Mozilla, who all implement it in their web browsers.\n"
+    },
+    {
+      "id": 4,
+      "title": "Lipp2p",
+      "text": "Apeirogon's ecosystem uses a state-of-the-art, peer-to-peer network platform called libp2p which is a modular system of protocols, specifications and libraries that enable the development of peer-to-peer network applications and is positioned to be the standard for future decentralized applications."
+    },
+    {
+      "id": 5,
+      "title": "Rust",
+      "text": "CORE relay chain is built with Substrate, a blockchain-building framework that is the distillation of Parity Technologies’ learnings building Ethereum, Bitcoin, and enterprise blockchains.<br/><br/> CORE state machine is compiled to WebAssembly (Wasm), a super performant virtual environment. Wasm is developed by major companies, including Google, Apple, Microsoft, and Mozilla, that have created a large ecosystem of support for the standard."
+    },
+    {
+      "id": 6,
+      "title": "C++",
+      "text": "To bring it all together, we use Rust, Haskell, C++,  and Golang to program everything. These programming languages are the most advanced in the market and provide high speeds and robust performance. All of this combined makes the Apeirogon framework a high-speed, and robust solution."
+    }
+  ]
+}
