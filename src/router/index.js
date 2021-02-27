@@ -9,6 +9,7 @@ import Guideline from '../views/Guideline.vue'
 import Roadmap from '../views/Roadmap.vue'
 import Privacy from '../views/Privacy.vue'
 import Proposals from '../views/Proposals.vue'
+import Community from '../views/Community.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -63,6 +64,12 @@ const routes = [
     path: '/proposals',
     name: 'Proposals',
     component: Proposals,
+    meta: { scrollToTop: true }
+  },
+  {
+    path: '/community',
+    name: 'Community',
+    component: Community,
     meta: { scrollToTop: true }
   }
 ]

@@ -202,22 +202,22 @@
     {
       "id": 1,
       "title": "CORE",
-      "text": "CORE relay chain is built with Substrate, a blockchain-building framework that is the distillation of Parity Technologies’ learnings building Ethereum, Bitcoin, and enterprise blockchains.<br/><br/> CORE state machine is compiled to WebAssembly (Wasm), a super performant virtual environment. Wasm is developed by major companies, including Google, Apple, Microsoft, and Mozilla, that have created a large ecosystem of support for the standard."
+      "text": "CORE blockchain is a combination of all the latest frameworks and advanced programming languages into one cutting-edge solution. \n"
     },
     {
       "id": 2,
-      "title": "Hypercube",
-      "text": "CORE relay chain is built with Substrate, a blockchain-building framework that is the distillation of Parity Technologies’ learnings building Ethereum, Bitcoin, and enterprise blockchains.<br/><br/> CORE state machine is compiled to WebAssembly (Wasm), a super performant virtual environment. Wasm is developed by major companies, including Google, Apple, Microsoft, and Mozilla, that have created a large ecosystem of support for the standard."
+      "title": "Apeirogon",
+      "text": "It is built on top of our in-house Apeirogon blockchain framework - a next-generation framework for enterprise-grade blockchain innovation that is highly compatible with Solidity, Simplicity, and CX. Apeirogon allows any development team to easily build a custom blockchain for their own use case with custom parameter settings such as token supply and token name. It also allows you to add customised protocols to your blockchain and can communicate with both public and private blockchains through its built-in public bridges. \n\n"
     },
     {
       "id": 3,
       "title": "Wasmi",
-      "text": "CORE relay chain is built with Substrate, a blockchain-building framework that is the distillation of Parity Technologies’ learnings building Ethereum, Bitcoin, and enterprise blockchains.<br/><br/> CORE state machine is compiled to WebAssembly (Wasm), a super performant virtual environment. Wasm is developed by major companies, including Google, Apple, Microsoft, and Mozilla, that have created a large ecosystem of support for the standard."
+      "text": "Apeirogon is compiled to WebAssembly which is a super performant virtual environment that provides a way to run code written in multiple languages on the web at near native speed. WebAssembly is a fast, efficient, and safe binary instruction format for a stack-based virtual machine. It is a popular choice for the major web browser providers such as Google, Apple, Microsoft, and Mozilla, who all implement it in their web browsers.\n"
     },
     {
       "id": 4,
       "title": "Lipp2p",
-      "text": "CORE relay chain is built with Substrate, a blockchain-building framework that is the distillation of Parity Technologies’ learnings building Ethereum, Bitcoin, and enterprise blockchains.<br/><br/> CORE state machine is compiled to WebAssembly (Wasm), a super performant virtual environment. Wasm is developed by major companies, including Google, Apple, Microsoft, and Mozilla, that have created a large ecosystem of support for the standard."
+      "text": "Apeirogon's ecosystem uses a state-of-the-art, peer-to-peer network platform called libp2p which is a modular system of protocols, specifications and libraries that enable the development of peer-to-peer network applications and is positioned to be the standard for future decentralized applications."
     },
     {
       "id": 5,
@@ -227,7 +227,7 @@
     {
       "id": 6,
       "title": "C++",
-      "text": "CORE relay chain is built with Substrate, a blockchain-building framework that is the distillation of Parity Technologies’ learnings building Ethereum, Bitcoin, and enterprise blockchains.<br/><br/> CORE state machine is compiled to WebAssembly (Wasm), a super performant virtual environment. Wasm is developed by major companies, including Google, Apple, Microsoft, and Mozilla, that have created a large ecosystem of support for the standard."
+      "text": "To bring it all together, we use Rust, Haskell, C++,  and Golang to program everything. These programming languages are the most advanced in the market and provide high speeds and robust performance. All of this combined makes the Apeirogon framework a high-speed, and robust solution."
     }
   ]
 }

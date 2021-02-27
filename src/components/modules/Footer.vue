@@ -198,9 +198,9 @@
         <div class="footer__last">
           <div class="footer__last-copy">© 2021 CORE Multi-Chain</div>
           <div class="footer__last-nav">
-            <router-link to="/termsofuse">Terms of Service</router-link>
+            <router-link to="/termsofuse">Terms</router-link>
             <router-link to="/privacy">Privacy</router-link>
-            <router-link to="/proposals">Proposals</router-link>
+            <router-link to="/proposals">Request for Proposals</router-link>
             <router-link to="/guidelines">Brand Guidelines</router-link>
           </div>
           <a href="#main" v-smooth-scroll class="btnUp">
@@ -245,6 +245,11 @@ export default {
           id: 4,
           title: 'Technology',
           route: '/technology'
+        },
+        {
+          id: 5,
+          title: 'Community',
+          route: '/community'
         }
       ]
     }

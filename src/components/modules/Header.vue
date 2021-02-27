@@ -149,6 +149,11 @@ export default {
           id: 4,
           title: 'Technology',
           route: '/technology'
+        },
+        {
+          id: 5,
+          title: 'Community',
+          route: '/community'
         }
       ]
     }

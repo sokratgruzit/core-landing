@@ -5,7 +5,7 @@
       <div class="container">
         <div class="main-container__description">
           <div class="left">
-            <h1><span>Open Call</span><span>for Proposals</span></h1>
+            <h1><span>Request</span><span>for Proposals</span></h1>
           </div>
         </div>
       </div>

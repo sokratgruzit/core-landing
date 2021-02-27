@@ -49,22 +49,21 @@
                   <line x1="10" y1="9" x2="10" y2="15" stroke="white" stroke-width="2"/>
                   <line x1="10" y1="5" x2="10" y2="7" stroke="white" stroke-width="2"/>
                 </svg>
-                IEO Will start May 1st 2021 <br>
-                (*or sooner if Seed Round total <br>
-                allocation claimed).
+                IEO will start in Q2 2021*<br>
+                (*or sooner if Seed Round total<br> allocation claimed)<br>
               </div>
             </div>
             <div class="about-list__item-part">
               <div class="about-list__item-color-ttl">Pre-Seed</div>
-              <div class="about-list__item-sub-text">Starts on February 20 2021 2pm,
-                GMT Ends on February 22 2021 2pm, GMT</div>
+              <div class="about-list__item-sub-text">24 days or whenever allocation is claimed</div>
               <div class="about-list__item-color-ttl">Founders Round</div>
-              <div class="about-list__item-sub-text">Starts on February 23 2021 2:00pm, GMT Ends on March 09 2021 2:00pm, GMT (*or whenever total allocation is claimed</div>
+              <div class="about-list__item-sub-text">20 days - Starting one day after Pre-Seed Round or whenever allocation is claimed.</div>
 
               <div class="about-list__item-color-ttl">Seed Round — 1,000,000,000</div>
-              <div class="about-list__item-sub-text">Starts on March 21 2021 2:00pm, GMT Ends on March 29 2021 2:00pm, GMT (*or whenever total allocation is claimed)</div>
+              <div class="about-list__item-sub-text">20 days - Starting one day after Founders Round or whenever allocation is claimed.</div>
               <div class="about-list__item-color-ttl">Pre-IEO: 1,000,000,000</div>
-              <div class="about-list__item-sub-text">Starts on April 07 2021 2:00pm, GMT Ends on April 24 2021 2:00pm, GMT</div>
+              <div class="about-list__item-sub-text">20 days - Starting one day after Seed Round or whenever allocation is claimed.
+              </div>
             </div>
           </div>
         </div>
